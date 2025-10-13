@@ -26,13 +26,15 @@ AGET occupies a unique niche in the agent framework landscape:
 
 ## Templates
 
-Choose the template that matches your agent's role:
+**All templates build on the worker foundation.** Advisor and supervisor are specialized workers with additional capabilities.
 
-| Template | Use Case | Capability | Status |
-|----------|----------|------------|--------|
-| **[template-worker-aget](https://github.com/aget-framework/template-worker-aget)** | General-purpose tasks | Flexible (AGET or aget) | ✅ Public |
-| **[template-advisor-aget](https://github.com/aget-framework/template-advisor-aget)** | Advisory with internal state | Persona-based guidance | ✅ Public |
-| **[template-supervisor-aget](https://github.com/aget-framework/template-supervisor-aget)** | Fleet coordination | Multi-agent orchestration | 🔒 Private (v2.7) |
+| Template | Foundation | Additional Capabilities | Status |
+|----------|------------|------------------------|--------|
+| **[template-worker-aget](https://github.com/aget-framework/template-worker-aget)** | ✅ **CORE** | General-purpose (flexible) | ✅ Public v2.7.0 |
+| **[template-advisor-aget](https://github.com/aget-framework/template-advisor-aget)** | Worker + | Persona system, session artifacts | ✅ Public v2.7.0 |
+| **[template-supervisor-aget](https://github.com/aget-framework/template-supervisor-aget)** | Worker + | Fleet coordination, process enforcement | ✅ Public v2.7.0 |
+
+**Need help choosing?** See **[Template Selector](./TEMPLATE_SELECTOR.md)** for decision tree and detailed comparison.
 
 **Naming Convention**:
 - `-AGET` suffix = Action-taking agent (can modify systems)
@@ -53,15 +55,15 @@ The suffix convention provides visual capability signaling—like `sudo` or `rm 
 
 ### 1. Choose Your Template
 
-Use the **template decision tree**:
+**All templates build on worker foundation.** Use the **template decision tree**:
 
 ```
-Need to manage multiple agents? → template-supervisor-aget
-Need advisory role with personas? → template-advisor-aget
-General-purpose agent? → template-worker-aget
+Need fleet coordination? → template-supervisor-aget (worker + fleet)
+Need advisory persona? → template-advisor-aget (worker + persona)
+General-purpose? → template-worker-aget (core foundation)
 ```
 
-See [Getting Started Guide](./GETTING_STARTED.md) for detailed decision tree.
+See **[Template Selector](./TEMPLATE_SELECTOR.md)** for detailed decision tree, capability matrix, and upgrade paths.
 
 ### 2. Clone Template
 
@@ -119,6 +121,7 @@ wind down
 ## Documentation
 
 ### Framework Guides
+- **[Template Selector](./TEMPLATE_SELECTOR.md)** - Choose the right template (decision tree, comparison matrix)
 - **[Getting Started](./GETTING_STARTED.md)** - Create your first agent (step-by-step)
 - **[Design Philosophy](./DESIGN_PHILOSOPHY.md)** - Human-supervised collaboration principles
 - **[Core Patterns](./CORE_PATTERNS.md)** - Gate discipline, recursive supervision, file-based coordination
