@@ -49,6 +49,7 @@ Choose a specialized template for specific technical tasks:
 | Template | Purpose | Methodology | Status |
 |----------|---------|-------------|--------|
 | **[template-spec-engineer-aget](https://github.com/aget-framework/template-spec-engineer-aget)** | Reverse engineer Python code into formal EARS specifications | Semantic extraction via coding agent (functions → scripts → modules → applications) | ✅ Public v2.7.0 |
+| **[template-developer-aget](https://github.com/aget-framework/template-developer-aget)** | Code quality analysis and standards compliance advisor | Multi-repository code analysis (quality metrics, standards checking, debugging assistance, spec consistency) | ✅ Public v2.7.0 |
 
 **Specification Engineering Use Cases**:
 - **Extract** specifications from existing Python code (AGET tools, scripts, modules, applications)
@@ -58,6 +59,16 @@ Choose a specialized template for specific technical tasks:
 **Quality benchmarks**: 75-85% for scripts (100-500 lines), 60-70% for full applications (2000+ lines)
 
 **Progression path**: Start with functions (validate methodology), scale to scripts (primary focus), then modules and applications
+
+**Code Analysis Use Cases**:
+- **Assess** code quality across repositories (complexity, maintainability, technical debt)
+- **Verify** coding standards compliance (PEP-8, custom standards)
+- **Assist** with debugging (error pattern recognition, fix strategies)
+- **Validate** spec-to-code consistency (YAML/Markdown specifications)
+
+**Quality benchmarks**: 9.2/10 average pattern quality across 5 real-world validation tasks
+
+**Validation status**: Production-ready with 21 contract tests passing, critical bug fixed during validation
 
 **Naming Convention**:
 - `-AGET` suffix = Action-taking agent (can modify systems)
