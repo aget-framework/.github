@@ -26,15 +26,38 @@ AGET occupies a unique niche in the agent framework landscape:
 
 ## Templates
 
-**All templates build on the worker foundation.** Advisor and supervisor are specialized workers with additional capabilities.
+**AGET templates provide configuration and lifecycle management for CLI-based coding agents.**
+
+### Core Templates (Fleet Roles)
+
+Choose a core template based on your agent's role in the fleet:
+
+**All core templates build on the worker foundation.** Advisor and supervisor add specialized capabilities.
 
 | Template | Foundation | Additional Capabilities | Status |
 |----------|------------|------------------------|--------|
-| **[template-worker-aget](https://github.com/aget-framework/template-worker-aget)** | ✅ **CORE** | General-purpose (flexible) | ✅ Public v2.7.0 |
-| **[template-advisor-aget](https://github.com/aget-framework/template-advisor-aget)** | Worker + | Persona system, session artifacts | ✅ Public v2.7.0 |
+| **[template-worker-aget](https://github.com/aget-framework/template-worker-aget)** | ✅ **CORE** | General-purpose (flexible capability) | ✅ Public v2.7.0 |
+| **[template-advisor-aget](https://github.com/aget-framework/template-advisor-aget)** | Worker + | Persona system, advisory-only mode | ✅ Public v2.7.0 |
 | **[template-supervisor-aget](https://github.com/aget-framework/template-supervisor-aget)** | Worker + | Fleet coordination, process enforcement | ✅ Public v2.7.0 |
 
 **Need help choosing?** See **[Template Selector](./TEMPLATE_SELECTOR.md)** for decision tree and detailed comparison.
+
+### Specialized Templates (Task-Specific)
+
+Choose a specialized template for specific technical tasks:
+
+| Template | Purpose | Methodology | Status |
+|----------|---------|-------------|--------|
+| **[template-spec-engineer-aget](https://github.com/aget-framework/template-spec-engineer-aget)** | Reverse engineer Python code into formal EARS specifications | Semantic extraction via coding agent (functions → scripts → modules → applications) | ✅ Public v2.7.0 |
+
+**Specification Engineering Use Cases**:
+- **Extract** specifications from existing Python code (AGET tools, scripts, modules, applications)
+- **Maintain** specifications as primary artifacts (ongoing evolution)
+- **Document** legacy code with formal requirements
+
+**Quality benchmarks**: 75-85% for scripts (100-500 lines), 60-70% for full applications (2000+ lines)
+
+**Progression path**: Start with functions (validate methodology), scale to scripts (primary focus), then modules and applications
 
 **Naming Convention**:
 - `-AGET` suffix = Action-taking agent (can modify systems)
