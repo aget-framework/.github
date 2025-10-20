@@ -176,7 +176,7 @@ Execute ONLY current gate deliverables, stop at boundary, WAIT for explicit GO.
 
 **In Practice**:
 ```
-Human (supervises) → my-supervisor-AGET (supervises) → 10 worker agents
+Human (supervises) → fleet-supervisor-AGET (supervises) → 10 worker agents
 ```
 
 - Workers can be promoted to supervisors via configuration

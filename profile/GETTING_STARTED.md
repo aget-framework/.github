@@ -116,15 +116,15 @@ ls -la
 
 **Examples**:
 ```bash
-# Action-taking agents
-my-github-AGET              # Creates PRs, manages issues
-my-deployment-AGET          # Deploys to servers
-my-database-AGET            # Modifies database schemas
+# Action-taking agents (personal deployments)
+private-github-AGET              # Creates PRs, manages issues
+private-deployment-AGET          # Deploys to servers
+private-database-AGET            # Modifies database schemas
 
-# Information-only agents
-my-analytics-aget           # Reports metrics
-my-log-analyzer-aget        # Analyzes logs
-my-documentation-aget       # Generates docs (read-only context)
+# Information-only agents (personal deployments)
+private-analytics-aget           # Reports metrics
+private-log-analyzer-aget        # Analyzes logs
+private-documentation-aget       # Generates docs (read-only context)
 ```
 
 ---

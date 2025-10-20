@@ -362,7 +362,7 @@ Unclear supervision structure as agent fleets grow. Questions arise:
 
 **Recursive Structure**:
 ```
-Human (supervises) → my-supervisor-AGET (supervises) → 10 worker agents
+Human (supervises) → fleet-supervisor-AGET (supervises) → 10 worker agents
 ```
 
 **Enables**:
@@ -382,9 +382,9 @@ Human (supervises) → my-supervisor-AGET (supervises) → 10 worker agents
   "domain": "supervision",
   "supervisor": "human-user-name",
   "direct_reports": [
-    "my-github-AGET",
-    "my-deployment-AGET",
-    "my-analytics-aget"
+    "github-automation-AGET",
+    "deployment-automation-AGET",
+    "analytics-reporter-aget"
   ]
 }
 ```
@@ -394,9 +394,9 @@ Human (supervises) → my-supervisor-AGET (supervises) → 10 worker agents
 ## Direct Reports
 
 This supervisor manages 10 agents:
-- my-github-AGET (action-taking)
-- my-deployment-AGET (action-taking)
-- my-analytics-aget (information-only)
+- github-automation-AGET (action-taking)
+- deployment-automation-AGET (action-taking)
+- analytics-reporter-aget (information-only)
 - [... 7 more agents ...]
 
 Responsibilities:
@@ -452,7 +452,7 @@ Responsibilities:
 - Clarity: Accountability chains explicit
 - Flexibility: Workers promoted to supervisors via config change
 
-**Example**: my-supervisor-AGET coordinates 10 workers, itself supervised by human. If fleet grows to 50 agents, create 5 supervisors (10 agents each), supervised by meta-supervisor.
+**Example**: fleet-supervisor-AGET coordinates 10 workers, itself supervised by human. If fleet grows to 50 agents, create 5 supervisors (10 agents each), supervised by meta-supervisor.
 
 ---
 
