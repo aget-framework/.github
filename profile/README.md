@@ -70,18 +70,35 @@ Choose a specialized template for specific technical tasks:
 
 **Validation status**: Production-ready with 21 contract tests passing, critical bug fixed during validation
 
-**Naming Convention**:
+---
+
+## Naming Convention
+
+**Capability Suffix** (case-sensitive):
 - `-AGET` suffix = Action-taking agent (can modify systems)
 - `-aget` suffix = Information-only agent (read-only)
 
-**Examples**:
-```
-my-github-AGET              # Action-taking: Creates PRs, merges code
-my-spotify-analyst-aget     # Information-only: Reports analytics
-my-supervisor-AGET          # Coordinator: Manages agent fleet
-```
+**Visibility Prefix**:
+- `private-*` prefix = Personal deployment (not for sharing)
 
 The suffix convention provides visual capability signaling—like `sudo` or `rm -rf`, the capitalized AGET warns of powerful operations.
+
+### Examples by Template
+
+| Template | Generic Example | Personal Deployment |
+|----------|----------------|---------------------|
+| **template-worker-aget** | `github-automation-AGET` | `private-github-AGET` |
+| | `analytics-reporter-aget` | `private-analytics-aget` |
+| **template-advisor-aget** | `code-review-advisor-aget` | `private-code-advisor-aget` |
+| **template-supervisor-aget** | `fleet-supervisor-AGET` | `private-supervisor-AGET` |
+| **template-spec-engineer-aget** | `spec-engineer-aget` | `private-spec-engineer-aget` |
+| **template-developer-aget** | `code-analyzer-aget` | `private-code-analyzer-aget` |
+
+**Notes**:
+- Worker agents can be either `-AGET` (action-taking) or `-aget` (information-only)
+- Advisor agents are always `-aget` (advisory-only, no external modifications)
+- Supervisor agents are always `-AGET` (fleet coordination requires action-taking)
+- Specialized templates have fixed capability based on their purpose
 
 ---
 
