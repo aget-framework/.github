@@ -50,6 +50,7 @@ Choose a specialized template for specific technical tasks:
 |----------|---------|-------------|--------|
 | **[template-spec-engineer-aget](https://github.com/aget-framework/template-spec-engineer-aget)** | Reverse engineer Python code into formal EARS specifications | Semantic extraction via coding agent (functions → scripts → modules → applications) | ✅ Public v2.7.0 |
 | **[template-developer-aget](https://github.com/aget-framework/template-developer-aget)** | Code quality analysis and standards compliance advisor | Multi-repository code analysis (quality metrics, standards checking, debugging assistance, spec consistency) | ✅ Public v2.7.0 |
+| **[template-document-processor-AGET](https://github.com/aget-framework/template-document-processor-AGET)** | Create document processing agents with LLM pipelines and security protocols | Multi-provider LLM support, validation pipelines, security protocols, caching, and observability | ✅ Public v2.7.0 |
 
 **Specification Engineering Use Cases**:
 - **Extract** specifications from existing Python code (AGET tools, scripts, modules, applications)
@@ -69,6 +70,16 @@ Choose a specialized template for specific technical tasks:
 **Quality benchmarks**: 9.2/10 average pattern quality across 5 real-world validation tasks
 
 **Validation status**: Production-ready with 21 contract tests passing, critical bug fixed during validation
+
+**Document Processing Use Cases**:
+- **Build** document processing agents with LLM assistance (OpenAI, Anthropic, Google)
+- **Implement** batch operations with validation pipelines and approval gates
+- **Enforce** security protocols (prompt injection prevention, content filtering)
+- **Optimize** performance with caching, metrics, and task decomposition
+
+**Quality benchmarks**: 30/30 contract tests passing, Apache 2.0 licensed, privacy-safe
+
+**Time savings**: 60-70% reduction in new agent setup (3-5 hours → 1-2 hours)
 
 ---
 
@@ -93,6 +104,8 @@ The suffix convention provides visual capability signaling—like `sudo` or `rm 
 | **template-supervisor-aget** | `fleet-supervisor-AGET` | `private-supervisor-AGET` |
 | **template-spec-engineer-aget** | `spec-engineer-aget` | `private-spec-engineer-aget` |
 | **template-developer-aget** | `code-analyzer-aget` | `private-code-analyzer-aget` |
+| **template-document-processor-AGET** | `pdf-processor-AGET` | `private-doc-processor-AGET` |
+| | `invoice-extractor-AGET` | `private-invoice-AGET` |
 
 **Notes**:
 - Worker agents can be either `-AGET` (action-taking) or `-aget` (information-only)
