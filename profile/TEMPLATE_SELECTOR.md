@@ -2,7 +2,7 @@
 
 **Choose the right template for your use case**
 
-AGET provides three templates for different agent roles. **All templates build on the worker foundation** - advisor and supervisor are specialized workers with additional capabilities.
+AGET provides four templates for different agent roles. **All templates build on the worker foundation** - advisor, consultant, and supervisor are specialized workers with additional capabilities.
 
 ---
 
@@ -11,12 +11,14 @@ AGET provides three templates for different agent roles. **All templates build o
 ```
 template-worker-aget (CORE)
     │
-    ├─► template-advisor-aget (worker + persona system + session artifacts)
+    ├─► template-advisor-aget (worker + 5 personas + session artifacts)
+    │
+    ├─► template-consultant-aget (worker + consultant patterns + proactive analysis)
     │
     └─► template-supervisor-aget (worker + fleet coordination + process enforcement)
 ```
 
-**Key Insight**: Every agent is fundamentally a worker. Advisor and supervisor add specialized capabilities on top of the worker foundation.
+**Key Insight**: Every agent is fundamentally a worker. Advisor, consultant, and supervisor add specialized capabilities on top of the worker foundation.
 
 ---
 
@@ -29,7 +31,11 @@ START: What will your agent do?
 │   └─► YES → Use template-supervisor-aget (worker + fleet coordination)
 │
 ├─► Provide advice/guidance with session memory?
-│   └─► YES → Use template-advisor-aget (worker + persona system)
+│   ├─► Need multiple personas (teacher/mentor/guru/coach)?
+│   │   └─► YES → Use template-advisor-aget (worker + 5 personas)
+│   │
+│   └─► Solutions-focused proactive consulting only?
+│       └─► YES → Use template-consultant-aget (worker + consultant patterns)
 │
 └─► General automation or task execution?
     └─► YES → Use template-worker-aget (core foundation)
@@ -39,19 +45,20 @@ START: What will your agent do?
 
 ## Template Comparison Matrix
 
-| Feature | Worker (Core) | Advisor (Worker+) | Supervisor (Worker+) |
-|---------|---------------|-------------------|----------------------|
-| **Foundation** | ✅ Core template | ✅ Extends worker | ✅ Extends worker |
-| **Primary Role** | Task execution | Advisory & guidance | Fleet coordination |
-| **Action-taking** | Configurable (aget/AGET) | Limited (.aget/** only) | Always (AGET) |
-| **Internal State** | No | Yes (session artifacts) | Yes (fleet registry) |
-| **Multi-agent** | No | No | Yes (coordinates workers) |
-| **Persona System** | No | Yes (5 personas) | No |
-| **Portfolio Aware** | Yes | Yes | Yes (cross-portfolio) |
-| **Contract Tests** | 7 minimum | 30 minimum | 7 minimum |
-| **Typical Use Cases** | Automation, CI/CD, data processing | Coaching, consulting, teaching | Release management, fleet ops |
-| **Complexity** | Simple | Medium | Advanced |
-| **Best For** | Individual developers | Power users | Team leads, org admins |
+| Feature | Worker (Core) | Consultant | Advisor | Supervisor |
+|---------|---------------|------------|---------|------------|
+| **Foundation** | ✅ Core template | ✅ Extends worker | ✅ Extends worker | ✅ Extends worker |
+| **Primary Role** | Task execution | Proactive consulting | Multi-persona advisory | Fleet coordination |
+| **Action-taking** | Configurable (aget/AGET) | Limited (.aget/** only) | Limited (.aget/** only) | Always (AGET) |
+| **Internal State** | No | Yes (consultant artifacts) | Yes (session artifacts) | Yes (fleet registry) |
+| **Multi-agent** | No | No | No | Yes (coordinates workers) |
+| **Persona System** | No | No (consultant only) | Yes (5 personas) | No |
+| **Specialized Patterns** | No | Yes (6 consultant patterns) | No (generic advisory) | Yes (coordination) |
+| **Portfolio Aware** | Yes | Yes | Yes | Yes (cross-portfolio) |
+| **Contract Tests** | 7 minimum | 55 (most rigorous) | 30 | 7 minimum |
+| **Typical Use Cases** | Automation, CI/CD | Strategic advisory, options frameworks | Coaching, teaching, mentoring | Release management, fleet ops |
+| **Complexity** | Simple | Medium | Medium | Advanced |
+| **Best For** | Individual developers | Consultants, strategists | Power users, coaches | Team leads, org admins |
 
 ---
 
@@ -88,11 +95,72 @@ START: What will your agent do?
 - data-pipeline-AGET (processes and transforms data)
 - deployment-helper-AGET (automates deployment workflows)
 
+**Repository**: https://github.com/aget-framework/template-worker-aget
+
 ---
 
-### Advisor Template (`template-advisor-aget`) - Worker + Persona
+### Consultant Template (`template-consultant-aget`) - Worker + Consultant Patterns
 
-**This is a worker with added advisory capabilities.**
+**This is a worker with formalized consultant-specific patterns.**
+
+**Foundation**: Inherits all worker template capabilities
+
+**Additional Capabilities**:
+- **6 Consultant Patterns**: Proactive analysis, framework-based knowledge, decision journals, options generation, evidence-based recommendations, low-continuity engagements
+- **Specialized Directories**: `.aget/analysis/` (proactive findings), `.aget/evidence/` (case studies, benchmarks)
+- **Scoped Writes**: Can write to `.aget/**` for consultant artifacts (read-only elsewhere)
+- **Fixed Persona**: Consultant-only (not configurable) - solutions-focused, professional analysis
+- Contract testing framework (55 tests - most rigorous of all templates)
+
+**Architecture**:
+```
+Worker Foundation (all core capabilities)
+    + 6 Consultant Patterns (formalized workflows)
+    + Consultant-Specific Directories (.aget/analysis/, .aget/evidence/)
+    + Enhanced Contract Tests (55 tests)
+    = Consultant Template
+```
+
+**Typical Use Cases**:
+- Strategic advisory (architecture decisions, technology selection)
+- Options frameworks (2-4 paths with explicit tradeoffs)
+- Evidence-based recommendations (cite case studies, benchmarks, research)
+- Decision journals (track options, rationale, outcomes)
+- Risk assessment with mitigation options
+- Vendor/technology selection with weighted criteria
+
+**When to Choose**:
+- Need **proactive analysis** (identify issues without prompting)
+- Want **systematic decision frameworks** (repeatable processes)
+- Require **evidence-based recommendations** (data-driven, not opinion)
+- Prefer **options frameworks** (2-4 paths with tradeoffs vs single recommendation)
+- Value **discrete engagements** (session-based advisory, not long-term coaching)
+- Solutions-focused professional analysis (not teaching, mentoring, or coaching)
+
+**When to Use Advisor Instead**:
+- Need to **switch personas** (teacher for education, coach for performance, etc.)
+- Curriculum-based learning required (teacher persona)
+- Guided discovery coaching needed (coach persona)
+- Career development focus (mentor persona)
+
+**Example Agents**:
+- architecture-consultant-aget (system design advisory with options frameworks)
+- technology-selection-consultant-aget (vendor evaluation with weighted criteria)
+- risk-assessment-consultant-aget (identify risks, generate mitigation options)
+
+**Extraction Story**:
+- **Extracted from**: template-advisor-aget (v2.7.0)
+- **Evidence**: 5 production instances, 100% consultant persona adoption
+- **Rationale**: Dominant usage pattern (>80% concentration) signaled dedicated template extraction
+- **Learning**: L227 - Template Extraction from Dominant Persona Usage
+
+**Repository**: https://github.com/aget-framework/template-consultant-aget
+
+---
+
+### Advisor Template (`template-advisor-aget`) - Worker + 5 Personas
+
+**This is a worker with multi-persona advisory capabilities.**
 
 **Foundation**: Inherits all worker template capabilities
 
@@ -101,7 +169,7 @@ START: What will your agent do?
 - **Scoped Writes**: Can write to `.aget/**` for session artifacts (read-only elsewhere)
 - **Session Management**: Maintains session state and artifacts
 - **Internal Artifacts**: Learning notes, session summaries, reflections
-- Contract testing framework (30 tests - most rigorous)
+- Contract testing framework (30 tests)
 
 **Architecture**:
 ```
@@ -115,27 +183,36 @@ Worker Foundation (all core capabilities)
 **Typical Use Cases**:
 - Executive coaching (persona: coach)
 - Technical mentorship (persona: mentor)
-- Architecture consulting (persona: consultant)
 - Domain expertise (persona: guru)
 - Educational guidance (persona: teacher)
+- General consulting (persona: consultant - consider dedicated consultant template for specialized patterns)
 
 **When to Choose**:
-- You need advisory capabilities with personality
+- You need **multiple advisory styles** (switch between personas)
 - Session memory and artifact management required
 - Non-action-taking by design (guidance, not execution)
-- Power user or consultant use case
+- Power user or consultant use case with persona flexibility
+
+**When to Use Consultant Template Instead**:
+- **Always** use consultant persona (never switch)
+- Need formalized consultant patterns (proactive analysis, decision journals, evidence repository)
+- Want consultant-specific optimizations (55 tests vs 30, specialized directories)
 
 **Example Agents**:
 - executive-coach-aget (coaches leaders on decision-making)
-- architecture-consultant-aget (advises on system design)
 - security-mentor-aget (guides security best practices)
+- python-teacher-aget (teaches Python with curriculum)
 
 **Persona Selection**:
 - **Teacher**: Structured lessons, knowledge transfer, assessments
 - **Mentor**: Experience-based guidance, career development
-- **Consultant**: Expert analysis, recommendations, frameworks
+- **Consultant**: Expert analysis, recommendations, frameworks (→ consider template-consultant-aget for specialization)
 - **Guru**: Deep domain wisdom, philosophical guidance
 - **Coach**: Question-based discovery, reflection, accountability
+
+**Note on Consultant Persona**: If you exclusively use consultant persona, consider migrating to `template-consultant-aget` for formalized consultant patterns and enhanced capabilities.
+
+**Repository**: https://github.com/aget-framework/template-advisor-aget
 
 ---
 
@@ -146,7 +223,7 @@ Worker Foundation (all core capabilities)
 **Foundation**: Inherits all worker template capabilities
 
 **Additional Capabilities**:
-- **Fleet Coordination**: Manage multiple worker/advisor agents
+- **Fleet Coordination**: Manage multiple worker/advisor/consultant agents
 - **Cross-Portfolio Operations**: Coordinate agents across portfolios
 - **Process Enforcement**: Gate discipline, quality standards (L099)
 - **Recursive Supervision**: Can be supervised by other supervisors (L99)
@@ -184,6 +261,38 @@ Worker Foundation (all core capabilities)
 - fleet-supervisor-AGET (coordinates multiple domain agents)
 - quality-assurance-AGET (enforces standards across fleet)
 
+**Repository**: https://github.com/aget-framework/template-supervisor-aget (private until public release)
+
+---
+
+## Consultant vs Advisor: When to Choose
+
+### Use Consultant Template When:
+
+✅ **Always** use consultant communication style (never switch personas)
+✅ Need **proactive analysis** (identify issues without prompting)
+✅ Want **systematic frameworks** (decision matrices, risk models, evaluation rubrics)
+✅ Require **evidence-based recommendations** (cite case studies, benchmarks, research)
+✅ Provide **options frameworks** (2-4 paths with explicit tradeoffs)
+✅ Value **discrete engagements** (session-based, actionable deliverables)
+✅ Need consultant-specific directories (`.aget/analysis/`, `.aget/evidence/`)
+
+### Use Advisor Template When:
+
+✅ **Switch between personas** based on context (teacher, mentor, consultant, guru, coach)
+✅ Curriculum-based teaching required (teacher persona)
+✅ Guided discovery coaching needed (coach persona)
+✅ Career development mentorship (mentor persona)
+✅ Deep domain wisdom sharing (guru persona)
+✅ Might change advisory style over time
+
+### Migration Path
+
+If you have advisor instance using **only** consultant persona:
+- Consider migrating to `template-consultant-aget`
+- See: [Consultant Template Migration Guide](https://github.com/aget-framework/template-consultant-aget/blob/main/docs/MIGRATION_GUIDE.md)
+- Benefit: Formalized patterns, specialized testing (55 vs 30 tests), optimized structure
+
 ---
 
 ## Portfolio Awareness
@@ -203,6 +312,11 @@ Worker Foundation (all core capabilities)
 - Assign to specific portfolio based on data access
 - Examples: `main` for general automation, `ccb` for personal agents
 
+**Consultant** (Worker + Patterns):
+- Inherits worker portfolio capabilities
+- Consultant artifacts inherit portfolio classification
+- Examples: `main` for general consulting, `ccb` for personal advisory
+
 **Advisor** (Worker + Persona):
 - Inherits worker portfolio capabilities
 - Session artifacts inherit portfolio classification
@@ -217,7 +331,7 @@ Worker Foundation (all core capabilities)
 ### Setting Portfolio
 
 ```bash
-# After cloning any template (worker, advisor, or supervisor)
+# After cloning any template (worker, consultant, advisor, or supervisor)
 vim .aget/version.json
 
 # Set portfolio field
@@ -254,18 +368,19 @@ vim .aget/version.json
 
 ---
 
-### When to Use Advisor Instead of Worker
+### When to Use Consultant vs Advisor
 
-**Remember**: Advisor is a worker with persona and session management.
+**Choose Consultant if**:
+- You know you need consultant-specific patterns (proactive, frameworks, decisions, options, evidence)
+- You value formalized workflows over persona flexibility
+- You want the most rigorous testing (55 contract tests)
 
 **Choose Advisor if**:
+- You need persona flexibility (might use teacher, mentor, coach, guru)
+- You're exploring advisory styles and haven't settled on one
+- Generic advisory patterns sufficient
 
-- Primary role is guidance/advisory (not action-taking)
-- Need session memory across multiple interactions
-- Persona-based interaction style required
-- Creating session artifacts (notes, summaries, reflections)
-
-**Don't upgrade worker to advisor**. These are distinct specializations of the worker foundation. Create new advisor agent if advisory capabilities needed.
+**Don't upgrade advisor to consultant**. These are distinct specializations of the worker foundation. Migrate existing advisor instances if they exclusively use consultant persona (see migration guide).
 
 ---
 
@@ -281,10 +396,21 @@ vim .aget/version.json
 
 **Why worker first**: Master the foundation before specializing
 
-### Power User / Consultant
+### Consultant / Strategic Advisor
 
-**Consider**: Advisor template (worker + persona)
-- Leverage persona system for client interaction
+**Consider**: Consultant template (worker + formalized patterns)
+- Proactive analysis and options frameworks
+- Evidence-based recommendations with citation
+- Decision journals for outcome tracking
+- Specialized directories for consultant workflows
+- All worker capabilities still available
+
+**Foundation**: Still a worker, with consultant pattern formalization
+
+### Power User / Multi-Style Advisor
+
+**Consider**: Advisor template (worker + 5 personas)
+- Leverage persona system for varied interaction styles
 - Session management for multi-engagement tracking
 - Scoped writes for internal note-taking
 - All worker capabilities still available
@@ -321,7 +447,7 @@ vim .aget/version.json
 
 ### 1. Start with Worker Foundation
 
-**Even if you need supervisor/advisor eventually, understand the worker foundation first.**
+**Even if you need supervisor/advisor/consultant eventually, understand the worker foundation first.**
 
 All templates share:
 - `.aget/` directory structure
@@ -334,7 +460,8 @@ All templates share:
 
 ```
 General automation → Worker (core)
-Advisory role → Advisor (worker + persona)
+Solutions-focused consulting → Consultant (worker + patterns)
+Multi-style advisory → Advisor (worker + personas)
 Fleet coordination → Supervisor (worker + fleet)
 ```
 
@@ -344,7 +471,10 @@ Fleet coordination → Supervisor (worker + fleet)
 # Worker (core foundation)
 gh repo clone aget-framework/template-worker-aget my-agent-name
 
-# Advisor (worker + persona)
+# Consultant (worker + formalized patterns)
+gh repo clone aget-framework/template-consultant-aget my-consultant-name
+
+# Advisor (worker + 5 personas)
 gh repo clone aget-framework/template-advisor-aget my-advisor-name
 
 # Supervisor (worker + fleet coordination)
@@ -377,6 +507,7 @@ python3 -m pytest tests/ -v
 
 # Should show:
 # - 7/7 passed (worker, supervisor)
+# - 55/55 passed (consultant) - most rigorous
 # - 30/30 passed (advisor)
 ```
 
@@ -392,37 +523,45 @@ git push -u origin main
 
 ## Common Questions
 
-### Q: Are advisor and supervisor different types of agents?
+### Q: When should I use consultant vs advisor template?
 
-**A**: No. They're **workers with additional capabilities**. All agents share the worker foundation (directory structure, lifecycle, portfolio awareness, contract tests). Advisor adds persona system. Supervisor adds fleet coordination.
+**A**: Use **consultant** if you exclusively use consultant communication style (solutions-focused, options frameworks, evidence-based). Use **advisor** if you switch between personas (teacher, mentor, coach, guru) or might in the future. Consultant has formalized patterns and enhanced testing (55 vs 30 tests).
+
+### Q: Are consultant, advisor, and supervisor different types of agents?
+
+**A**: No. They're **workers with additional capabilities**. All agents share the worker foundation (directory structure, lifecycle, portfolio awareness, contract tests). Consultant adds formalized patterns. Advisor adds persona system. Supervisor adds fleet coordination.
+
+### Q: Can I migrate from advisor to consultant template?
+
+**A**: Yes, if you exclusively use consultant persona. See [Migration Guide](https://github.com/aget-framework/template-consultant-aget/blob/main/docs/MIGRATION_GUIDE.md). Benefits: formalized consultant patterns, specialized testing, optimized structure.
 
 ### Q: Can I use supervisor capabilities in a worker?
 
 **A**: No. Use the supervisor template if you need fleet coordination. The templates are pre-configured specializations.
 
-### Q: Can advisor agents coordinate other agents?
+### Q: Can advisor or consultant agents coordinate other agents?
 
-**A**: No. Advisors are workers with advisory capabilities (persona, session management). For coordination, use supervisor template (worker + fleet coordination).
+**A**: No. Advisors and consultants are workers with advisory capabilities. For coordination, use supervisor template (worker + fleet coordination).
 
-### Q: Why start with worker if I need a supervisor?
+### Q: Why start with worker if I need a consultant?
 
-**A**: Understanding the worker foundation helps you understand what supervisors inherit. But if you know you need fleet coordination, you can start with supervisor template directly.
+**A**: Understanding the worker foundation helps you understand what consultants inherit. But if you know you need consultant patterns, you can start with consultant template directly.
 
-### Q: Do supervisors have personas like advisors?
+### Q: Do supervisors or consultants have personas like advisors?
 
-**A**: No. Supervisor = worker + fleet coordination. Advisor = worker + persona system. These are different specializations of the worker core.
+**A**: No. Consultant = worker + consultant patterns (fixed consultant persona). Supervisor = worker + fleet coordination (no personas). Advisor = worker + 5 persona system. These are different specializations of the worker core.
 
 ### Q: Can I change templates later?
 
-**A**: Templates define agent architecture. Changing templates = creating new agent. Keep original agent, create new one from different template if needed.
+**A**: Templates define agent architecture. Changing templates = creating new agent or migration (for advisor→consultant). Keep original agent, create new one from different template if needed, or follow migration guide for supported paths.
 
 ### Q: Can worker agents coordinate each other?
 
 **A**: No. Worker-to-worker coordination leads to complexity. Use supervisor template (worker + fleet coordination) for multi-agent coordination.
 
-### Q: Can advisors take actions?
+### Q: Can consultants or advisors take actions?
 
-**A**: Limited. Advisors can write to `.aget/**` for session artifacts (notes, summaries). Cannot modify external systems. This is worker foundation + scoped write restriction.
+**A**: Limited. Consultants and advisors can write to `.aget/**` for artifacts (consultant: `.aget/analysis/`, `.aget/evidence/`; advisor: `.aget/sessions/`). Cannot modify external systems. This is worker foundation + scoped write restriction.
 
 ### Q: Do I need a supervisor for 2 agents?
 
@@ -446,17 +585,18 @@ git push -u origin main
 │  - Contract testing (7 tests)                   │
 │  - Configurable capabilities (aget/AGET)        │
 └─────────────────────────────────────────────────┘
-           ▲                          ▲
-           │                          │
-    ┌──────┴──────┐          ┌───────┴────────┐
-    │             │          │                │
-┌───▼────────┐  ┌─▼──────────────┐  ┌────────▼───────┐
-│  Advisor   │  │  Worker Only   │  │  Supervisor    │
-│            │  │                │  │                │
-│ + Persona  │  │  (Use as-is)   │  │ + Fleet Coord  │
-│ + Session  │  │                │  │ + Process      │
-│ + 30 tests │  │                │  │   Enforcement  │
-└────────────┘  └────────────────┘  └────────────────┘
+           ▲                ▲                ▲
+           │                │                │
+    ┌──────┴──────┐  ┌──────┴──────┐  ┌─────┴──────┐
+    │             │  │             │  │            │
+┌───▼────────┐  ┌─▼──────────┐  ┌─▼─────────┐  ┌─▼────────────┐
+│ Consultant │  │  Advisor   │  │  Worker   │  │ Supervisor   │
+│            │  │            │  │   Only    │  │              │
+│ + 6 Patterns│  │ + 5 Personas│  │          │  │ + Fleet Coord│
+│ + Analysis │  │ + Session  │  │(Use as-is)│  │ + Process    │
+│ + Evidence │  │ + 30 tests │  │           │  │  Enforcement │
+│ + 55 tests │  │            │  │           │  │              │
+└────────────┘  └────────────┘  └───────────┘  └──────────────┘
 ```
 
 **Key Takeaway**: Master the worker foundation. Everything builds on it.
@@ -474,16 +614,25 @@ git push -u origin main
 
 ---
 
-### Example 2: Executive Coaching
+### Example 2: Architecture Decision Advisory
 
-**Need**: Provide coaching with session memory
-**Choice**: Advisor template (worker + persona system)
-**Portfolio**: `ccb` (very_personal - confidential coaching context)
-**Rationale**: Advisory role, session artifacts required, persona system needed, built on worker foundation
+**Need**: Provide architecture recommendations with options frameworks and evidence
+**Choice**: Consultant template (worker + formalized patterns)
+**Portfolio**: `main` (general consulting)
+**Rationale**: Proactive analysis, options frameworks, decision journals, evidence-based recommendations, built on worker foundation
 
 ---
 
-### Example 3: Fleet Release Management
+### Example 3: Executive Coaching with Multiple Styles
+
+**Need**: Provide coaching with ability to switch to mentoring or teaching
+**Choice**: Advisor template (worker + 5 personas)
+**Portfolio**: `ccb` (very_personal - confidential coaching context)
+**Rationale**: Multi-persona flexibility, session artifacts required, persona system needed, built on worker foundation
+
+---
+
+### Example 4: Fleet Release Management
 
 **Need**: Coordinate v2.6 → v2.7 migration across 15 agents
 **Choice**: Supervisor template (worker + fleet coordination)
@@ -492,12 +641,12 @@ git push -u origin main
 
 ---
 
-### Example 4: Architecture Consulting
+### Example 5: Strategic Technology Selection
 
-**Need**: Advise on system design with documentation
-**Choice**: Advisor template (worker + persona system)
+**Need**: Evaluate vendors with weighted criteria and evidence-based recommendations
+**Choice**: Consultant template (worker + formalized patterns)
 **Portfolio**: `main` (general consulting)
-**Rationale**: Expert advisory, session artifacts (design notes), consultant persona, built on worker foundation
+**Rationale**: Evidence repository, decision journals, options generation, systematic frameworks, built on worker foundation
 
 ---
 
@@ -516,4 +665,5 @@ git push -u origin main
 
 *AGET Framework v2.7.0 - Template Selector*
 *Worker Foundation: Core capabilities inherited by all templates*
-*Last Updated: 2025-10-13*
+*Consultant Template: Extracted v2.7.0 based on dominant usage evidence (L227)*
+*Last Updated: 2025-11-01*
