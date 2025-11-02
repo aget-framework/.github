@@ -32,12 +32,13 @@ AGET occupies a unique niche in the agent framework landscape:
 
 Choose a core template based on your agent's role in the fleet:
 
-**All core templates build on the worker foundation.** Advisor and supervisor add specialized capabilities.
+**All core templates build on the worker foundation.** Advisor, consultant, and supervisor add specialized capabilities.
 
 | Template | Foundation | Additional Capabilities | Status |
 |----------|------------|------------------------|--------|
 | **[template-worker-aget](https://github.com/aget-framework/template-worker-aget)** | ✅ **CORE** | General-purpose (flexible capability) | ✅ Public v2.7.0 |
 | **[template-advisor-aget](https://github.com/aget-framework/template-advisor-aget)** | Worker + | Persona system, advisory-only mode | ✅ Public v2.7.0 |
+| **[template-consultant-aget](https://github.com/aget-framework/template-consultant-aget)** | Worker + | Solutions-focused proactive advisory | ✅ Public v2.7.0 |
 | **[template-supervisor-aget](https://github.com/aget-framework/template-supervisor-aget)** | Worker + | Fleet coordination, process enforcement | ✅ Public v2.7.0 |
 
 **Need help choosing?** See **[Template Selector](./TEMPLATE_SELECTOR.md)** for decision tree and detailed comparison.
@@ -101,6 +102,7 @@ The suffix convention provides visual capability signaling—like `sudo` or `rm 
 | **template-worker-aget** | `github-automation-AGET` | `private-github-AGET` |
 | | `analytics-reporter-aget` | `private-analytics-aget` |
 | **template-advisor-aget** | `code-review-advisor-aget` | `private-code-advisor-aget` |
+| **template-consultant-aget** | `architecture-consultant-aget` | `private-consultant-aget` |
 | **template-supervisor-aget** | `fleet-supervisor-AGET` | `private-supervisor-AGET` |
 | **template-spec-engineer-aget** | `spec-engineer-aget` | `private-spec-engineer-aget` |
 | **template-developer-aget** | `code-analyzer-aget` | `private-code-analyzer-aget` |
@@ -109,7 +111,7 @@ The suffix convention provides visual capability signaling—like `sudo` or `rm 
 
 **Notes**:
 - Worker agents can be either `-AGET` (action-taking) or `-aget` (information-only)
-- Advisor agents are always `-aget` (advisory-only, no external modifications)
+- Advisor and consultant agents are always `-aget` (advisory-only, no external modifications)
 - Supervisor agents are always `-AGET` (fleet coordination requires action-taking)
 - Specialized templates have fixed capability based on their purpose
 
@@ -123,6 +125,7 @@ The suffix convention provides visual capability signaling—like `sudo` or `rm 
 
 ```
 Need fleet coordination? → template-supervisor-aget (worker + fleet)
+Need consultant advisory? → template-consultant-aget (worker + consultant patterns)
 Need advisory persona? → template-advisor-aget (worker + persona)
 General-purpose? → template-worker-aget (core foundation)
 ```
