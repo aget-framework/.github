@@ -54,9 +54,21 @@ Use this decision tree to select the right template:
   │ Agents? │        │ Role?   │      │ Task?    │
   └─────────┘        └─────────┘      └──────────┘
         │                  │                  │
-        ▼                  ▼                  ▼
-  supervisor         advisor            worker
-  template           template           template
+        ▼                  │                  ▼
+  supervisor               │              worker
+  template                 │              template
+                           │
+                ┌──────────┴───────────┐
+                │                      │
+                ▼                      ▼
+          ┌──────────┐          ┌──────────┐
+          │Solutions-│          │Multiple  │
+          │focused?  │          │personas? │
+          └──────────┘          └──────────┘
+                │                      │
+                ▼                      ▼
+          consultant             advisor
+          template               template
 ```
 
 ### Template Selection Guide
@@ -64,7 +76,8 @@ Use this decision tree to select the right template:
 | Template | When to Use | Key Features | Complexity |
 |----------|-------------|--------------|------------|
 | **template-worker-aget** | General-purpose tasks, data analysis, API integration | Flexible capability (AGET or aget), 7 contract tests | ⭐ Beginner-friendly |
-| **template-advisor-aget** | Coaching, mentoring, consulting, teaching | Persona-based (5 personas), scoped writes, 30 contract tests | ⭐⭐ Intermediate |
+| **template-advisor-aget** | Coaching, mentoring, teaching with multiple personas | Persona-based (5 personas), scoped writes, 30 contract tests | ⭐⭐ Intermediate |
+| **template-consultant-aget** | Solutions-focused advisory, strategic analysis | 6 consultant patterns, proactive analysis, 55 contract tests | ⭐⭐ Intermediate |
 | **template-supervisor-aget** | Fleet coordination, multi-agent orchestration | Worker coordination, issue routing, fleet registry | ⭐⭐⭐ Advanced |
 
 ### Common Use Cases
@@ -79,9 +92,15 @@ Use this decision tree to select the right template:
 **Advisor Template**:
 - Executive coaching (persona: coach)
 - Technical mentoring (persona: mentor)
-- Strategic consulting (persona: consultant)
 - Knowledge synthesis (persona: teacher)
 - Domain expertise (persona: guru)
+
+**Consultant Template**:
+- Architecture advisory and strategic analysis
+- Vendor selection and technology evaluation
+- Risk assessment and mitigation planning
+- Process optimization and efficiency consulting
+- Evidence-based recommendations with tradeoff analysis
 
 **Supervisor Template**:
 - Fleet management (10+ agents)
@@ -191,10 +210,11 @@ sed -i '' 's/"domain": ".*"/"domain": "automation"/' .aget/version.json
 - `created_at`: Today's date (YYYY-MM-DD)
 - `updated_at`: Today's date (YYYY-MM-DD)
 
-**Optional fields** (for advisor template):
+**Optional fields** (for advisor/consultant templates):
 ```json
 {
-  "persona": "mentor"  // One of: teacher, mentor, consultant, guru, coach
+  "persona": "mentor"  // Advisor: teacher, mentor, guru, coach
+                       // Consultant: consultant (fixed)
 }
 ```
 
@@ -522,14 +542,31 @@ Once comfortable with your first agent:
 **Choosing a persona**:
 - **Teacher**: Structured lessons, step-by-step guidance
 - **Mentor**: Long-term development, skill building
-- **Consultant**: Problem-specific advice, tactical recommendations
 - **Guru**: Deep expertise, nuanced insights
 - **Coach**: Reflective questioning, self-discovery
+
+**Note**: For solutions-focused consulting (problem-specific advice, tactical recommendations), use template-consultant-aget instead.
 
 **Scoped write permissions**:
 - Can write to `.aget/**` (internal state)
 - Cannot modify code or external systems
 - 30 contract tests validate boundaries
+
+### Consultant Template Deep Dive
+
+**Core patterns** (6):
+- **Proactive Analysis**: Identify issues without prompting
+- **Framework-Based Knowledge**: Analytical frameworks as first-class artifacts
+- **Decision Journals**: Track options, evidence, rationale, outcomes
+- **Options Generation**: 2-4 paths with explicit tradeoffs
+- **Evidence-Based Recommendations**: Cite case studies, benchmarks, research
+- **Low-Continuity Engagements**: Discrete sessions with actionable deliverables
+
+**When to use consultant vs advisor**:
+- **Consultant**: Solutions-focused, proactive, options with tradeoffs, discrete engagements
+- **Advisor**: Ongoing guidance, relationship-building, teaching/mentoring/coaching
+
+**Extraction story**: Created from template-advisor-aget based on 100% consultant persona adoption across 5 instances.
 
 ### Supervisor Template Deep Dive
 
@@ -551,7 +588,7 @@ Once comfortable with your first agent:
 
 You've successfully completed getting started when:
 
-✅ Contract tests pass (7 tests for worker, 30 for advisor, 7 for supervisor)
+✅ Contract tests pass (7 tests for worker, 30 for advisor, 55 for consultant, 7 for supervisor)
 ✅ Agent responds to "wake up" with correct identity
 ✅ First task completed successfully
 ✅ Session notes created on "wind down"
@@ -559,7 +596,7 @@ You've successfully completed getting started when:
 ✅ Version.json shows 2.7.0
 ✅ CLAUDE.md is symlink to AGENTS.md
 
-**Estimated time**: 30 minutes for worker, 45 minutes for advisor, 60 minutes for supervisor
+**Estimated time**: 30 minutes for worker, 45 minutes for advisor/consultant, 60 minutes for supervisor
 
 ---
 
