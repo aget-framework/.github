@@ -193,7 +193,7 @@ sed -i '' 's/"domain": ".*"/"domain": "automation"/' .aget/version.json
 **Required fields**:
 ```json
 {
-  "aget_version": "2.7.0",
+  "aget_version": "2.8.0",
   "agent_name": "my-first-aget",
   "instance_type": "AGET",
   "domain": "automation",
@@ -203,7 +203,7 @@ sed -i '' 's/"domain": ".*"/"domain": "automation"/' .aget/version.json
 ```
 
 **Field Descriptions**:
-- `aget_version`: Framework version (must be 2.7.0+ for new agents)
+- `aget_version`: Framework version (must be 2.8.0+ for new agents)
 - `agent_name`: Must match directory name exactly (e.g., `my-first-aget`)
 - `instance_type`: `AGET` (action-taking) or `aget` (read-only)
 - `domain`: Agent's primary domain (e.g., "github", "automation", "analytics")
@@ -610,4 +610,4 @@ You've successfully completed getting started when:
 
 ---
 
-*Getting Started Guide v2.7.0 - Last updated: 2025-10-13*
+*Getting Started Guide v2.8.0 - Last updated: 2025-11-10*

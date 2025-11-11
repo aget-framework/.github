@@ -207,7 +207,7 @@ Human (supervises) → fleet-supervisor-AGET (supervises) → 10 worker agents
 - v2.0 → v2.5.0 → v2.6.0 → v2.7.0 progression
 - Each version has migration guide
 - Contract tests validate compliance
-- New agents created at current version floor (v2.7.0+)
+- New agents created at current version floor (v2.8.0+)
 
 **Version Semantics**:
 ```
@@ -485,4 +485,4 @@ This philosophy document synthesizes insights from:
 
 ---
 
-*Design Philosophy v2.7.0 - Last updated: 2025-10-13*
+*Design Philosophy v2.8.0 - Last updated: 2025-11-10*
