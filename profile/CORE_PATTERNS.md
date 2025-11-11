@@ -884,4 +884,4 @@ Full learning documents available in `.aget/evolution/` of any AGET agent reposi
 
 ---
 
-*Core Patterns v2.7.0 - Last updated: 2025-10-13*
+*Core Patterns v2.8.0 - Last updated: 2025-11-10*
