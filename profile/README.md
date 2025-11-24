@@ -1,303 +1,325 @@
 # AGET Framework
 
-**Configuration & Lifecycle Management System for CLI-Based Human-AI Collaborative Coding**
+**Fleet Coordination for the CLI Coding Tools You Already Use**
 
-AGET enables organizations to manage fleets of specialized AI coding agents with version control, shared learning, and lifecycle governance—without infrastructure overhead.
+Enable your AI agents to make the universe more beautiful. AGET brings version control, shared learning, and lifecycle governance to Claude Code, Cursor, Aider, Windsurf, and more—through an open standard. Zero infrastructure required.
+
+[![Version](https://img.shields.io/badge/version-2.9.0-blue)](https://github.com/gmelli/private-supervisor-AGET/releases/tag/v2.9.0)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 ---
 
 ## What is AGET?
 
-AGET occupies a unique niche in the agent framework landscape:
+AGET coordinates multiple specialized AI coding agents across CLI tools—with human supervision, shared learning, and version progression. Think of it as fleet management for your AI coding team.
 
-- **Not** an autonomous agent runtime (LangChain, MetaGPT, AutoGPT)
-- **Not** a production ALM platform (AgentOps, Salesforce ALM)
-- **Instead**: Human-supervised fleet management with organizational memory and version progression
+### How It Works
 
-### Differentiators
+- **Universal CLI Compatibility** - Works with Claude Code, Cursor, Aider, Windsurf
+- **Version Control** - Track agent versions, manage upgrades, ensure compliance
+- **Shared Learning** - Propagate insights across your fleet (.aget/evolution/)
+- **Lifecycle Governance** - Gated releases, contract testing, deployment verification
+- **Open Standard** - AGENTS.md enables ecosystem innovation
 
-✅ **Universal CLI Compatibility** - Works across Claude Code, Cursor, Aider, Windsurf
-✅ **Contract Testing** - Version compliance validation (v2.8.0)
-✅ **Shared Learning Repository** - `.aget/evolution/` for organizational memory
-✅ **Lightweight** - Zero-infrastructure (markdown + git)
-✅ **Human-Centric Governance** - Gated releases, evidence-based planning
+### Who It's For
 
----
-
-## Templates
-
-**AGET templates provide configuration and lifecycle management for CLI-based coding agents.**
-
-### Core Templates (Fleet Roles)
-
-Choose a core template based on your agent's role in the fleet:
-
-**All core templates build on the worker foundation.** Advisor, consultant, and supervisor add specialized capabilities.
-
-| Template | Foundation | Additional Capabilities | Status |
-|----------|------------|------------------------|--------|
-| **[template-worker-aget](https://github.com/aget-framework/template-worker-aget)** | ✅ **CORE** | General-purpose (flexible capability) | ✅ Public v2.8.0 |
-| **[template-advisor-aget](https://github.com/aget-framework/template-advisor-aget)** | Worker + | Persona system, advisory-only mode | ✅ Public v2.9.0 |
-| **[template-consultant-aget](https://github.com/aget-framework/template-consultant-aget)** | Worker + | Solutions-focused proactive advisory | ✅ Public v2.9.0 |
-| **[template-supervisor-aget](https://github.com/aget-framework/template-supervisor-aget)** | Worker + | Fleet coordination, process enforcement | ✅ Public v2.8.0 |
-
-**Need help choosing?** See **[Template Selector](./TEMPLATE_SELECTOR.md)** for decision tree and detailed comparison.
-
-### Specialized Templates (Task-Specific)
-
-Choose a specialized template for specific technical tasks:
-
-| Template | Purpose | Methodology | Status |
-|----------|---------|-------------|--------|
-| **[template-spec-engineer-aget](https://github.com/aget-framework/template-spec-engineer-aget)** | Reverse engineer Python code into formal EARS specifications | Semantic extraction via coding agent (functions → scripts → modules → applications) | ✅ Public v2.9.0 |
-| **[template-developer-aget](https://github.com/aget-framework/template-developer-aget)** | Code quality analysis and standards compliance advisor | Multi-repository code analysis (quality metrics, standards checking, debugging assistance, spec consistency) | ✅ Public v2.9.0 |
-| **[template-document-processor-AGET](https://github.com/aget-framework/template-document-processor-AGET)** | Create document processing agents with LLM pipelines and security protocols | Multi-provider LLM support, validation pipelines, security protocols, caching, and observability | ✅ Public v2.7.0 |
-
-**Specification Engineering Use Cases**:
-- **Extract** specifications from existing Python code (AGET tools, scripts, modules, applications)
-- **Maintain** specifications as primary artifacts (ongoing evolution)
-- **Document** legacy code with formal requirements
-
-**Quality benchmarks**: 75-85% for scripts (100-500 lines), 60-70% for full applications (2000+ lines)
-
-**Progression path**: Start with functions (validate methodology), scale to scripts (primary focus), then modules and applications
-
-**Code Analysis Use Cases**:
-- **Assess** code quality across repositories (complexity, maintainability, technical debt)
-- **Verify** coding standards compliance (PEP-8, custom standards)
-- **Assist** with debugging (error pattern recognition, fix strategies)
-- **Validate** spec-to-code consistency (YAML/Markdown specifications)
-
-**Quality benchmarks**: 9.2/10 average pattern quality across 5 real-world validation tasks
-
-**Validation status**: Production-ready with 21 contract tests passing, critical bug fixed during validation
-
-**Document Processing Use Cases**:
-- **Build** document processing agents with LLM assistance (OpenAI, Anthropic, Google)
-- **Implement** batch operations with validation pipelines and approval gates
-- **Enforce** security protocols (prompt injection prevention, content filtering)
-- **Optimize** performance with caching, metrics, and task decomposition
-
-**Quality benchmarks**: 30/30 contract tests passing, Apache 2.0 licensed, privacy-safe
-
-**Time savings**: 60-70% reduction in new agent setup (3-5 hours → 1-2 hours)
+- **Organizations** managing 5+ AI coding agents (version control, compliance)
+- **Power Users** coordinating specialized agents (legal, healthcare, code analysis)
+- **Development Teams** adopting AI agents with governance requirements
 
 ---
 
-## Naming Convention
+## Why AGET?
 
-**Capability Suffix** (case-sensitive):
-- `-AGET` suffix = Action-taking agent (can modify systems)
-- `-aget` suffix = Information-only agent (read-only)
+### Mission-Driven
 
-**Visibility Prefix**:
-- `private-*` prefix = Personal deployment (not for sharing)
+Enable your agents to succeed at making their principals successful at making the universe more beautiful.
 
-The suffix convention provides visual capability signaling—like `sudo` or `rm -rf`, the capitalized AGET warns of powerful operations.
+Success cascades through four levels:
+```
+Universe More Beautiful  ← Fairer outcomes, better quality
+    ↑
+Principal Success        ← Lawyers, doctors, developers deliver better work
+    ↑
+Agent Success            ← Effective augmentation with deployment confidence
+    ↑
+Framework Quality        ← AGET ensures coordination, learning, governance
+```
 
-### Examples by Template
+### Ecosystem Approach
 
-| Template | Generic Example | Personal Deployment |
-|----------|----------------|---------------------|
-| **template-worker-aget** | `github-automation-AGET` | `private-github-AGET` |
-| | `analytics-reporter-aget` | `private-analytics-aget` |
-| **template-advisor-aget** | `code-review-advisor-aget` | `private-code-advisor-aget` |
-| **template-consultant-aget** | `architecture-consultant-aget` | `private-consultant-aget` |
-| **template-supervisor-aget** | `fleet-supervisor-AGET` | `private-supervisor-AGET` |
-| **template-spec-engineer-aget** | `spec-engineer-aget` | `private-spec-engineer-aget` |
-| **template-developer-aget** | `code-analyzer-aget` | `private-code-analyzer-aget` |
-| **template-document-processor-AGET** | `pdf-processor-AGET` | `private-doc-processor-AGET` |
-| | `invoice-extractor-AGET` | `private-invoice-AGET` |
+AGET doesn't replace your CLI tools—it coordinates them. Works alongside Claude Code, Cursor, Aider, Windsurf to bring fleet-level capabilities: version control, shared learning, lifecycle governance.
 
-**Notes**:
-- Worker agents can be either `-AGET` (action-taking) or `-aget` (information-only)
-- Advisor and consultant agents are always `-aget` (advisory-only, no external modifications)
-- Supervisor agents are always `-AGET` (fleet coordination requires action-taking)
-- Specialized templates have fixed capability based on their purpose
+**Complementary, not competitive**: AGET + CLI Tools work together to enable your agents.
+
+### Open Innovation
+
+**AGENTS.md** open standard means anyone can adopt, extend, or integrate. **Shared learning repository** means collective intelligence grows together. No vendor lock-in, no proprietary formats—just universal CLI compatibility and portable knowledge.
 
 ---
 
-## Quick Start (5 Steps)
+## Quick Start
 
 ### 1. Choose Your Template
 
-**All templates build on worker foundation.** Use the **template decision tree**:
+| Template | Use Case | Capability |
+|----------|----------|------------|
+| [**template-worker-aget**](https://github.com/aget-framework/template-worker-aget) | General-purpose tasks | Flexible (can be AGET or aget) |
+| [**template-advisor-aget**](https://github.com/aget-framework/template-advisor-aget) | Persona-based guidance | Advisory with internal state |
+| [**template-consultant-aget**](https://github.com/aget-framework/template-consultant-aget) | Strategic analysis | Consultant persona |
+| [**template-developer-aget**](https://github.com/aget-framework/template-developer-aget) | Code quality, debugging | Multi-repo analysis |
+| [**template-spec-engineer-aget**](https://github.com/aget-framework/template-spec-engineer-aget) | Formal specifications | Requirements engineering |
 
-```
-Need fleet coordination? → template-supervisor-aget (worker + fleet)
-Need consultant advisory? → template-consultant-aget (worker + consultant patterns)
-Need advisory persona? → template-advisor-aget (worker + persona)
-General-purpose? → template-worker-aget (core foundation)
-```
-
-See **[Template Selector](./TEMPLATE_SELECTOR.md)** for detailed decision tree, capability matrix, and upgrade paths.
-
-### 2. Clone Template
+### 2. Create Your Agent
 
 ```bash
-# Worker example
-gh repo clone aget-framework/template-worker-aget my-custom-aget
-cd my-custom-aget
+# Clone template
+gh repo clone aget-framework/template-worker-aget my-agent-name
+cd my-agent-name
+
+# Configure identity
+vim .aget/version.json  # Set agent_name, domain, instance_type
+
+# Verify deployment
+python3 -m pytest tests/ -v  # Contract tests must pass
 ```
 
-### 3. Update Identity
+### 3. Start Using
 
-Edit `.aget/version.json`:
-```json
+```bash
+# In Claude Code, Cursor, Aider, or Windsurf
+claude code my-agent-name/
+
+# Agent uses AGENTS.md configuration automatically
+# No additional setup required (universal CLI compatibility)
+```
+
+---
+
+## Key Features
+
+### Version Control
+
+Track agent identity, manage upgrades, ensure compliance:
+```yaml
+# .aget/version.json
 {
-  "aget_version": "2.8.0",
-  "agent_name": "my-custom-aget",
+  "agent_name": "my-legal-assistant",
+  "aget_version": "2.9.0",
   "instance_type": "AGET",
-  "domain": "your-domain"
+  "domain": "legal_contract_analysis"
 }
 ```
 
-**Important**: Verify `CLAUDE.md` symlink after cloning:
-```bash
-ls -lh CLAUDE.md  # Should show: lrwxr-xr-x ... -> AGENTS.md
-readlink CLAUDE.md  # Should return: AGENTS.md
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9
+Migration history tracked, contract tests enforce compliance.
 
-# If not symlink, fix it:
-rm CLAUDE.md && ln -s AGENTS.md CLAUDE.md
+### Shared Learning
+
+Propagate insights across your fleet:
+```markdown
+# .aget/evolution/L315_pattern_discovered.md
+## Problem: Agents duplicated work (no shared context)
+## Learning: Centralize learnings in .aget/evolution/
+## Protocol: Pattern deployment across fleet
 ```
 
-### 4. Run Contract Tests
+Collective intelligence: Fleet gets smarter together, not individually.
 
-```bash
-python3 -m pytest tests/ -v
-```
+### Lifecycle Governance
 
-All agents must pass contract tests before first commit.
+Gated releases with human supervision:
+- Incremental go/no-go decision points
+- Contract testing (deployment verification)
+- Evidence-based planning
+- Honest gap recording (prediction accuracy is metric)
 
-### 5. First Session
+### Universal CLI Compatibility
 
-```bash
-# Wake up your agent
-# In Claude Code or your preferred CLI tool:
-wake up
+AGENTS.md configuration works across:
+- ✅ Claude Code
+- ✅ Cursor
+- ✅ Aider
+- ✅ Windsurf
+- ✅ Any CLI tool supporting configuration files
 
-# Start working
-# ... collaborate on tasks ...
-
-# Save session
-wind down
-```
+No tool lock-in. No vendor-specific formats. Just open standards.
 
 ---
 
 ## Documentation
 
-### Framework Guides
-- **[Template Selector](./TEMPLATE_SELECTOR.md)** - Choose the right template (decision tree, comparison matrix)
-- **[Getting Started](./GETTING_STARTED.md)** - Create your first agent (step-by-step)
-- **[Design Philosophy](./DESIGN_PHILOSOPHY.md)** - Human-supervised collaboration principles
-- **[Core Patterns](./CORE_PATTERNS.md)** - Gate discipline, recursive supervision, file-based coordination
-
-### Specifications
-- **[SPEC_FORMAT_v1.1.md](https://github.com/aget-framework/template-worker-aget/blob/main/.aget/docs/SPEC_FORMAT_v1.1.md)** - EARS patterns and controlled vocabulary
-- **[LEARNING_DOCUMENT_SPEC_v1.0](https://github.com/aget-framework/template-worker-aget/blob/main/.aget/specs/LEARNING_DOCUMENT_SPEC_v1.0.yaml)** - Organizational memory structure
-
-### Resources
-- **Learning System** - `.aget/evolution/` contains L-numbered pattern discoveries
-- **Migration Guides** - Version progression protocols in individual repositories
-- **Issue Templates** - Severity-based routing and SLA expectations
+- **[Getting Started Guide](docs/GETTING_STARTED.md)** - Create your first agent
+- **[AGENTS.md Specification](docs/AGENTS_MD_SPEC.md)** - Universal configuration format
+- **[Migration Guide](docs/MIGRATION_GUIDE.md)** - Upgrade between versions
+- **[Template Comparison](docs/TEMPLATE_COMPARISON.md)** - Choose the right template
+- **[Framework Vision](https://github.com/gmelli/private-supervisor-AGET/blob/main/.aget/specs/FRAMEWORK_VISION_v1.0.yaml)** - Mission, principles, positioning
 
 ---
 
-## Framework Philosophy
+## Architecture
 
-**Human-Supervised Collaboration**: AGET keeps humans in control with GO/NOGO gates for substantial changes.
+### 5-Layer Knowledge Model
 
-**Configuration Over Code**: Agents configured via `AGENTS.md` markdown files, not custom runtimes.
+AGET uses a hierarchical knowledge architecture to separate concerns:
 
-**Evidence-Based Evolution**: Organizational memory system (`.aget/evolution/`) captures "why" decisions were made.
+| Layer | Location | Purpose | Portability |
+|-------|----------|---------|-------------|
+| **Framework** | `.aget/` | Process knowledge, patterns | ✅ Portable (clone to new domain) |
+| **Agent Type** | Template | Role-specific capabilities | ✅ Inherited at creation |
+| **Instance** | `.aget/version.json` | Agent identity, configuration | Per-agent |
+| **Memory** | `.memory/` | Engagement state (advisors only) | Relationship-specific |
+| **Domain** | Root `sessions/`, `knowledge/` | Principal's work product | Principal-owned |
 
-**Universal CLI Compatibility**: Works across competing platforms—no vendor lock-in.
+**Principle**: Framework knowledge (how to work) stays in `.aget/`. Domain knowledge (what you know) stays at root.
 
-See [Design Philosophy](./DESIGN_PHILOSOPHY.md) for complete principles.
+### Fleet Coordination
 
----
+```
+┌─────────────────────────────────────────────────────────┐
+│ MISSION: Make Universe Beautiful                        │
+│          (through principal success)                    │
+└─────────────────────────────────────────────────────────┘
+                        ↑
+┌─────────────────────────────────────────────────────────┐
+│ AI CODING AGENTS                                        │
+│ (Workers, Advisors, Supervisors, Consultants)           │
+└─────────────────────────────────────────────────────────┘
+                ↑               ↑
+        ┌───────────┐   ┌──────────────┐
+        │   AGET    │   │  CLI TOOLS   │
+        │ (Coords)  │←→│ Claude Code  │
+        │           │   │ Cursor       │
+        │ Version   │   │ Aider        │
+        │ Learning  │   │ Windsurf     │
+        │ Lifecycle │   │              │
+        └───────────┘   └──────────────┘
+              ↑                 ↑
+        Open Standard     Universal CLI
+        (AGENTS.md)       Compatibility
+```
 
-## Version Compliance
-
-**Current Version**: v2.9.0 "Information Storage Standardization"
-
-**New Agent Policy**: All new agents must be created at **v2.9.0 or higher**.
-
-**v2.9.0 Baseline**:
-- 5-layer architecture (Framework, Agent Type, Instance, Memory, Domain)
-- Session Metadata Standard v1.0 (formal session documentation)
-- Information storage standardization (sessions/, knowledge/, workspace/, .memory/)
-- 6 production migration tools (100% success rate across 28-agent fleet)
-- Comprehensive documentation (175KB: migration guides, specs, tools reference)
-- Backward compatible with v2.8 (non-breaking architecture extension)
-
-**Migration Protocols**: Each version includes migration guides for existing agents.
-
----
-
-## Who Should Use AGET?
-
-### ✅ Good Fit
-
-- **Organizations managing 5+ specialized coding agents**
-- **Teams needing version control for agent capabilities**
-- **Projects requiring organizational memory across agents**
-- **Users wanting universal CLI compatibility (not vendor-locked)**
-- **Teams with human supervisors coordinating agent work**
-
-### ❌ Not a Fit
-
-- **Single autonomous agent deployments** (use LangChain/MetaGPT)
-- **Production runtime monitoring** (use AgentOps/Salesforce ALM)
-- **Agent-to-agent autonomous coordination** (use CrewAI/LangGraph)
-- **Single-project configuration** (use AGENTS.md without AGET framework)
+AGET + CLI Tools = **Complementary** (not competitive)
 
 ---
 
-## Positioning in Framework Landscape
+## Use Cases
 
-AGET solves the problem:
+### Legal Practice
 
-> "How do organizations manage dozens of specialized AI coding assistants with version control, shared learning, and lifecycle governance?"
+**Principal**: Lawyer handling contract review
+**Agents**: 5 specialized (analysis, research, drafting, compliance, case management)
+**Outcome**: 3x caseload with maintained quality (10x faster contract analysis)
+**Universe Beautiful**: More accessible legal representation
 
-**No existing framework addresses this exact space**—most assume either:
-- Single autonomous agent (ALM systems)
-- Agent-to-agent autonomous coordination (meta-frameworks)
-- Single-project configuration (CLI tools)
+### Healthcare
 
-**AGET's sweet spot**: Human-supervised fleets of specialized CLI agents with organizational memory and version progression.
+**Principal**: Doctor diagnosing complex cases
+**Agents**: 3 specialized (records pre-processing, literature research, diagnosis suggestions)
+**Outcome**: More patients seen, better diagnoses (pattern recognition from literature)
+**Universe Beautiful**: Improved patient care quality
 
-See [L143: Framework Landscape Positioning](https://github.com/aget-framework/template-worker-aget/blob/main/.aget/evolution/L143_aget_framework_landscape_positioning.md) for complete analysis.
+### Software Development
+
+**Principal**: Development team shipping code
+**Agents**: 8 specialized (code review, testing, documentation, standards, debugging)
+**Outcome**: Higher code quality, fewer bugs, better architecture
+**Universe Beautiful**: More reliable software
 
 ---
 
-## Contributing
+## Differentiators
 
-Framework is in active development (v2.8.0). Contribution guidelines coming in v2.9+.
+### vs Agent Runtimes (LangChain, MetaGPT)
 
-**Current Focus**:
-- Template refinement (worker, advisor, supervisor)
-- Documentation expansion
-- Fleet migration patterns
-- Security and privacy enhancements
+**AGET**: Human-supervised coordination (not autonomous)
+**Them**: Autonomous execution runtimes
+**Difference**: AGET brings governance and learning to CLI tools you already use
 
-**Feedback Welcome**: File issues in relevant repositories with appropriate labels.
+### vs ALM Platforms (AgentOps, Salesforce ALM)
+
+**AGET**: Lightweight, zero-infrastructure (markdown + git)
+**Them**: Cloud platforms, observability infrastructure
+**Difference**: AGET works locally with no servers, no overhead
+
+### vs Raw CLI Tools (Claude Code, Cursor alone)
+
+**AGET**: Fleet coordination, shared learning, version control
+**Them**: Single-agent, no versioning, no cross-agent learning
+**Difference**: AGET enables coordination across tools and agents
+
+---
+
+## Roadmap
+
+### v2.9 (Current) - Information Storage Standardization
+- ✅ Session location standard (`sessions/` at root)
+- ✅ Session metadata standard (YAML frontmatter)
+- ✅ Memory layer for advisors (`.memory/` structure)
+- ✅ 5-layer knowledge architecture
+- ✅ Fleet-wide migration complete (28 agents)
+
+### v2.10 (Next) - Public Documentation & Ecosystem Growth
+- 📋 Expand template documentation (examples, migration guides)
+- 📋 Public migration resources (v2.8 → v2.9 → v2.10 path)
+- 📋 Enhanced .memory/ examples for advisor templates
+- 📋 Template selector guide (choose right template for use case)
+
+### v3.0 (Future) - Multi-Agent Coordination
+- 🔮 Agent discovery and routing
+- 🔮 Task queue and delegation
+- 🔮 Cross-agent collaboration patterns
+- 🔮 Fleet-level analytics and metrics
+
+---
+
+## Community
+
+- **GitHub Issues**: [File bugs, request features](https://github.com/gmelli/aget-aget/issues)
+- **Discussions**: [Ask questions, share patterns](https://github.com/orgs/aget-framework/discussions)
+- **Contributing**: [Contribution guidelines](CONTRIBUTING.md)
+
+---
+
+## Principles
+
+### Abundance Mindset
+
+- CLI tools are ecosystem partners (not competitors)
+- Open standards enable collective innovation (not ownership advantage)
+- Success measured by agent effectiveness (not market capture)
+- Positive direction leads (affirmative framing, not negative contrast)
+
+### Human-Supervised
+
+- Agents augment human capability (not replace)
+- Human judgment remains central (gated releases, incremental go/no-go)
+- Learning investment valued (extract systematic insights)
+
+### Evidence-Based
+
+- Decisions grounded in data (not assumptions)
+- Learnings extracted systematically (L-series evolution documents)
+- Honest gap recording (prediction accuracy is metric)
 
 ---
 
 ## License
 
-Apache 2.0 (individual repositories may vary - check each repo)
+MIT License - See [LICENSE](LICENSE) for details
 
 ---
 
-## Support
+## Acknowledgments
 
-- **Issues**: File in relevant repository (template-specific or aget-framework/.github)
-- **Discussions**: GitHub Discussions (coming soon)
-- **Security**: See [SECURITY.md](./SECURITY.md) for responsible disclosure
+Built with:
+- **Claude Code** (Anthropic) - AI coding assistant
+- **Universal CLI Compatibility** - Works across Cursor, Aider, Windsurf
+- **Open Standards** - AGENTS.md specification
+- **Community Contributors** - Thank you for making AGET better
 
 ---
 
-*AGET Framework v2.9.0 - Configuration & Lifecycle Management for Human-AI Collaborative Coding*
+**AGET Framework** - Enable your AI agents to make the universe more beautiful
+
+*Fleet coordination for the CLI coding tools you already use*
