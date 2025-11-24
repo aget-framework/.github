@@ -663,7 +663,7 @@ git push -u origin main
 
 ---
 
-*AGET Framework v2.8.0 - Template Selector*
+*AGET Framework v2.9.0 - Template Selector*
 *Worker Foundation: Core capabilities inherited by all templates*
 *Consultant Template: Extracted v2.7.0 based on dominant usage evidence (L227)*
 *Last Updated: 2025-11-10*
