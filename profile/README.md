@@ -2,7 +2,9 @@
 
 **Fleet Coordination for the CLI Coding Tools You Already Use**
 
-Enable your AI agents to make the universe more beautiful. AGET brings version control, shared learning, and lifecycle governance to Claude Code, Cursor, Aider, Windsurf, and more—through an open standard. Zero infrastructure required.
+Deploy AI coding agents with confidence. AGET provides specification-based governance, version control, and shared learning across Claude Code, Cursor, Aider, Windsurf—through an open standard. Zero infrastructure required.
+
+**Solve**: Version drift, deployment breaks, compliance gaps, isolated agent learnings across your fleet.
 
 [![Version](https://img.shields.io/badge/version-2.9.0-blue)](https://github.com/gmelli/private-supervisor-AGET/releases/tag/v2.9.0)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
@@ -17,44 +19,36 @@ AGET coordinates multiple specialized AI coding agents across CLI tools—with h
 
 - **Universal CLI Compatibility** - Works with Claude Code, Cursor, Aider, Windsurf
 - **Version Control** - Track agent versions, manage upgrades, ensure compliance
-- **Shared Learning** - Propagate insights across your fleet (.aget/evolution/)
+- **Shared Learning** - Propagate insights across your fleet (`.aget/evolution/`)
 - **Lifecycle Governance** - Gated releases, contract testing, deployment verification
 - **Open Standard** - AGENTS.md enables ecosystem innovation
+
+### Specification-First Development
+
+AGET brings formal requirements engineering to agent fleet management:
+
+**EARS Patterns** - Write unambiguous specifications:
+- **Ubiquitous**: "The system SHALL always..."
+- **Event-driven**: "WHEN [trigger] the system SHALL..."
+- **State-driven**: "WHILE [condition] the system SHALL..."
+- **Optional**: "WHERE [feature enabled] the system SHALL..."
+- **Conditional**: "IF [condition] THEN the system SHALL..."
+
+**Contract Testing** - Validate deployments before production (7-30 tests per agent)
+
+**Ambiguity Detection** - Intelligence layer identifies unclear requirements
+
+**Validation Framework** - Every specification includes formal validation tests
+
+**Result**: Deploy with confidence—formal specs → validated implementations → verified deployments.
+
+See [template-spec-engineer-aget](https://github.com/aget-framework/template-spec-engineer-aget) for specification engineering capabilities.
 
 ### Who It's For
 
 - **Organizations** managing 5+ AI coding agents (version control, compliance)
 - **Power Users** coordinating specialized agents (legal, healthcare, code analysis)
 - **Development Teams** adopting AI agents with governance requirements
-
----
-
-## Why AGET?
-
-### Mission-Driven
-
-Enable your agents to succeed at making their principals successful at making the universe more beautiful.
-
-Success cascades through four levels:
-```
-Universe More Beautiful  ← Fairer outcomes, better quality
-    ↑
-Principal Success        ← Lawyers, doctors, developers deliver better work
-    ↑
-Agent Success            ← Effective augmentation with deployment confidence
-    ↑
-Framework Quality        ← AGET ensures coordination, learning, governance
-```
-
-### Ecosystem Approach
-
-AGET doesn't replace your CLI tools—it coordinates them. Works alongside Claude Code, Cursor, Aider, Windsurf to bring fleet-level capabilities: version control, shared learning, lifecycle governance.
-
-**Complementary, not competitive**: AGET + CLI Tools work together to enable your agents.
-
-### Open Innovation
-
-**AGENTS.md** open standard means anyone can adopt, extend, or integrate. **Shared learning repository** means collective intelligence grows together. No vendor lock-in, no proprietary formats—just universal CLI compatibility and portable knowledge.
 
 ---
 
@@ -96,13 +90,144 @@ claude code my-agent-name/
 
 ---
 
+## Why AGET?
+
+### Mission-Driven
+
+Enable your agents to succeed at making their principals successful.
+
+Success cascades from framework quality to agent effectiveness to principal outcomes:
+
+```
+Better Principal Outcomes  ← More cases handled, better diagnoses, fewer bugs
+    ↑
+Principal Success          ← Lawyers, doctors, developers deliver better work
+    ↑
+Agent Success              ← Effective augmentation with deployment confidence
+    ↑
+Framework Quality          ← AGET ensures governance, learning, compliance
+```
+
+**Goal**: Not just "manage agents" but enable principal success through agent effectiveness and deployment confidence.
+
+### Ecosystem Approach
+
+AGET doesn't replace your CLI tools—it coordinates them. Works alongside Claude Code, Cursor, Aider, Windsurf to bring fleet-level capabilities: version control, shared learning, lifecycle governance.
+
+**Complementary, not competitive**: AGET + CLI Tools work together to enable your agents.
+
+### Open Innovation
+
+**AGENTS.md** open standard means anyone can adopt, extend, or integrate. **Shared learning repository** means collective intelligence grows together. No vendor lock-in, no proprietary formats—just universal CLI compatibility and portable knowledge.
+
+---
+
+## Architecture & Technical Foundation
+
+### 5-Layer Knowledge Architecture
+
+Separates framework knowledge (portable) from domain knowledge (specific):
+
+| Layer | Location | Purpose | Example Content |
+|-------|----------|---------|-----------------|
+| **Framework** | `.aget/` | Process patterns, learnings | `.aget/evolution/L*.md` (portable to any domain) |
+| **Agent Type** | Template | Role-specific capabilities | Advisor personas, worker task patterns |
+| **Instance** | `.aget/version.json` | Agent identity, config | `agent_name`, `aget_version`, `domain` |
+| **Memory** | `.memory/` | Engagement state (advisors) | `.memory/clients/{id}/` relationship history |
+| **Domain** | Root | Principal's work product | `sessions/*.md`, `knowledge/*.md` |
+
+**Design principle**: Framework knowledge (`.aget/`) is portable across domains. Domain knowledge (root) is principal-owned and specific.
+
+### Specification-Based Governance
+
+Every agent, feature, and release is formally specified and validated:
+
+**Specification Format**:
+```yaml
+# .aget/specs/EXAMPLE_SPEC_v1.0.yaml
+requirements:
+  R1_capability_check:
+    statement: "Agent SHALL validate version.json on startup"
+    validation:
+      test: "Contract test test_version_file_exists()"
+      threshold: "PASS required for deployment"
+```
+
+**Contract Testing**:
+- 7-30 pytest-based tests per agent
+- Validates: Identity, configuration, capabilities, compliance
+- Runs: Pre-commit, pre-deployment, CI/CD
+- Example: `pytest tests/test_contract.py -v`
+
+**Version Compliance**:
+```json
+// .aget/version.json
+{
+  "agent_name": "my-legal-assistant",
+  "aget_version": "2.9.0",
+  "instance_type": "AGET",
+  "migration_history": ["2.7.0", "2.8.0", "2.9.0"]
+}
+```
+
+Migration history tracked, compliance validated via contract tests.
+
+### Universal CLI Compatibility (AGENTS.md Standard)
+
+Open standard configuration works across all CLI coding tools:
+
+```markdown
+# AGENTS.md
+version: "1.0"
+agent:
+  name: "my-legal-assistant"
+  type: "advisor"
+  domain: "legal_contract_analysis"
+  capabilities:
+    - contract_analysis
+    - legal_research
+    - compliance_checking
+```
+
+No vendor lock-in: Same configuration file works with Claude Code, Cursor, Aider, Windsurf. Agent portability preserved.
+
+### Fleet Coordination Model
+
+```
+┌─────────────────────────────────────────────────────────┐
+│ PRINCIPALS                                              │
+│ (Lawyers, Doctors, Developers)                          │
+└─────────────────────────────────────────────────────────┘
+                        ↑
+┌─────────────────────────────────────────────────────────┐
+│ AI CODING AGENTS                                        │
+│ (Workers, Advisors, Supervisors, Consultants)           │
+└─────────────────────────────────────────────────────────┘
+                ↑               ↑
+        ┌───────────┐   ┌──────────────┐
+        │   AGET    │   │  CLI TOOLS   │
+        │           │←→│              │
+        │ • Version │   │ • Claude Code│
+        │ • Learning│   │ • Cursor     │
+        │ • Specs   │   │ • Aider      │
+        │ • Govern  │   │ • Windsurf   │
+        └───────────┘   └──────────────┘
+              ↑                 ↑
+        AGENTS.md         Universal CLI
+        (open std)        Compatibility
+```
+
+**Complementary architecture**: AGET provides governance layer. CLI tools provide execution environment. Together they enable confident multi-agent deployment.
+
+---
+
 ## Key Features
 
 ### Version Control
 
 Track agent identity, manage upgrades, ensure compliance:
-```yaml
-# .aget/version.json
+```json
+// .aget/version.json
 {
   "agent_name": "my-legal-assistant",
   "aget_version": "2.9.0",
@@ -147,62 +272,6 @@ No tool lock-in. No vendor-specific formats. Just open standards.
 
 ---
 
-## Documentation
-
-- **[Getting Started Guide](docs/GETTING_STARTED.md)** - Create your first agent
-- **[AGENTS.md Specification](docs/AGENTS_MD_SPEC.md)** - Universal configuration format
-- **[Migration Guide](docs/MIGRATION_GUIDE.md)** - Upgrade between versions
-- **[Template Comparison](docs/TEMPLATE_COMPARISON.md)** - Choose the right template
-- **[Framework Vision](https://github.com/gmelli/private-supervisor-AGET/blob/main/.aget/specs/FRAMEWORK_VISION_v1.0.yaml)** - Mission, principles, positioning
-
----
-
-## Architecture
-
-### 5-Layer Knowledge Model
-
-AGET uses a hierarchical knowledge architecture to separate concerns:
-
-| Layer | Location | Purpose | Portability |
-|-------|----------|---------|-------------|
-| **Framework** | `.aget/` | Process knowledge, patterns | ✅ Portable (clone to new domain) |
-| **Agent Type** | Template | Role-specific capabilities | ✅ Inherited at creation |
-| **Instance** | `.aget/version.json` | Agent identity, configuration | Per-agent |
-| **Memory** | `.memory/` | Engagement state (advisors only) | Relationship-specific |
-| **Domain** | Root `sessions/`, `knowledge/` | Principal's work product | Principal-owned |
-
-**Principle**: Framework knowledge (how to work) stays in `.aget/`. Domain knowledge (what you know) stays at root.
-
-### Fleet Coordination
-
-```
-┌─────────────────────────────────────────────────────────┐
-│ MISSION: Make Universe Beautiful                        │
-│          (through principal success)                    │
-└─────────────────────────────────────────────────────────┘
-                        ↑
-┌─────────────────────────────────────────────────────────┐
-│ AI CODING AGENTS                                        │
-│ (Workers, Advisors, Supervisors, Consultants)           │
-└─────────────────────────────────────────────────────────┘
-                ↑               ↑
-        ┌───────────┐   ┌──────────────┐
-        │   AGET    │   │  CLI TOOLS   │
-        │ (Coords)  │←→│ Claude Code  │
-        │           │   │ Cursor       │
-        │ Version   │   │ Aider        │
-        │ Learning  │   │ Windsurf     │
-        │ Lifecycle │   │              │
-        └───────────┘   └──────────────┘
-              ↑                 ↑
-        Open Standard     Universal CLI
-        (AGENTS.md)       Compatibility
-```
-
-AGET + CLI Tools = **Complementary** (not competitive)
-
----
-
 ## Use Cases
 
 ### Legal Practice
@@ -210,21 +279,31 @@ AGET + CLI Tools = **Complementary** (not competitive)
 **Principal**: Lawyer handling contract review
 **Agents**: 5 specialized (analysis, research, drafting, compliance, case management)
 **Outcome**: 3x caseload with maintained quality (10x faster contract analysis)
-**Universe Beautiful**: More accessible legal representation
+**Impact**: More accessible legal representation
 
 ### Healthcare
 
 **Principal**: Doctor diagnosing complex cases
 **Agents**: 3 specialized (records pre-processing, literature research, diagnosis suggestions)
 **Outcome**: More patients seen, better diagnoses (pattern recognition from literature)
-**Universe Beautiful**: Improved patient care quality
+**Impact**: Improved patient care quality
 
 ### Software Development
 
 **Principal**: Development team shipping code
 **Agents**: 8 specialized (code review, testing, documentation, standards, debugging)
 **Outcome**: Higher code quality, fewer bugs, better architecture
-**Universe Beautiful**: More reliable software
+**Impact**: More reliable software
+
+---
+
+## Documentation
+
+- **[Getting Started Guide](docs/GETTING_STARTED.md)** - Create your first agent
+- **[AGENTS.md Specification](docs/AGENTS_MD_SPEC.md)** - Universal configuration format
+- **[Migration Guide](docs/MIGRATION_GUIDE.md)** - Upgrade between versions
+- **[Template Comparison](docs/TEMPLATE_COMPARISON.md)** - Choose the right template
+- **[Framework Vision](https://github.com/gmelli/private-supervisor-AGET/blob/main/.aget/specs/FRAMEWORK_VISION_v1.0.yaml)** - Mission, principles, positioning
 
 ---
 
@@ -262,7 +341,7 @@ AGET + CLI Tools = **Complementary** (not competitive)
 ### v2.10 (Next) - Public Documentation & Ecosystem Growth
 - 📋 Expand template documentation (examples, migration guides)
 - 📋 Public migration resources (v2.8 → v2.9 → v2.10 path)
-- 📋 Enhanced .memory/ examples for advisor templates
+- 📋 Enhanced `.memory/` examples for advisor templates
 - 📋 Template selector guide (choose right template for use case)
 
 ### v3.0 (Future) - Multi-Agent Coordination
@@ -320,6 +399,6 @@ Built with:
 
 ---
 
-**AGET Framework** - Enable your AI agents to make the universe more beautiful
+**AGET Framework** - Deploy AI agents with confidence
 
 *Fleet coordination for the CLI coding tools you already use*
