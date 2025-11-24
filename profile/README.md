@@ -36,10 +36,10 @@ Choose a core template based on your agent's role in the fleet:
 
 | Template | Foundation | Additional Capabilities | Status |
 |----------|------------|------------------------|--------|
-| **[template-worker-aget](https://github.com/aget-framework/template-worker-aget)** | ✅ **CORE** | General-purpose (flexible capability) | ✅ Public v2.8.0 |
-| **[template-advisor-aget](https://github.com/aget-framework/template-advisor-aget)** | Worker + | Persona system, advisory-only mode | ✅ Public v2.8.0 |
-| **[template-consultant-aget](https://github.com/aget-framework/template-consultant-aget)** | Worker + | Solutions-focused proactive advisory | ✅ Public v2.8.0 |
-| **[template-supervisor-aget](https://github.com/aget-framework/template-supervisor-aget)** | Worker + | Fleet coordination, process enforcement | ✅ Public v2.8.0 |
+| **[template-worker-aget](https://github.com/aget-framework/template-worker-aget)** | ✅ **CORE** | General-purpose (flexible capability) | ✅ Public v2.9.0 |
+| **[template-advisor-aget](https://github.com/aget-framework/template-advisor-aget)** | Worker + | Persona system, advisory-only mode | ✅ Public v2.9.0 |
+| **[template-consultant-aget](https://github.com/aget-framework/template-consultant-aget)** | Worker + | Solutions-focused proactive advisory | ✅ Public v2.9.0 |
+| **[template-supervisor-aget](https://github.com/aget-framework/template-supervisor-aget)** | Worker + | Fleet coordination, process enforcement | ✅ Public v2.9.0 |
 
 **Need help choosing?** See **[Template Selector](./TEMPLATE_SELECTOR.md)** for decision tree and detailed comparison.
 
@@ -49,9 +49,9 @@ Choose a specialized template for specific technical tasks:
 
 | Template | Purpose | Methodology | Status |
 |----------|---------|-------------|--------|
-| **[template-spec-engineer-aget](https://github.com/aget-framework/template-spec-engineer-aget)** | Reverse engineer Python code into formal EARS specifications | Semantic extraction via coding agent (functions → scripts → modules → applications) | ✅ Public v2.8.0 |
-| **[template-developer-aget](https://github.com/aget-framework/template-developer-aget)** | Code quality analysis and standards compliance advisor | Multi-repository code analysis (quality metrics, standards checking, debugging assistance, spec consistency) | ✅ Public v2.8.0 |
-| **[template-document-processor-AGET](https://github.com/aget-framework/template-document-processor-AGET)** | Create document processing agents with LLM pipelines and security protocols | Multi-provider LLM support, validation pipelines, security protocols, caching, and observability | ✅ Public v2.8.0 |
+| **[template-spec-engineer-aget](https://github.com/aget-framework/template-spec-engineer-aget)** | Reverse engineer Python code into formal EARS specifications | Semantic extraction via coding agent (functions → scripts → modules → applications) | ✅ Public v2.9.0 |
+| **[template-developer-aget](https://github.com/aget-framework/template-developer-aget)** | Code quality analysis and standards compliance advisor | Multi-repository code analysis (quality metrics, standards checking, debugging assistance, spec consistency) | ✅ Public v2.9.0 |
+| **[template-document-processor-AGET](https://github.com/aget-framework/template-document-processor-AGET)** | Create document processing agents with LLM pipelines and security protocols | Multi-provider LLM support, validation pipelines, security protocols, caching, and observability | ✅ Public v2.9.0 |
 
 **Specification Engineering Use Cases**:
 - **Extract** specifications from existing Python code (AGET tools, scripts, modules, applications)
@@ -220,16 +220,17 @@ See [Design Philosophy](./DESIGN_PHILOSOPHY.md) for complete principles.
 
 ## Version Compliance
 
-**Current Version**: v2.8.0 "Planning & Infrastructure"
+**Current Version**: v2.9.0 "Information Storage Standardization"
 
-**New Agent Policy**: All new agents must be created at **v2.8.0 or higher**.
+**New Agent Policy**: All new agents must be created at **v2.9.0 or higher**.
 
-**v2.8.0 Baseline**:
-- Planning Framework v1.0 (5 templates: Enhancement, Gate, Project, Checkpoint, Critique)
-- Enhancement Filing Protocol (systematic framework improvement workflow)
-- GitHub tooling improvements (interactive `make issue`, `--learning` flag)
-- Naming prefix conventions formalized (private-/public-/my- semantics)
-- Backward compatible with v2.7 (no breaking changes)
+**v2.9.0 Baseline**:
+- 5-layer architecture (Framework, Agent Type, Instance, Memory, Domain)
+- Session Metadata Standard v1.0 (formal session documentation)
+- Information storage standardization (sessions/, knowledge/, workspace/, .memory/)
+- 6 production migration tools (100% success rate across 28-agent fleet)
+- Comprehensive documentation (175KB: migration guides, specs, tools reference)
+- Backward compatible with v2.8 (non-breaking architecture extension)
 
 **Migration Protocols**: Each version includes migration guides for existing agents.
 
@@ -299,4 +300,4 @@ Apache 2.0 (individual repositories may vary - check each repo)
 
 ---
 
-*AGET Framework v2.8.0 - Configuration & Lifecycle Management for Human-AI Collaborative Coding*
+*AGET Framework v2.9.0 - Configuration & Lifecycle Management for Human-AI Collaborative Coding*
