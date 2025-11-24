@@ -36,10 +36,10 @@ Choose a core template based on your agent's role in the fleet:
 
 | Template | Foundation | Additional Capabilities | Status |
 |----------|------------|------------------------|--------|
-| **[template-worker-aget](https://github.com/aget-framework/template-worker-aget)** | ✅ **CORE** | General-purpose (flexible capability) | ✅ Public v2.9.0 |
+| **[template-worker-aget](https://github.com/aget-framework/template-worker-aget)** | ✅ **CORE** | General-purpose (flexible capability) | ✅ Public v2.8.0 |
 | **[template-advisor-aget](https://github.com/aget-framework/template-advisor-aget)** | Worker + | Persona system, advisory-only mode | ✅ Public v2.9.0 |
 | **[template-consultant-aget](https://github.com/aget-framework/template-consultant-aget)** | Worker + | Solutions-focused proactive advisory | ✅ Public v2.9.0 |
-| **[template-supervisor-aget](https://github.com/aget-framework/template-supervisor-aget)** | Worker + | Fleet coordination, process enforcement | ✅ Public v2.9.0 |
+| **[template-supervisor-aget](https://github.com/aget-framework/template-supervisor-aget)** | Worker + | Fleet coordination, process enforcement | ✅ Public v2.8.0 |
 
 **Need help choosing?** See **[Template Selector](./TEMPLATE_SELECTOR.md)** for decision tree and detailed comparison.
 
@@ -51,7 +51,7 @@ Choose a specialized template for specific technical tasks:
 |----------|---------|-------------|--------|
 | **[template-spec-engineer-aget](https://github.com/aget-framework/template-spec-engineer-aget)** | Reverse engineer Python code into formal EARS specifications | Semantic extraction via coding agent (functions → scripts → modules → applications) | ✅ Public v2.9.0 |
 | **[template-developer-aget](https://github.com/aget-framework/template-developer-aget)** | Code quality analysis and standards compliance advisor | Multi-repository code analysis (quality metrics, standards checking, debugging assistance, spec consistency) | ✅ Public v2.9.0 |
-| **[template-document-processor-AGET](https://github.com/aget-framework/template-document-processor-AGET)** | Create document processing agents with LLM pipelines and security protocols | Multi-provider LLM support, validation pipelines, security protocols, caching, and observability | ✅ Public v2.9.0 |
+| **[template-document-processor-AGET](https://github.com/aget-framework/template-document-processor-AGET)** | Create document processing agents with LLM pipelines and security protocols | Multi-provider LLM support, validation pipelines, security protocols, caching, and observability | ✅ Public v2.7.0 |
 
 **Specification Engineering Use Cases**:
 - **Extract** specifications from existing Python code (AGET tools, scripts, modules, applications)
