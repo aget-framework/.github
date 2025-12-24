@@ -6,8 +6,9 @@ Deploy AI coding agents with confidence. AGET provides specification-based gover
 
 **Solve**: Version drift, deployment breaks, compliance gaps, isolated agent learnings across your fleet.
 
-[![Version](https://img.shields.io/badge/version-2.9.0-blue)](https://github.com/gmelli/private-supervisor-AGET/releases/tag/v2.9.0)
+[![Version](https://img.shields.io/badge/version-2.11.0-blue)](https://github.com/aget-framework/aget/releases/tag/v2.11.0)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Release Date](https://img.shields.io/badge/released-2025--12--24-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
 ---
 
