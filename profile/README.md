@@ -165,9 +165,14 @@ requirements:
 // .aget/version.json
 {
   "agent_name": "my-legal-assistant",
-  "aget_version": "2.9.0",
+  "aget_version": "2.11.0",
   "instance_type": "AGET",
-  "migration_history": ["2.7.0", "2.8.0", "2.9.0"]
+  "migration_history": [
+    "v2.7.0 -> v2.8.0: 2025-11-01",
+    "v2.8.0 -> v2.9.0: 2025-11-15",
+    "v2.9.0 -> v2.10.0: 2025-12-13",
+    "v2.10.0 -> v2.11.0: 2025-12-24"
+  ]
 }
 ```
 
@@ -231,13 +236,13 @@ Track agent identity, manage upgrades, ensure compliance:
 // .aget/version.json
 {
   "agent_name": "my-legal-assistant",
-  "aget_version": "2.9.0",
+  "aget_version": "2.11.0",
   "instance_type": "AGET",
   "domain": "legal_contract_analysis"
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -332,18 +337,39 @@ No tool lock-in. No vendor-specific formats. Just open standards.
 
 ## Roadmap
 
-### v2.9 (Current) - Information Storage Standardization
+### v2.11 (Current) - Memory Architecture + Public Governance
+**Released**: 2025-12-24
+
+- ✅ Memory Architecture (L335): 6-layer information model
+- ✅ L352 Traceability Pattern: Requirement-to-test traceability
+- ✅ R-PUB-001 Public Release Completeness (8 requirements)
+- ✅ Post-release validation automation
+- ✅ Public framework governance (VERSIONING.md, RELEASES.md, UPGRADING.md)
+- ✅ Configurable wake-up output
+- ✅ Version migration protocol (R-REL-006)
+
+### v2.10 - Capability Composition Architecture
+**Released**: 2025-12-24 (retroactive)
+
+- ✅ 6 agent type specifications
+- ✅ Executive Advisor pattern (5W+H knowledge architecture)
+- ✅ Domain Specialist pattern (structured outputs)
+- ✅ Theoretical grounding protocol (L332)
+
+### v2.9 - Information Storage Standardization
+**Released**: 2025-11-24 (partial - advisor family only)
+
 - ✅ Session location standard (`sessions/` at root)
 - ✅ Session metadata standard (YAML frontmatter)
 - ✅ Memory layer for advisors (`.memory/` structure)
 - ✅ 5-layer knowledge architecture
 - ✅ Fleet-wide migration complete (28 agents)
 
-### v2.10 (Next) - Public Documentation & Ecosystem Growth
-- 📋 Expand template documentation (examples, migration guides)
-- 📋 Public migration resources (v2.8 → v2.9 → v2.10 path)
-- 📋 Enhanced `.memory/` examples for advisor templates
-- 📋 Template selector guide (choose right template for use case)
+### v2.12 (Next) - Planned
+- 📋 Template consistency verification
+- 📋 Historical release backfill (v2.1-v2.9 for aget/)
+- 📋 R-PUB-001 contract test coverage
+- 📋 CONTRIBUTING.md and community infrastructure
 
 ### v3.0 (Future) - Multi-Agent Coordination
 - 🔮 Agent discovery and routing
