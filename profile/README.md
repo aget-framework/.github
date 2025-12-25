@@ -305,11 +305,12 @@ No tool lock-in. No vendor-specific formats. Just open standards.
 
 ## Documentation
 
-- **[Getting Started Guide](docs/GETTING_STARTED.md)** - Create your first agent
-- **[AGENTS.md Specification](docs/AGENTS_MD_SPEC.md)** - Universal configuration format
-- **[Migration Guide](docs/MIGRATION_GUIDE.md)** - Upgrade between versions
-- **[Template Comparison](docs/TEMPLATE_COMPARISON.md)** - Choose the right template
-- **[Framework Vision](https://github.com/gmelli/private-supervisor-AGET/blob/main/.aget/specs/FRAMEWORK_VISION_v1.0.yaml)** - Mission, principles, positioning
+- **[Versioning Guide](https://github.com/aget-framework/aget/blob/main/docs/VERSIONING.md)** - Version system and compatibility
+- **[Upgrade Guide](https://github.com/aget-framework/aget/blob/main/docs/UPGRADING.md)** - Safe upgrade procedures
+- **[Releases](https://github.com/aget-framework/aget/blob/main/docs/RELEASES.md)** - Release process and quality standards
+- **[Version History](https://github.com/aget-framework/aget/blob/main/docs/VERSION_HISTORY.md)** - Complete release timeline
+- **[Template Structure Guide](https://github.com/aget-framework/aget/blob/main/docs/TEMPLATE_STRUCTURE_GUIDE.md)** - Understanding agent templates
+- **[Layer Architecture](https://github.com/aget-framework/aget/blob/main/docs/LAYER_ARCHITECTURE.md)** - 5-layer knowledge architecture
 
 ---
 
@@ -381,9 +382,8 @@ No tool lock-in. No vendor-specific formats. Just open standards.
 
 ## Community
 
-- **GitHub Issues**: [File bugs, request features](https://github.com/gmelli/aget-aget/issues)
-- **Discussions**: [Ask questions, share patterns](https://github.com/orgs/aget-framework/discussions)
-- **Contributing**: [Contribution guidelines](CONTRIBUTING.md)
+- **GitHub Issues**: [File bugs, request features](https://github.com/aget-framework/aget/issues)
+- **GitHub Releases**: [View releases, changelogs](https://github.com/aget-framework/aget/releases)
 
 ---
 
