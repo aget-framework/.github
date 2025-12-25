@@ -242,7 +242,7 @@ Track agent identity, manage upgrades, ensure compliance:
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11.0
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -338,7 +338,7 @@ No tool lock-in. No vendor-specific formats. Just open standards.
 
 ## Roadmap
 
-### v2.11 (Current) - Memory Architecture + Public Governance
+### v2.11.0 (Current) - Memory Architecture + Public Governance
 **Released**: 2025-12-24
 
 - ✅ Memory Architecture (L335): 6-layer information model
