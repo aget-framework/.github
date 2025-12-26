@@ -6,9 +6,9 @@ Deploy AI coding agents with confidence. AGET provides specification-based gover
 
 **Solve**: Version drift, deployment breaks, compliance gaps, isolated agent learnings across your fleet.
 
-[![Version](https://img.shields.io/badge/version-2.11.0-blue)](https://github.com/aget-framework/aget/releases/tag/v2.11.0)
+[![Version](https://img.shields.io/badge/version-2.12.0-blue)](https://github.com/aget-framework/aget/releases/tag/v2.12.0)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2025--12--24-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
+[![Release Date](https://img.shields.io/badge/released-2025--12--26-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
 ---
 
@@ -165,7 +165,7 @@ requirements:
 // .aget/version.json
 {
   "agent_name": "my-legal-assistant",
-  "aget_version": "2.11.0",
+  "aget_version": "2.12.0",
   "instance_type": "AGET",
   "migration_history": [
     "v2.7.0 -> v2.8.0: 2025-11-01",
@@ -236,7 +236,7 @@ Track agent identity, manage upgrades, ensure compliance:
 // .aget/version.json
 {
   "agent_name": "my-legal-assistant",
-  "aget_version": "2.11.0",
+  "aget_version": "2.12.0",
   "instance_type": "AGET",
   "domain": "legal_contract_analysis"
 }
@@ -338,7 +338,18 @@ No tool lock-in. No vendor-specific formats. Just open standards.
 
 ## Roadmap
 
-### v2.11.0 (Current) - Memory Architecture + Public Governance
+### v2.12.0 (Current) - Capability Architecture Completion
+**Released**: 2025-12-26
+
+- ✅ Complete capability composition system (5 specs, 3 validators, 80 tests)
+- ✅ Template manifest system for agent composition (manifest.yaml)
+- ✅ Fleet migration enablement (6 pilots validated)
+- ✅ Governance exemplar enforcement (L367)
+- ✅ Self-validation pattern (L372) - agents can validate themselves
+- ✅ 5 additional validators for framework compliance
+- ✅ 10 learnings captured (L366-L375)
+
+### v2.11.0 - Memory Architecture + Public Governance
 **Released**: 2025-12-24
 
 - ✅ Memory Architecture (L335): 6-layer information model
@@ -349,28 +360,19 @@ No tool lock-in. No vendor-specific formats. Just open standards.
 - ✅ Configurable wake-up output
 - ✅ Version migration protocol (R-REL-006)
 
-### v2.10 - Capability Composition Architecture
-**Released**: 2025-12-24 (retroactive)
+### v2.10.0 - Capability Composition Architecture
+**Released**: 2025-12-13
 
 - ✅ 6 agent type specifications
 - ✅ Executive Advisor pattern (5W+H knowledge architecture)
 - ✅ Domain Specialist pattern (structured outputs)
 - ✅ Theoretical grounding protocol (L332)
 
-### v2.9 - Information Storage Standardization
-**Released**: 2025-11-24 (partial - advisor family only)
-
-- ✅ Session location standard (`sessions/` at root)
-- ✅ Session metadata standard (YAML frontmatter)
-- ✅ Memory layer for advisors (`.memory/` structure)
-- ✅ 5-layer knowledge architecture
-- ✅ Fleet-wide migration complete (28 agents)
-
-### v2.12 (Next) - Planned
-- 📋 Template consistency verification
-- 📋 Historical release backfill (v2.1-v2.9 for aget/)
-- 📋 R-PUB-001 contract test coverage
-- 📋 CONTRIBUTING.md and community infrastructure
+### v2.13 (Next) - Planned
+- 📋 FLEET_ANNOUNCEMENTS.md (inter-agent communication)
+- 📋 Behavioral validation (validate_behavioral.py)
+- 📋 CI/CD validator propagation
+- 📋 Process specifications completion
 
 ### v3.0 (Future) - Multi-Agent Coordination
 - 🔮 Agent discovery and routing
