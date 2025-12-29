@@ -280,28 +280,71 @@ No tool lock-in. No vendor-specific formats. Just open standards.
 
 ---
 
-## Use Cases
+## What AGET Solves
 
-### Legal Practice
+### Session Continuity
 
-**Principal**: Lawyer handling contract review
-**Agents**: 5 specialized (analysis, research, drafting, compliance, case management)
-**Outcome**: 3x caseload with maintained quality (10x faster contract analysis)
-**Impact**: More accessible legal representation
+**Pain**: "I explain the same context every session"
 
-### Healthcare
+Your AI agent forgets everything between sessions. You waste the first 10 minutes re-explaining project history, decisions made, and work in progress.
 
-**Principal**: Doctor diagnosing complex cases
-**Agents**: 3 specialized (records pre-processing, literature research, diagnosis suggestions)
-**Outcome**: More patients seen, better diagnoses (pattern recognition from literature)
-**Impact**: Improved patient care quality
+AGET's lifecycle protocols preserve context across sessions automatically. Wake-up loads previous state; wind-down captures decisions for next session.
 
-### Software Development
+[See it in action: Session protocols](https://github.com/aget-framework/aget/blob/main/docs/TEMPLATE_STRUCTURE_GUIDE.md)
 
-**Principal**: Development team shipping code
-**Agents**: 8 specialized (code review, testing, documentation, standards, debugging)
-**Outcome**: Higher code quality, fewer bugs, better architecture
-**Impact**: More reliable software
+### Multi-Agent Coordination
+
+**Pain**: "My agents don't know about each other"
+
+You have 5 agents across 5 projects. They duplicate work, contradict each other, and can't share what they've learned.
+
+AGET's fleet management coordinates agents with supervisor/worker patterns, shared configuration, and learning propagation across your entire agent fleet.
+
+[See it in action: Fleet templates](https://github.com/aget-framework/template-worker-aget)
+
+### Organizational Memory
+
+**Pain**: "Knowledge walks out when people leave"
+
+Your best developer leaves. So does everything they taught the AI—it's trapped in their chat history, not your organization's knowledge base.
+
+AGET's evolution tracking captures decisions, learnings, and context as permanent organizational memory. 590+ learning documents across our fleet, accessible to any session.
+
+[See it in action: Learning architecture](https://github.com/aget-framework/aget/blob/main/docs/LAYER_ARCHITECTURE.md)
+
+### Tool Portability
+
+**Pain**: "I'm locked into one tool"
+
+Cursor today, Claude Code tomorrow, Windsurf next month. Your agent configuration shouldn't be hostage to vendor choice.
+
+AGET works across all major CLI coding tools with a single AGENTS.md configuration. No vendor lock-in.
+
+**Supported**: Claude Code, Cursor, Aider, Windsurf
+
+[See the standard: AGENTS.md](https://github.com/aget-framework/template-worker-aget/blob/main/AGENTS.md)
+
+### Audit Trail
+
+**Pain**: "I can't explain what the AI decided"
+
+Compliance asks: "Why did the AI make that choice?" You have no answer—just an endless chat transcript.
+
+AGET's gated workflows and evolution tracking create an auditable trail of decisions, rationale, and outcomes. Every significant decision documented with PROJECT_PLAN pattern.
+
+[See it in action: Governance patterns](https://github.com/aget-framework/aget/tree/main/docs)
+
+---
+
+## Patterns We're Building
+
+These patterns are industry-validated. We're building AGET templates to support them.
+
+| Pattern | Status | Template |
+|---------|--------|----------|
+| Research Fleet | Designing | template-research-advisor-aget |
+| Consulting Practice | Roadmap | template-practice-advisor-aget |
+| Compliance Teams | Roadmap | template-compliance-worker-aget |
 
 ---
 
