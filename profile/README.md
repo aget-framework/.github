@@ -6,9 +6,9 @@ Deploy AI coding agents with confidence. AGET provides specification-based gover
 
 **Solve**: Version drift, deployment breaks, compliance gaps, isolated agent learnings across your fleet.
 
-[![Version](https://img.shields.io/badge/version-2.12.0-blue)](https://github.com/aget-framework/aget/releases/tag/v2.12.0)
+[![Version](https://img.shields.io/badge/version-3.0.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.0.0)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2025--12--26-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
+[![Release Date](https://img.shields.io/badge/released-2025--12--28-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
 ---
 
@@ -165,13 +165,14 @@ requirements:
 // .aget/version.json
 {
   "agent_name": "my-legal-assistant",
-  "aget_version": "2.12.0",
+  "aget_version": "3.0.0",
   "instance_type": "AGET",
+  "template": "worker",
   "migration_history": [
-    "v2.7.0 -> v2.8.0: 2025-11-01",
-    "v2.8.0 -> v2.9.0: 2025-11-15",
     "v2.9.0 -> v2.10.0: 2025-12-13",
-    "v2.10.0 -> v2.11.0: 2025-12-24"
+    "v2.10.0 -> v2.11.0: 2025-12-24",
+    "v2.11.0 -> v2.12.0: 2025-12-25",
+    "v2.12.0 -> v3.0.0: 2025-12-28"
   ]
 }
 ```
@@ -236,13 +237,14 @@ Track agent identity, manage upgrades, ensure compliance:
 // .aget/version.json
 {
   "agent_name": "my-legal-assistant",
-  "aget_version": "2.12.0",
+  "aget_version": "3.0.0",
   "instance_type": "AGET",
+  "template": "worker",
   "domain": "legal_contract_analysis"
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11.0
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -338,16 +340,23 @@ No tool lock-in. No vendor-specific formats. Just open standards.
 
 ## Roadmap
 
-### v2.12.0 (Current) - Capability Architecture Completion
-**Released**: 2025-12-26
+### v3.0.0 (Current) - 5D Composition Architecture
+**Released**: 2025-12-28
+
+- ✅ **5D Directory Structure**: persona/, memory/, reasoning/, skills/, context/
+- ✅ **Instance Type System**: aget (advisory), AGET (action-taking), template
+- ✅ **Template field**: Replaces deprecated roles array
+- ✅ All 6 templates migrated to v3.0 architecture
+- ✅ 731 contract tests passing across framework
+- ✅ Breaking changes: roles removed, manifest_version 3.0
+
+### v2.12.0 - Capability Architecture Completion
+**Released**: 2025-12-25
 
 - ✅ Complete capability composition system (5 specs, 3 validators, 80 tests)
 - ✅ Template manifest system for agent composition (manifest.yaml)
 - ✅ Fleet migration enablement (6 pilots validated)
 - ✅ Governance exemplar enforcement (L367)
-- ✅ Self-validation pattern (L372) - agents can validate themselves
-- ✅ 5 additional validators for framework compliance
-- ✅ 10 learnings captured (L366-L375)
 
 ### v2.11.0 - Memory Architecture + Public Governance
 **Released**: 2025-12-24
@@ -355,9 +364,6 @@ No tool lock-in. No vendor-specific formats. Just open standards.
 - ✅ Memory Architecture (L335): 6-layer information model
 - ✅ L352 Traceability Pattern: Requirement-to-test traceability
 - ✅ R-PUB-001 Public Release Completeness (8 requirements)
-- ✅ Post-release validation automation
-- ✅ Public framework governance (VERSIONING.md, RELEASES.md, UPGRADING.md)
-- ✅ Configurable wake-up output
 - ✅ Version migration protocol (R-REL-006)
 
 ### v2.10.0 - Capability Composition Architecture
@@ -365,20 +371,13 @@ No tool lock-in. No vendor-specific formats. Just open standards.
 
 - ✅ 6 agent type specifications
 - ✅ Executive Advisor pattern (5W+H knowledge architecture)
-- ✅ Domain Specialist pattern (structured outputs)
 - ✅ Theoretical grounding protocol (L332)
 
-### v2.13 (Next) - Planned
-- 📋 FLEET_ANNOUNCEMENTS.md (inter-agent communication)
+### v3.1.0 (Next) - Fleet Migration + Enhancements
+- 📋 Fleet-wide migration automation
+- 📋 Additional archetype templates (analyst, architect, researcher)
+- 📋 Enhanced knowledge directory templates
 - 📋 Behavioral validation (validate_behavioral.py)
-- 📋 CI/CD validator propagation
-- 📋 Process specifications completion
-
-### v3.0 (Future) - Multi-Agent Coordination
-- 🔮 Agent discovery and routing
-- 🔮 Task queue and delegation
-- 🔮 Cross-agent collaboration patterns
-- 🔮 Fleet-level analytics and metrics
 
 ---
 
