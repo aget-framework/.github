@@ -473,3 +473,7 @@ Built with:
 **AGET Framework** - Deploy AI agents with confidence
 
 *Fleet coordination for the CLI coding tools you already use*
+
+---
+
+**Maintained by** [@gmelli](https://github.com/gmelli) • [gabormelli.com](http://www.gabormelli.com/RKB/Gabor_Melli)
