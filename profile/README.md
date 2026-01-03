@@ -416,11 +416,12 @@ These patterns are industry-validated. We're building AGET templates to support 
 - ✅ Executive Advisor pattern (5W+H knowledge architecture)
 - ✅ Theoretical grounding protocol (L332)
 
-### v3.1.0 (Next) - Fleet Migration + Enhancements
-- 📋 Fleet-wide migration automation
-- 📋 Additional archetype templates (analyst, architect, researcher)
-- 📋 Enhanced knowledge directory templates
-- 📋 Behavioral validation (validate_behavioral.py)
+### v3.1.0 (Next) - Protocol Enforcement Through Infrastructure
+- 📋 Cross-CLI infrastructure (agent-agnostic scripts, --json output)
+- 📋 Complete session lifecycle (wake up → sanity check → wind down)
+- 📋 Verification architecture (source-verified constants, enforcement testing)
+- 📋 L-doc Format v2 (cross-agent discovery, adoption tracking)
+- 📋 Fleet validation tooling (validate_fleet.py, version_sync.py)
 
 ---
 
