@@ -460,6 +460,16 @@ MIT License - See [LICENSE](LICENSE) for details
 
 ---
 
+## Team
+
+| Role | Member |
+|------|--------|
+| Creator & Lead Maintainer | [@gmelli](https://github.com/gmelli) |
+
+See [MAINTAINERS.md](https://github.com/aget-framework/aget/blob/main/MAINTAINERS.md) for governance details.
+
+---
+
 ## Acknowledgments
 
 Built with:
