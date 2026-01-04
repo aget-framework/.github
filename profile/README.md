@@ -394,7 +394,14 @@ These patterns are industry-validated. We're building AGET templates to support 
 - ✅ **Fleet Validation Tooling**: validate_fleet.py, version_sync.py
 - ✅ **Workflow Automation**: L-doc to GitHub Issue, cascade to SOP
 
-### v3.2.0 (Next) - Fleet Communication Patterns
+### v3.2.0 (Next) - Specification Architecture
+- 📋 7 new specifications (Testing, Release, Documentation, Organization, Error, Security, Project Plan)
+- 📋 Specification consolidation (29 → ~24 specs)
+- 📋 Naming conventions expanded (4 → 9 categories)
+- 📋 Validator theater remediation (<10% missing)
+- 📋 Gate verification tests (CAP-PP-011)
+
+### v3.3.0 (Planned) - Fleet Communication Patterns
 - 📋 Fleet broadcast communication pattern
 - 📋 Cross-agent learning analysis automation
 - 📋 NotebookLM storytelling integration
