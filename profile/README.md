@@ -6,9 +6,9 @@ Deploy AI coding agents with confidence. AGET provides specification-based gover
 
 **Solve**: Version drift, deployment breaks, compliance gaps, isolated agent learnings across your fleet.
 
-[![Version](https://img.shields.io/badge/version-3.0.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.0.0)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2025--12--28-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
+[![Version](https://img.shields.io/badge/version-3.1.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.1.0)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
+[![Release Date](https://img.shields.io/badge/released-2026--01--04-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
 ---
 
@@ -172,7 +172,8 @@ requirements:
     "v2.9.0 -> v2.10.0: 2025-12-13",
     "v2.10.0 -> v2.11.0: 2025-12-24",
     "v2.11.0 -> v2.12.0: 2025-12-25",
-    "v2.12.0 -> v3.0.0: 2025-12-28"
+    "v2.12.0 -> v3.0.0: 2025-12-28",
+    "v3.0.0 -> v3.1.0: 2026-01-04"
   ]
 }
 ```
@@ -244,7 +245,7 @@ Track agent identity, manage upgrades, ensure compliance:
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -383,7 +384,22 @@ These patterns are industry-validated. We're building AGET templates to support 
 
 ## Roadmap
 
-### v3.0.0 (Current) - 5D Composition Architecture
+### v3.1.0 (Current) - Protocol Enforcement Through Infrastructure
+**Released**: 2026-01-04
+
+- ✅ **Cross-CLI Infrastructure**: Agent-agnostic scripts with --json output
+- ✅ **Complete Session Lifecycle**: wake up → sanity check → wind down
+- ✅ **Verification Architecture**: Source-verified constants, enforcement testing
+- ✅ **L-doc Format v2**: Cross-agent discovery, adoption tracking
+- ✅ **Fleet Validation Tooling**: validate_fleet.py, version_sync.py
+- ✅ **Workflow Automation**: L-doc to GitHub Issue, cascade to SOP
+
+### v3.2.0 (Next) - Fleet Communication Patterns
+- 📋 Fleet broadcast communication pattern
+- 📋 Cross-agent learning analysis automation
+- 📋 NotebookLM storytelling integration
+
+### v3.0.0 - 5D Composition Architecture
 **Released**: 2025-12-28
 
 - ✅ **5D Directory Structure**: persona/, memory/, reasoning/, skills/, context/
@@ -415,13 +431,6 @@ These patterns are industry-validated. We're building AGET templates to support 
 - ✅ 6 agent type specifications
 - ✅ Executive Advisor pattern (5W+H knowledge architecture)
 - ✅ Theoretical grounding protocol (L332)
-
-### v3.1.0 (Next) - Protocol Enforcement Through Infrastructure
-- 📋 Cross-CLI infrastructure (agent-agnostic scripts, --json output)
-- 📋 Complete session lifecycle (wake up → sanity check → wind down)
-- 📋 Verification architecture (source-verified constants, enforcement testing)
-- 📋 L-doc Format v2 (cross-agent discovery, adoption tracking)
-- 📋 Fleet validation tooling (validate_fleet.py, version_sync.py)
 
 ---
 
