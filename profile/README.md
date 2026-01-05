@@ -391,13 +391,25 @@ These patterns are industry-validated. We're building AGET templates to support 
 - ✅ **Coherence Testing**: New V-tests for AGENTS.md, manifest.yaml verification
 - ✅ **SOP Update**: Gate 7 V-tests for version inventory coherence
 
-### v3.3.0 (Next) - Fleet Communication Patterns
+### v3.3.0 (Next) - Specification Maturity
+- 📋 **Spec Lifecycle** (L445): Provenance and Roadmap sections in specs
+- 📋 **Term Disambiguation** (L446): Aget_ prefix pattern for vocabulary
+- 📋 **Linked References** (L447): Combined reference pattern (table + footnotes)
+- 📋 **Vocabulary Anchors** (L448): Foundation for bidirectional term linking
+- 📋 Theater ratio remediation (<10%)
+
+### v3.4.0 (Planned) - Fleet Communication
 - 📋 Fleet broadcast communication pattern
 - 📋 Cross-agent learning analysis automation
-- 📋 Theater ratio remediation (<10%)
 - 📋 NotebookLM storytelling integration
+- 📋 Vocabulary reverse index (backlinks)
 
-### v3.4.0 (Planned) - Advanced Validators
+### v3.5.0 (Conceptual) - Vocabulary Intelligence
+- 📋 Auto-link term suggestions
+- 📋 Term hover previews
+- 📋 Knowledge graph visualization
+
+### v3.6.0 (Conceptual) - Advanced Validators
 - 📋 Remaining P2/P3 validators
 - 📋 Full validator coverage for all specs
 - 📋 Automated spec compliance checking
@@ -459,6 +471,7 @@ These patterns are industry-validated. We're building AGET templates to support 
 
 ## Community
 
+- **Roadmap**: [View planned enhancements](https://github.com/orgs/aget-framework/projects/1)
 - **GitHub Issues**: [File bugs, request features](https://github.com/aget-framework/aget/issues)
 - **GitHub Releases**: [View releases, changelogs](https://github.com/aget-framework/aget/releases)
 
