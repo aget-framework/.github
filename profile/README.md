@@ -6,7 +6,7 @@ Deploy AI coding agents with confidence. AGET provides specification-based gover
 
 **Solve**: Version drift, deployment breaks, compliance gaps, isolated agent learnings across your fleet.
 
-[![Version](https://img.shields.io/badge/version-3.1.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.1.0)
+[![Version](https://img.shields.io/badge/version-3.2.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.2.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
 [![Release Date](https://img.shields.io/badge/released-2026--01--04-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
@@ -245,7 +245,7 @@ Track agent identity, manage upgrades, ensure compliance:
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -384,7 +384,28 @@ These patterns are industry-validated. We're building AGET templates to support 
 
 ## Roadmap
 
-### v3.1.0 (Current) - Protocol Enforcement Through Infrastructure
+### v3.2.0 (Current) - Specification Architecture
+**Released**: 2026-01-04
+
+- ✅ **7 New Specifications**: Testing, Release, Documentation, Organization, Error, Security, Project Plan
+- ✅ **Naming Conventions Expansion**: 4 → 10 categories (Categories F-J)
+- ✅ **Specification Index System**: INDEX.md (30 specs) + REQUIREMENTS_MATRIX.md (78 CAP requirements)
+- ✅ **6 New Validators**: License, Agent Structure, Release Gate, L-doc Index, SOP, Homepage
+- ✅ **Standardized Spec Headers**: YAML frontmatter with version, status, dependencies
+- ✅ **Learnings**: L439, L440, L443
+
+### v3.3.0 (Next) - Fleet Communication Patterns
+- 📋 Fleet broadcast communication pattern
+- 📋 Cross-agent learning analysis automation
+- 📋 Theater ratio remediation (<10%)
+- 📋 NotebookLM storytelling integration
+
+### v3.4.0 (Planned) - Advanced Validators
+- 📋 Remaining P2/P3 validators
+- 📋 Full validator coverage for all specs
+- 📋 Automated spec compliance checking
+
+### v3.1.0 - Protocol Enforcement Through Infrastructure
 **Released**: 2026-01-04
 
 - ✅ **Cross-CLI Infrastructure**: Agent-agnostic scripts with --json output
@@ -393,18 +414,6 @@ These patterns are industry-validated. We're building AGET templates to support 
 - ✅ **L-doc Format v2**: Cross-agent discovery, adoption tracking
 - ✅ **Fleet Validation Tooling**: validate_fleet.py, version_sync.py
 - ✅ **Workflow Automation**: L-doc to GitHub Issue, cascade to SOP
-
-### v3.2.0 (Next) - Specification Architecture
-- 📋 7 new specifications (Testing, Release, Documentation, Organization, Error, Security, Project Plan)
-- 📋 Specification consolidation (29 → ~24 specs)
-- 📋 Naming conventions expanded (4 → 9 categories)
-- 📋 Validator theater remediation (<10% missing)
-- 📋 Gate verification tests (CAP-PP-011)
-
-### v3.3.0 (Planned) - Fleet Communication Patterns
-- 📋 Fleet broadcast communication pattern
-- 📋 Cross-agent learning analysis automation
-- 📋 NotebookLM storytelling integration
 
 ### v3.0.0 - 5D Composition Architecture
 **Released**: 2025-12-28
