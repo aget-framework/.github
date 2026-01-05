@@ -6,7 +6,7 @@ Deploy AI coding agents with confidence. AGET provides specification-based gover
 
 **Solve**: Version drift, deployment breaks, compliance gaps, isolated agent learnings across your fleet.
 
-[![Version](https://img.shields.io/badge/version-3.2.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.2.0)
+[![Version](https://img.shields.io/badge/version-3.2.1-blue)](https://github.com/aget-framework/aget/releases/tag/v3.2.1)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
 [![Release Date](https://img.shields.io/badge/released-2026--01--04-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
@@ -384,15 +384,12 @@ These patterns are industry-validated. We're building AGET templates to support 
 
 ## Roadmap
 
-### v3.2.0 (Current) - Specification Architecture
+### v3.2.1 (Current) - Version Inventory Coherence
 **Released**: 2026-01-04
 
-- ✅ **7 New Specifications**: Testing, Release, Documentation, Organization, Error, Security, Project Plan
-- ✅ **Naming Conventions Expansion**: 4 → 10 categories (Categories F-J)
-- ✅ **Specification Index System**: INDEX.md (30 specs) + REQUIREMENTS_MATRIX.md (78 CAP requirements)
-- ✅ **6 New Validators**: License, Agent Structure, Release Gate, L-doc Index, SOP, Homepage
-- ✅ **Standardized Spec Headers**: YAML frontmatter with version, status, dependencies
-- ✅ **Learnings**: L439, L440, L443
+- ✅ **L444 Remediation**: Version consistency across all version-bearing files
+- ✅ **Coherence Testing**: New V-tests for AGENTS.md, manifest.yaml verification
+- ✅ **SOP Update**: Gate 7 V-tests for version inventory coherence
 
 ### v3.3.0 (Next) - Fleet Communication Patterns
 - 📋 Fleet broadcast communication pattern
@@ -404,6 +401,16 @@ These patterns are industry-validated. We're building AGET templates to support 
 - 📋 Remaining P2/P3 validators
 - 📋 Full validator coverage for all specs
 - 📋 Automated spec compliance checking
+
+### v3.2.0 - Specification Architecture
+**Released**: 2026-01-04
+
+- ✅ **7 New Specifications**: Testing, Release, Documentation, Organization, Error, Security, Project Plan
+- ✅ **Naming Conventions Expansion**: 4 → 10 categories (Categories F-J)
+- ✅ **Specification Index System**: INDEX.md (30 specs) + REQUIREMENTS_MATRIX.md (78 CAP requirements)
+- ✅ **6 New Validators**: License, Agent Structure, Release Gate, L-doc Index, SOP, Homepage
+- ✅ **Standardized Spec Headers**: YAML frontmatter with version, status, dependencies
+- ✅ **Learnings**: L439, L440, L443
 
 ### v3.1.0 - Protocol Enforcement Through Infrastructure
 **Released**: 2026-01-04
@@ -482,7 +489,7 @@ These patterns are industry-validated. We're building AGET templates to support 
 
 ## License
 
-MIT License - See [LICENSE](LICENSE) for details
+Apache 2.0 License - See [LICENSE](LICENSE) for details
 
 ---
 
