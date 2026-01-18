@@ -392,7 +392,7 @@ These patterns are industry-validated. We're building AGET templates to support 
 - ✅ **Governance Formalization**: Release, behavioral, and artifact governance patterns
 - ✅ **Spec-First Documentation**: AGET_IDENTITY_SPEC.yaml, AGET_POSITIONING_SPEC.yaml
 - ✅ **New SOPs**: L-doc creation, Enhancement Request, PROJECT_PLAN archival
-- ✅ **Template Infrastructure**: sops/ scaffold in all 12 templates
+- ✅ **Template Infrastructure**: sops/ with SOP_escalation.md in all 12 templates (R-TEMPLATE-001)
 - ✅ **codemeta.json + CITATION.cff**: Standard software metadata
 
 ### v3.5.0 (Next) - Core Entity Vocabulary
