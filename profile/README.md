@@ -6,9 +6,9 @@ Deploy AI coding agents with confidence. AGET provides specification-based gover
 
 **Solve**: Version drift, deployment breaks, compliance gaps, isolated agent learnings across your fleet.
 
-[![Version](https://img.shields.io/badge/version-3.3.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.3.0)
+[![Version](https://img.shields.io/badge/version-3.4.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.4.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2026--01--10-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
+[![Release Date](https://img.shields.io/badge/released-2026--01--18-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
 ---
 
@@ -245,7 +245,7 @@ Track agent identity, manage upgrades, ensure compliance:
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -384,7 +384,35 @@ These patterns are industry-validated. We're building AGET templates to support 
 
 ## Roadmap
 
-### v3.3.0 (Current) - Shell Integration + Executable Knowledge Ontology
+### v3.4.0 (Current) - Session Skills Maturity + Governance Formalization
+**Released**: 2026-01-18
+
+- ✅ **Session Protocol Enhancements**: Re-entrancy guard, calendar awareness, sanity gate
+- ✅ **Cross-CLI Validation**: Tested on Claude Code, Codex CLI, Gemini CLI
+- ✅ **Governance Formalization**: Release, behavioral, and artifact governance patterns
+- ✅ **Spec-First Documentation**: AGET_IDENTITY_SPEC.yaml, AGET_POSITIONING_SPEC.yaml
+- ✅ **New SOPs**: L-doc creation, Enhancement Request, PROJECT_PLAN archival
+- ✅ **Template Infrastructure**: sops/ scaffold in all 12 templates
+- ✅ **codemeta.json + CITATION.cff**: Standard software metadata
+
+### v3.5.0 (Next) - Core Entity Vocabulary
+- 📋 Core entity definitions (Person, Document, Task)
+- 📋 Entity inheritance mechanism
+- 📋 validate_entity_inheritance.py
+- 📋 ENTITY_EXTENSION_GUIDE.md
+
+### v3.6.0 (Planned) - Vocabulary Intelligence
+- 📋 Auto-link term suggestions
+- 📋 Term hover previews
+- 📋 Knowledge graph visualization
+- 📋 Vocabulary reverse index (backlinks)
+
+### v3.7.0 (Conceptual) - Advanced Validators
+- 📋 Remaining P2/P3 validators
+- 📋 Full validator coverage for all specs
+- 📋 Automated spec compliance checking
+
+### v3.3.0 - Shell Integration + Executable Knowledge Ontology
 **Released**: 2026-01-10
 
 - ✅ **Shell Orchestration**: aget.zsh, profiles.zsh (5 CLI backends)
@@ -393,25 +421,6 @@ These patterns are industry-validated. We're building AGET templates to support 
 - ✅ **AGET_EXECUTABLE_KNOWLEDGE_SPEC.md**: Executable knowledge framework
 - ✅ **AGET_EVOLUTION_SPEC.md**: Evolution entry standardization
 - ✅ **18 New L-docs**: L451-L503 learnings documented
-- ✅ **validate_ontology_compliance.py**: Template vocabulary validator
-- ✅ **generate_template_ontology.py**: Ontology generator for templates
-
-### v3.4.0 (Next) - Core Entity Vocabulary
-- 📋 Core entity definitions (Person, Document, Task)
-- 📋 Entity inheritance mechanism
-- 📋 validate_entity_inheritance.py
-- 📋 ENTITY_EXTENSION_GUIDE.md
-
-### v3.5.0 (Planned) - Vocabulary Intelligence
-- 📋 Auto-link term suggestions
-- 📋 Term hover previews
-- 📋 Knowledge graph visualization
-- 📋 Vocabulary reverse index (backlinks)
-
-### v3.6.0 (Conceptual) - Advanced Validators
-- 📋 Remaining P2/P3 validators
-- 📋 Full validator coverage for all specs
-- 📋 Automated spec compliance checking
 
 ### v3.2.1 - Version Inventory Coherence
 **Released**: 2026-01-04
