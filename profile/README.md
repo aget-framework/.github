@@ -165,7 +165,7 @@ requirements:
 // .aget/version.json
 {
   "agent_name": "my-legal-assistant",
-  "aget_version": "3.0.0",
+  "aget_version": "3.4.0",
   "instance_type": "AGET",
   "template": "worker",
   "migration_history": [
@@ -238,7 +238,7 @@ Track agent identity, manage upgrades, ensure compliance:
 // .aget/version.json
 {
   "agent_name": "my-legal-assistant",
-  "aget_version": "3.0.0",
+  "aget_version": "3.4.0",
   "instance_type": "AGET",
   "template": "worker",
   "domain": "legal_contract_analysis"
@@ -486,7 +486,7 @@ These patterns are industry-validated. We're building AGET templates to support 
 
 ## Community
 
-- **Roadmap**: [View planned enhancements](https://github.com/orgs/aget-framework/projects/1)
+- **Roadmap**: [View planned enhancements](https://github.com/aget-framework/aget/issues)
 - **GitHub Issues**: [File bugs, request features](https://github.com/aget-framework/aget/issues)
 - **GitHub Releases**: [View releases, changelogs](https://github.com/aget-framework/aget/releases)
 
