@@ -76,6 +76,25 @@ See [template-spec-engineer-aget](https://github.com/aget-framework/template-spe
 
 **All templates include**: 13 universal skills (wake-up, wind-down, sanity-check, studyup, record-lesson, etc.) + archetype-specific skills above.
 
+#### Ontology-Driven Design (v3.5.0)
+
+Each archetype includes a **formal ontology** defining domain vocabulary:
+
+```
+Vocabulary → Specification → Implementation
+```
+
+| Archetype | Concepts | Clusters | Example Terms |
+|-----------|----------|----------|---------------|
+| Developer | 10 | 4 | Codebase, TestSuite, PullRequest, LintRule |
+| Supervisor | 8 | 3 | Fleet, Agent, Escalation, Broadcast |
+| Advisor | 6 | 2 | Risk, Recommendation, Persona |
+| Architect | 7 | 3 | Architecture, Component, Tradeoff |
+
+**Benefits**: Precision (formal vocabulary prevents ambiguity), Consistency (same concepts across instances), Extensibility (add domain-specific terms).
+
+See [`ontology/ONTOLOGY_{archetype}.yaml`](https://github.com/aget-framework/template-developer-aget/blob/main/ontology/ONTOLOGY_developer.yaml) in any template.
+
 ### 2. Create Your Agent
 
 ```bash
