@@ -6,9 +6,9 @@ Deploy AI coding agents with confidence. AGET provides specification-based gover
 
 **Solve**: Version drift, deployment breaks, compliance gaps, isolated agent learnings across your fleet.
 
-[![Version](https://img.shields.io/badge/version-3.4.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.4.0)
+[![Version](https://img.shields.io/badge/version-3.5.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.5.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2026--01--18-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
+[![Release Date](https://img.shields.io/badge/released-2026--02--14-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
 ---
 
@@ -57,13 +57,24 @@ See [template-spec-engineer-aget](https://github.com/aget-framework/template-spe
 
 ### 1. Choose Your Template
 
-| Template | Use Case | Capability |
-|----------|----------|------------|
-| [**template-worker-aget**](https://github.com/aget-framework/template-worker-aget) | General-purpose tasks | Flexible (can be AGET or aget) |
-| [**template-advisor-aget**](https://github.com/aget-framework/template-advisor-aget) | Persona-based guidance | Advisory with internal state |
-| [**template-consultant-aget**](https://github.com/aget-framework/template-consultant-aget) | Strategic analysis | Consultant persona |
-| [**template-developer-aget**](https://github.com/aget-framework/template-developer-aget) | Code quality, debugging | Multi-repo analysis |
-| [**template-spec-engineer-aget**](https://github.com/aget-framework/template-spec-engineer-aget) | Formal specifications | Requirements engineering |
+**12 Archetypes** — Each with specialized skills and ontology (v3.5.0+):
+
+| Template | Archetype | Key Skills | Primary Use Case |
+|----------|-----------|------------|------------------|
+| [**template-worker-aget**](https://github.com/aget-framework/template-worker-aget) | worker | execute-task, report-progress | Task execution, foundation |
+| [**template-supervisor-aget**](https://github.com/aget-framework/template-supervisor-aget) | supervisor | broadcast-fleet, review-agent, escalate-issue | Fleet coordination |
+| [**template-developer-aget**](https://github.com/aget-framework/template-developer-aget) | developer | run-tests, lint-code, review-pr | Code development |
+| [**template-advisor-aget**](https://github.com/aget-framework/template-advisor-aget) | advisor | assess-risk, recommend-action | Persona-based guidance |
+| [**template-consultant-aget**](https://github.com/aget-framework/template-consultant-aget) | consultant | assess-client, propose-engagement | Strategic engagements |
+| [**template-analyst-aget**](https://github.com/aget-framework/template-analyst-aget) | analyst | analyze-data, generate-report | Data analysis |
+| [**template-architect-aget**](https://github.com/aget-framework/template-architect-aget) | architect | design-architecture, assess-tradeoffs | System design |
+| [**template-researcher-aget**](https://github.com/aget-framework/template-researcher-aget) | researcher | search-literature, document-finding | Research workflows |
+| [**template-operator-aget**](https://github.com/aget-framework/template-operator-aget) | operator | handle-incident, run-playbook | Operations/DevOps |
+| [**template-executive-aget**](https://github.com/aget-framework/template-executive-aget) | executive | make-decision, review-budget | Executive advisory |
+| [**template-reviewer-aget**](https://github.com/aget-framework/template-reviewer-aget) | reviewer | review-artifact, provide-feedback | Quality review |
+| [**template-spec-engineer-aget**](https://github.com/aget-framework/template-spec-engineer-aget) | spec-engineer | validate-spec, generate-requirement | Requirements engineering |
+
+**All templates include**: 13 universal skills (wake-up, wind-down, sanity-check, studyup, record-lesson, etc.) + archetype-specific skills above.
 
 ### 2. Create Your Agent
 
@@ -165,7 +176,7 @@ requirements:
 // .aget/version.json
 {
   "agent_name": "my-legal-assistant",
-  "aget_version": "3.4.0",
+  "aget_version": "3.5.0",
   "instance_type": "AGET",
   "template": "worker",
   "migration_history": [
@@ -238,14 +249,14 @@ Track agent identity, manage upgrades, ensure compliance:
 // .aget/version.json
 {
   "agent_name": "my-legal-assistant",
-  "aget_version": "3.4.0",
+  "aget_version": "3.5.0",
   "instance_type": "AGET",
   "template": "worker",
   "domain": "legal_contract_analysis"
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → **v3.5.0**
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -384,7 +395,24 @@ These patterns are industry-validated. We're building AGET templates to support 
 
 ## Roadmap
 
-### v3.4.0 (Current) - Session Skills Maturity + Governance Formalization
+### v3.5.0 (Current) - Archetype Customization
+**Released**: 2026-02-14
+
+- ✅ **Archetype Ontologies**: 12 ONTOLOGY_{archetype}.yaml files with 87 domain concepts
+- ✅ **Archetype Skills**: 26 archetype-specific skills (2-3 per archetype)
+- ✅ **Universal Skills**: 13 skills shared across all templates
+- ✅ **Skill Specifications**: EARS-compliant specs for all 39 skills
+- ✅ **SOP Updates**: SOP_aget_create v2.2.0, SOP_aget_migrate v1.2.0
+- ✅ **Template Spec**: AGET_TEMPLATE_SPEC v3.4.0 with CAP-TPL-016 (Archetype Customization)
+- ✅ **Ontology-Driven**: Vocabulary → Specification → Instance pattern (L486)
+
+### v3.6.0 (Next) - Vocabulary Intelligence
+- 📋 Auto-link term suggestions
+- 📋 Term hover previews
+- 📋 Knowledge graph visualization
+- 📋 Vocabulary reverse index (backlinks)
+
+### v3.4.0 - Session Skills Maturity + Governance Formalization
 **Released**: 2026-01-18
 
 - ✅ **Session Protocol Enhancements**: Re-entrancy guard, calendar awareness, sanity gate
@@ -395,19 +423,7 @@ These patterns are industry-validated. We're building AGET templates to support 
 - ✅ **Template Infrastructure**: sops/ with SOP_escalation.md in all 12 templates (R-TEMPLATE-001)
 - ✅ **codemeta.json + CITATION.cff**: Standard software metadata
 
-### v3.5.0 (Next) - Core Entity Vocabulary
-- 📋 Core entity definitions (Person, Document, Task)
-- 📋 Entity inheritance mechanism
-- 📋 validate_entity_inheritance.py
-- 📋 ENTITY_EXTENSION_GUIDE.md
-
-### v3.6.0 (Planned) - Vocabulary Intelligence
-- 📋 Auto-link term suggestions
-- 📋 Term hover previews
-- 📋 Knowledge graph visualization
-- 📋 Vocabulary reverse index (backlinks)
-
-### v3.7.0 (Conceptual) - Advanced Validators
+### v3.7.0 (Planned) - Advanced Validators
 - 📋 Remaining P2/P3 validators
 - 📋 Full validator coverage for all specs
 - 📋 Automated spec compliance checking
