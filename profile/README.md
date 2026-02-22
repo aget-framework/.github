@@ -2,13 +2,13 @@
 
 **Fleet Coordination for the CLI Coding Tools You Already Use**
 
-Deploy AI coding agents with confidence. AGET provides specification-based governance, version control, and shared learning across Claude Code, Cursor, Aider, Windsurf—through an open standard. Zero infrastructure required.
+Deploy AI coding agents with confidence. AGET provides specification-based governance, version control, and shared learning across Claude Code, Codex CLI, Gemini CLI—through an open standard. Zero infrastructure required.
 
 **Solve**: Version drift, deployment breaks, compliance gaps, isolated agent learnings across your fleet.
 
-[![Version](https://img.shields.io/badge/version-3.5.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.5.0)
+[![Version](https://img.shields.io/badge/version-3.6.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.6.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2026--02--14-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
+[![Release Date](https://img.shields.io/badge/released-2026--02--21-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
 ---
 
@@ -18,7 +18,7 @@ AGET coordinates multiple specialized AI coding agents across CLI tools—with h
 
 ### How It Works
 
-- **Universal CLI Compatibility** - Works with Claude Code, Cursor, Aider, Windsurf
+- **Universal CLI Compatibility** - Works with Claude Code, Codex CLI, Gemini CLI
 - **Version Control** - Track agent versions, manage upgrades, ensure compliance
 - **Shared Learning** - Propagate insights across your fleet (`.aget/evolution/`)
 - **Lifecycle Governance** - Gated releases, contract testing, deployment verification
@@ -57,7 +57,7 @@ See [template-spec-engineer-aget](https://github.com/aget-framework/template-spe
 
 ### 1. Choose Your Template
 
-**12 Archetypes** — Each with specialized skills and ontology (v3.5.0+):
+**12 Archetypes** — Each with specialized skills and ontology (v3.5.0+, updated v3.6.0):
 
 | Template | Archetype | Key Skills | Primary Use Case |
 |----------|-----------|------------|------------------|
@@ -74,7 +74,7 @@ See [template-spec-engineer-aget](https://github.com/aget-framework/template-spe
 | [**template-reviewer-aget**](https://github.com/aget-framework/template-reviewer-aget) | reviewer | review-artifact, provide-feedback | Quality review |
 | [**template-spec-engineer-aget**](https://github.com/aget-framework/template-spec-engineer-aget) | spec-engineer | validate-spec, generate-requirement | Requirements engineering |
 
-**All templates include**: 13 universal skills (wake-up, wind-down, sanity-check, studyup, record-lesson, etc.) + archetype-specific skills above.
+**All templates include**: 14 universal skills (wake-up, wind-down, sanity-check, studyup, record-lesson, etc.) + archetype-specific skills above.
 
 #### Ontology-Driven Design (v3.5.0)
 
@@ -112,7 +112,7 @@ python3 -m pytest tests/ -v  # Contract tests must pass
 ### 3. Start Using
 
 ```bash
-# In Claude Code, Cursor, Aider, or Windsurf
+# In Claude Code, Codex CLI, Gemini CLI, or other supported tools
 claude code my-agent-name/
 
 # Agent uses AGENTS.md configuration automatically
@@ -143,7 +143,7 @@ Framework Quality          ← AGET ensures governance, learning, compliance
 
 ### Ecosystem Approach
 
-AGET doesn't replace your CLI tools—it coordinates them. Works alongside Claude Code, Cursor, Aider, Windsurf to bring fleet-level capabilities: version control, shared learning, lifecycle governance.
+AGET doesn't replace your CLI tools—it coordinates them. Works alongside Claude Code, Codex CLI, Gemini CLI to bring fleet-level capabilities: version control, shared learning, lifecycle governance.
 
 **Complementary, not competitive**: AGET + CLI Tools work together to enable your agents.
 
@@ -195,7 +195,7 @@ requirements:
 // .aget/version.json
 {
   "agent_name": "my-legal-assistant",
-  "aget_version": "3.5.0",
+  "aget_version": "3.6.0",
   "instance_type": "AGET",
   "template": "worker",
   "migration_history": [
@@ -203,7 +203,8 @@ requirements:
     "v2.10.0 -> v2.11.0: 2025-12-24",
     "v2.11.0 -> v2.12.0: 2025-12-25",
     "v2.12.0 -> v3.0.0: 2025-12-28",
-    "v3.0.0 -> v3.1.0: 2026-01-04"
+    "v3.0.0 -> v3.1.0: 2026-01-04",
+    "v3.5.0 -> v3.6.0: 2026-02-21"
   ]
 }
 ```
@@ -227,7 +228,7 @@ agent:
     - compliance_checking
 ```
 
-No vendor lock-in: Same configuration file works with Claude Code, Cursor, Aider, Windsurf. Agent portability preserved.
+No vendor lock-in: Same configuration file works with Claude Code, Codex CLI, Gemini CLI. Agent portability preserved.
 
 ### Fleet Coordination Model
 
@@ -246,9 +247,9 @@ No vendor lock-in: Same configuration file works with Claude Code, Cursor, Aider
         │   AGET    │   │  CLI TOOLS   │
         │           │←→│              │
         │ • Version │   │ • Claude Code│
-        │ • Learning│   │ • Cursor     │
-        │ • Specs   │   │ • Aider      │
-        │ • Govern  │   │ • Windsurf   │
+        │ • Learning│   │ • Codex CLI  │
+        │ • Specs   │   │ • Gemini CLI │
+        │ • Govern  │   │              │
         └───────────┘   └──────────────┘
               ↑                 ↑
         AGENTS.md         Universal CLI
@@ -268,14 +269,14 @@ Track agent identity, manage upgrades, ensure compliance:
 // .aget/version.json
 {
   "agent_name": "my-legal-assistant",
-  "aget_version": "3.5.0",
+  "aget_version": "3.6.0",
   "instance_type": "AGET",
   "template": "worker",
   "domain": "legal_contract_analysis"
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → **v3.5.0**
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → **v3.6.0**
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -301,10 +302,10 @@ Gated releases with human supervision:
 ### Universal CLI Compatibility
 
 AGENTS.md configuration works across:
-- ✅ Claude Code
-- ✅ Cursor
-- ✅ Aider
-- ✅ Windsurf
+- ✅ Claude Code (primary)
+- ✅ Codex CLI (supported)
+- ✅ Gemini CLI (supported)
+- ⚠️ Cursor, Aider (experimental)
 - ✅ Any CLI tool supporting configuration files
 
 No tool lock-in. No vendor-specific formats. Just open standards.
@@ -351,7 +352,7 @@ Cursor today, Claude Code tomorrow, Windsurf next month. Your agent configuratio
 
 AGET works across all major CLI coding tools with a single AGENTS.md configuration. No vendor lock-in.
 
-**Supported**: Claude Code, Cursor, Aider, Windsurf
+**Supported**: Claude Code, Codex CLI, Gemini CLI
 
 [See the standard: AGENTS.md](https://github.com/aget-framework/template-worker-aget/blob/main/AGENTS.md)
 
@@ -414,22 +415,25 @@ These patterns are industry-validated. We're building AGET templates to support 
 
 ## Roadmap
 
-### v3.5.0 (Current) - Archetype Customization
+### v3.6.0 (Current) - Infrastructure Maturation
+**Released**: 2026-02-21
+
+- ✅ **Release Observability**: 5 scripts — validation_logger, run_gate, release_snapshot, propagation_audit, health_logger
+- ✅ **Content Integrity**: 6 dimensions of claim-vs-reality drift fixed across all repos
+- ✅ **Canonical Scripts v2.0.0**: C3+C1 hybrid architecture (config-driven + hook-based extensions)
+- ✅ **Universal Skills**: 14 skills (added aget-studyup)
+- ✅ **Vocabulary Precision**: 4 compliance behavioral terms (VOCABULARY_SPEC v1.16.0)
+- ✅ **Platform Claims**: Claude Code, Codex CLI, Gemini CLI (Cursor/Aider → Experimental)
+- ✅ **Conformance Tool v1.3.0**: 12/12 templates CONFORMANT at deep depth
+
+### v3.5.0 - Archetype Customization
 **Released**: 2026-02-14
 
 - ✅ **Archetype Ontologies**: 12 ONTOLOGY_{archetype}.yaml files with 87 domain concepts
 - ✅ **Archetype Skills**: 26 archetype-specific skills (2-3 per archetype)
 - ✅ **Universal Skills**: 13 skills shared across all templates
 - ✅ **Skill Specifications**: EARS-compliant specs for all 39 skills
-- ✅ **SOP Updates**: SOP_aget_create v2.2.0, SOP_aget_migrate v1.2.0
-- ✅ **Template Spec**: AGET_TEMPLATE_SPEC v3.4.0 with CAP-TPL-016 (Archetype Customization)
 - ✅ **Ontology-Driven**: Vocabulary → Specification → Instance pattern (L486)
-
-### v3.6.0 (Next) - Vocabulary Intelligence
-- 📋 Auto-link term suggestions
-- 📋 Term hover previews
-- 📋 Knowledge graph visualization
-- 📋 Vocabulary reverse index (backlinks)
 
 ### v3.4.0 - Session Skills Maturity + Governance Formalization
 **Released**: 2026-01-18
@@ -442,10 +446,11 @@ These patterns are industry-validated. We're building AGET templates to support 
 - ✅ **Template Infrastructure**: sops/ with SOP_escalation.md in all 12 templates (R-TEMPLATE-001)
 - ✅ **codemeta.json + CITATION.cff**: Standard software metadata
 
-### v3.7.0 (Planned) - Advanced Validators
+### v3.7.0 (Next) - Advanced Validators
+- 📋 Phantom SOP creation (17 of 28 referenced)
 - 📋 Remaining P2/P3 validators
-- 📋 Full validator coverage for all specs
-- 📋 Automated spec compliance checking
+- 📋 Skill description propagation (CS-007)
+- 📋 Post-upgrade smoke tests
 
 ### v3.3.0 - Shell Integration + Executable Knowledge Ontology
 **Released**: 2026-01-10
@@ -570,7 +575,7 @@ See [MAINTAINERS.md](https://github.com/aget-framework/aget/blob/main/MAINTAINER
 
 Built with:
 - **Claude Code** (Anthropic) - AI coding assistant
-- **Universal CLI Compatibility** - Works across Cursor, Aider, Windsurf
+- **Universal CLI Compatibility** - Works across Claude Code, Codex CLI, Gemini CLI
 - **Open Standards** - AGENTS.md specification
 - **Community Contributors** - Thank you for making AGET better
 
