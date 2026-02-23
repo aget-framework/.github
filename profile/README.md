@@ -38,8 +38,6 @@ AGET brings formal requirements engineering to agent fleet management:
 
 **Contract Testing** - Validate deployments before production (7-30 tests per agent)
 
-**Ambiguity Detection** - Intelligence layer identifies unclear requirements
-
 **Validation Framework** - Every specification includes formal validation tests
 
 **Result**: Deploy with confidence—formal specs → validated implementations → verified deployments.
@@ -150,7 +148,7 @@ AGET doesn't replace your CLI tools—it coordinates them. Works alongside Claud
 
 ### Open Innovation
 
-**AGENTS.md** open standard means anyone can adopt, extend, or integrate. **Shared learning repository** means collective intelligence grows together. No vendor lock-in, no proprietary formats—just universal CLI compatibility and portable knowledge.
+**AGENTS.md** open standard means anyone can adopt, extend, or integrate. No vendor lock-in, no proprietary formats—just universal CLI compatibility and portable knowledge.
 
 ---
 
@@ -335,13 +333,13 @@ AGET's fleet management coordinates agents with supervisor/worker patterns, shar
 
 [See it in action: Fleet templates](https://github.com/aget-framework/template-worker-aget)
 
-### Organizational Memory
+### Accumulated Expertise
 
-**Pain**: "Knowledge walks out when people leave"
+**Pain**: "My AI doesn't get smarter over time"
 
-Your best developer leaves. So does everything they taught the AI—it's trapped in their chat history, not your organization's knowledge base.
+You've been working with AI tools for months. They've helped solve hundreds of problems. But they haven't learned anything — no patterns captured, no lessons retained, no expertise compounding.
 
-AGET's evolution tracking captures decisions, learnings, and context as permanent organizational memory. 590+ learning documents across our fleet, accessible to any session.
+AGET's evolution tracking captures decisions, learnings, and patterns as permanent, searchable knowledge. Your agent gets more effective with every session.
 
 [See it in action: Learning architecture](https://github.com/aget-framework/aget/blob/main/docs/LAYER_ARCHITECTURE.md)
 
@@ -366,18 +364,6 @@ Compliance asks: "Why did the AI make that choice?" You have no answer—just an
 AGET's gated workflows and evolution tracking create an auditable trail of decisions, rationale, and outcomes. Every significant decision documented with PROJECT_PLAN pattern.
 
 [See it in action: Governance patterns](https://github.com/aget-framework/aget/tree/main/docs)
-
----
-
-## Patterns We're Building
-
-These patterns are industry-validated. We're building AGET templates to support them.
-
-| Pattern | Status | Template |
-|---------|--------|----------|
-| Research Fleet | Designing | template-research-advisor-aget |
-| Consulting Practice | Roadmap | template-practice-advisor-aget |
-| Compliance Teams | Roadmap | template-compliance-worker-aget |
 
 ---
 
@@ -447,11 +433,11 @@ These patterns are industry-validated. We're building AGET templates to support 
 - ✅ **Template Infrastructure**: sops/ with SOP_escalation.md in all 12 templates (R-TEMPLATE-001)
 - ✅ **codemeta.json + CITATION.cff**: Standard software metadata
 
-### v3.7.0 (Next) - Advanced Validators
-- 📋 Phantom SOP creation (17 of 28 referenced)
-- 📋 Remaining P2/P3 validators
-- 📋 Skill description propagation (CS-007)
-- 📋 Post-upgrade smoke tests
+### v3.7.0 (Next) - Quality Reconciliation
+- 📋 Skill count reconciliation (spec/README/deployed alignment)
+- 📋 Post-release validation baseline
+- 📋 Content integrity validators
+- 📋 SOP lifecycle governance
 
 ### v3.3.0 - Shell Integration + Executable Knowledge Ontology
 **Released**: 2026-01-10
