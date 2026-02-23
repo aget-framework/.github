@@ -62,7 +62,7 @@ See [template-spec-engineer-aget](https://github.com/aget-framework/template-spe
 | Template | Archetype | Key Skills | Primary Use Case |
 |----------|-----------|------------|------------------|
 | [**template-worker-aget**](https://github.com/aget-framework/template-worker-aget) | worker | execute-task, report-progress | Task execution, foundation |
-| [**template-supervisor-aget**](https://github.com/aget-framework/template-supervisor-aget) | supervisor | broadcast-fleet, review-agent, escalate-issue | Fleet coordination |
+| **template-supervisor-aget** (private) | supervisor | broadcast-fleet, review-agent, escalate-issue | Fleet coordination |
 | [**template-developer-aget**](https://github.com/aget-framework/template-developer-aget) | developer | run-tests, lint-code, review-pr | Code development |
 | [**template-advisor-aget**](https://github.com/aget-framework/template-advisor-aget) | advisor | assess-risk, recommend-action | Persona-based guidance |
 | [**template-consultant-aget**](https://github.com/aget-framework/template-consultant-aget) | consultant | assess-client, propose-engagement | Strategic engagements |
