@@ -48,9 +48,9 @@ See [template-spec-engineer-aget](https://github.com/aget-framework/template-spe
 
 ### Who It's For
 
-- **Organizations** managing 5+ AI coding agents (version control, compliance)
+- **Individual Practitioners** building persistent AI expertise in a specific domain
 - **Power Users** coordinating specialized agents across domains
-- **Development Teams** adopting AI agents with governance requirements
+- **AI Tool Builders** wanting a governance layer for agent deployments
 
 ---
 
