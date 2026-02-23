@@ -257,6 +257,22 @@ No vendor lock-in: Same configuration file works with Claude Code, Codex CLI, Ge
 
 **Complementary architecture**: AGET provides governance layer. CLI tools provide execution environment. Together they enable confident multi-agent deployment.
 
+### Agent Hierarchy
+
+AGET templates form a deliberate authority hierarchy — agents have different levels of autonomy and accountability:
+
+```
+Supervisor  ─── Fleet coordination, escalation, cross-agent learning
+    ↑
+Advisor     ─── Read-only guidance (5 personas: teacher, mentor, consultant, guru, coach)
+    ↑
+Worker      ─── Task execution, the foundation archetype for all agents
+```
+
+**10 specialized archetypes** extend this hierarchy with domain-specific capabilities (developer, analyst, architect, researcher, operator, executive, reviewer, spec-engineer, consultant). Each inherits from worker and can operate alongside advisors or under supervisor coordination.
+
+The **supervisor template** manages fleet-level operations: agent review, learning propagation, issue escalation, and cross-agent coordination. It is available as a private template — [contact the maintainer](https://github.com/gmelli) for access.
+
 ---
 
 ## Key Features
