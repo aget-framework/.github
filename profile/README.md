@@ -1,10 +1,10 @@
 # AGET Framework
 
-**Fleet Coordination for the CLI Coding Tools You Already Use**
+**Persistent Domain Intelligence for the CLI Coding Tools You Already Use**
 
-Deploy AI coding agents with confidence. AGET provides specification-based governance, version control, and shared learning across Claude Code, Codex CLI, Gemini CLI—through an open standard. Zero infrastructure required.
+Build AI agents that accumulate domain expertise serving your decisions. AGET provides session continuity, shared memory architecture, and governance patterns across Claude Code, Codex CLI, Gemini CLI—through an open standard. Zero infrastructure required.
 
-**Solve**: Version drift, deployment breaks, compliance gaps, isolated agent learnings across your fleet.
+**Solve**: Lost context between sessions, knowledge that resets daily, agents that can't learn from each other, deployment confidence across your fleet.
 
 [![Version](https://img.shields.io/badge/version-3.6.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.6.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
@@ -14,14 +14,15 @@ Deploy AI coding agents with confidence. AGET provides specification-based gover
 
 ## What is AGET?
 
-AGET coordinates multiple specialized AI coding agents across CLI tools—with human supervision, shared learning, and version progression. Think of it as fleet management for your AI coding team.
+AGET enables AI agents that build persistent domain knowledge serving human decisions—with session continuity, shared learning, and governed autonomy across CLI tools. Think of it as the knowledge layer for your AI team.
 
 ### How It Works
 
-- **Universal CLI Compatibility** - Works with Claude Code, Codex CLI, Gemini CLI
-- **Version Control** - Track agent versions, manage upgrades, ensure compliance
+- **Persistent Domain Knowledge** - Agents accumulate expertise that compounds across sessions
+- **Session Continuity** - Pick up where you left off with structured memory architecture
 - **Shared Learning** - Propagate insights across your fleet (`.aget/evolution/`)
 - **Lifecycle Governance** - Gated releases, contract testing, deployment verification
+- **Universal CLI Compatibility** - Works with Claude Code, Codex CLI, Gemini CLI
 - **Open Standard** - AGENTS.md enables ecosystem innovation
 
 ### Specification-First Development
@@ -48,7 +49,7 @@ See [template-spec-engineer-aget](https://github.com/aget-framework/template-spe
 ### Who It's For
 
 - **Organizations** managing 5+ AI coding agents (version control, compliance)
-- **Power Users** coordinating specialized agents (legal, healthcare, code analysis)
+- **Power Users** coordinating specialized agents across domains
 - **Development Teams** adopting AI agents with governance requirements
 
 ---
@@ -130,16 +131,16 @@ Enable your agents to succeed at making their principals successful.
 Success cascades from framework quality to agent effectiveness to principal outcomes:
 
 ```
-Better Principal Outcomes  ← More cases handled, better diagnoses, fewer bugs
+Better Principal Outcomes  ← Faster decisions, deeper analysis, fewer knowledge gaps
     ↑
-Principal Success          ← Lawyers, doctors, developers deliver better work
+Principal Success          ← Practitioners deliver better work with accumulated domain expertise
     ↑
-Agent Success              ← Effective augmentation with deployment confidence
+Agent Success              ← Effective augmentation with persistent knowledge and deployment confidence
     ↑
 Framework Quality          ← AGET ensures governance, learning, compliance
 ```
 
-**Goal**: Not just "manage agents" but enable principal success through agent effectiveness and deployment confidence.
+**Goal**: Not just "manage agents" but enable principal success through accumulated domain intelligence and deployment confidence.
 
 ### Ecosystem Approach
 
@@ -194,10 +195,10 @@ requirements:
 ```json
 // .aget/version.json
 {
-  "agent_name": "my-legal-assistant",
+  "agent_name": "my-research-agent",
   "aget_version": "3.6.0",
   "instance_type": "AGET",
-  "template": "worker",
+  "template": "researcher",
   "migration_history": [
     "v2.9.0 -> v2.10.0: 2025-12-13",
     "v2.10.0 -> v2.11.0: 2025-12-24",
@@ -219,13 +220,13 @@ Open standard configuration works across all CLI coding tools:
 # AGENTS.md
 version: "1.0"
 agent:
-  name: "my-legal-assistant"
-  type: "advisor"
-  domain: "legal_contract_analysis"
+  name: "my-research-agent"
+  type: "researcher"
+  domain: "market_analysis"
   capabilities:
-    - contract_analysis
-    - legal_research
-    - compliance_checking
+    - search_literature
+    - document_finding
+    - analyze_data
 ```
 
 No vendor lock-in: Same configuration file works with Claude Code, Codex CLI, Gemini CLI. Agent portability preserved.
@@ -235,7 +236,7 @@ No vendor lock-in: Same configuration file works with Claude Code, Codex CLI, Ge
 ```
 ┌─────────────────────────────────────────────────────────┐
 │ PRINCIPALS                                              │
-│ (Lawyers, Doctors, Developers)                          │
+│ (Domain Practitioners)                                  │
 └─────────────────────────────────────────────────────────┘
                         ↑
 ┌─────────────────────────────────────────────────────────┐
@@ -268,11 +269,11 @@ Track agent identity, manage upgrades, ensure compliance:
 ```json
 // .aget/version.json
 {
-  "agent_name": "my-legal-assistant",
+  "agent_name": "my-research-agent",
   "aget_version": "3.6.0",
   "instance_type": "AGET",
-  "template": "worker",
-  "domain": "legal_contract_analysis"
+  "template": "researcher",
+  "domain": "market_analysis"
 }
 ```
 
@@ -581,9 +582,9 @@ Built with:
 
 ---
 
-**AGET Framework** - Deploy AI agents with confidence
+**AGET Framework** - Persistent domain intelligence for governed agentic work
 
-*Fleet coordination for the CLI coding tools you already use*
+*Build AI agents that accumulate domain expertise serving your decisions*
 
 ---
 
