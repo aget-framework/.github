@@ -60,8 +60,8 @@ See [template-spec-engineer-aget](https://github.com/aget-framework/template-spe
 
 | Template | Archetype | Key Skills | Primary Use Case |
 |----------|-----------|------------|------------------|
+| [**template-supervisor-aget**](https://github.com/aget-framework/template-supervisor-aget) | supervisor | broadcast-fleet, review-agent, escalate-issue, create-aget | Fleet coordination (**recommended start**) |
 | [**template-worker-aget**](https://github.com/aget-framework/template-worker-aget) | worker | execute-task, report-progress | Task execution, foundation |
-| **template-supervisor-aget** (private) | supervisor | broadcast-fleet, review-agent, escalate-issue | Fleet coordination |
 | [**template-developer-aget**](https://github.com/aget-framework/template-developer-aget) | developer | run-tests, lint-code, review-pr | Code development |
 | [**template-advisor-aget**](https://github.com/aget-framework/template-advisor-aget) | advisor | assess-risk, recommend-action | Persona-based guidance |
 | [**template-consultant-aget**](https://github.com/aget-framework/template-consultant-aget) | consultant | assess-client, propose-engagement | Strategic engagements |
@@ -271,7 +271,7 @@ Worker      ─── Task execution, the foundation archetype for all agents
 
 **10 specialized archetypes** extend this hierarchy with domain-specific capabilities (developer, analyst, architect, researcher, operator, executive, reviewer, spec-engineer, consultant). Each inherits from worker and can operate alongside advisors or under supervisor coordination.
 
-The **supervisor template** manages fleet-level operations: agent review, learning propagation, issue escalation, and cross-agent coordination. It is available as a private template — [contact the maintainer](https://github.com/gmelli) for access.
+The **[supervisor template](https://github.com/aget-framework/template-supervisor-aget)** manages fleet-level operations: agent review, learning propagation, issue escalation, and cross-agent coordination. **Recommended starting point** — start with a supervisor, then use it to create your fleet agents.
 
 ---
 
