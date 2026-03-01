@@ -73,7 +73,7 @@ See [template-spec-engineer-aget](https://github.com/aget-framework/template-spe
 | [**template-reviewer-aget**](https://github.com/aget-framework/template-reviewer-aget) | reviewer | review-artifact, provide-feedback | Quality review |
 | [**template-spec-engineer-aget**](https://github.com/aget-framework/template-spec-engineer-aget) | spec-engineer | validate-spec, generate-requirement | Requirements engineering |
 
-**All templates include**: 14 universal skills (wake-up, wind-down, sanity-check, studyup, record-lesson, etc.) + archetype-specific skills above.
+**All templates include**: 15 universal skills (wake-up, wind-down, check-health, study-up, record-lesson, etc.) + archetype-specific skills above.
 
 #### Ontology-Driven Design (v3.5.0)
 
