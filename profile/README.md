@@ -94,28 +94,31 @@ Vocabulary → Specification → Implementation
 
 See [`ontology/ONTOLOGY_{archetype}.yaml`](https://github.com/aget-framework/template-developer-aget/blob/main/ontology/ONTOLOGY_developer.yaml) in any template.
 
-### 2. Create Your Agent
+### 2. Start with a Supervisor
+
+> **Recommended**: Begin with a supervisor agent, then use `/aget-create-aget` to build your fleet.
 
 ```bash
-# Clone template
-gh repo clone aget-framework/template-worker-aget my-agent-name
-cd my-agent-name
+# Clone the supervisor template
+gh repo clone aget-framework/template-supervisor-aget my-supervisor
+cd my-supervisor
 
 # Configure identity
-vim .aget/version.json  # Set agent_name, domain, instance_type
+vim .aget/version.json  # Set agent_name, domain
 
 # Verify deployment
 python3 -m pytest tests/ -v  # Contract tests must pass
 ```
 
-### 3. Start Using
+### 3. Create Your Fleet
 
 ```bash
-# In Claude Code, Codex CLI, Gemini CLI, or other supported tools
-claude code my-agent-name/
+# In your CLI tool (Claude Code, Codex CLI, Gemini CLI)
+cd my-supervisor/
 
-# Agent uses AGENTS.md configuration automatically
-# No additional setup required (universal CLI compatibility)
+# Use the supervisor's /aget-create-aget skill to create agents
+/aget-create-aget
+# Follows 9 SOP gates: ontology → template → identity → deploy
 ```
 
 ---
