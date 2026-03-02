@@ -6,9 +6,9 @@ Build AI agents that accumulate domain expertise serving your decisions. AGET pr
 
 **Solve**: Lost context between sessions, knowledge that resets daily, agents that can't learn from each other, deployment confidence across your fleet.
 
-[![Version](https://img.shields.io/badge/version-3.6.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.6.0)
+[![Version](https://img.shields.io/badge/version-3.7.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.7.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2026--02--21-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
+[![Release Date](https://img.shields.io/badge/released-2026--03--01-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
 ---
 
@@ -56,7 +56,7 @@ See [template-spec-engineer-aget](https://github.com/aget-framework/template-spe
 
 ### 1. Choose Your Template
 
-**12 Archetypes** — Each with specialized skills and ontology (v3.5.0+, updated v3.6.0):
+**12 Archetypes** — Each with specialized skills and ontology (v3.5.0+, updated v3.7.0):
 
 | Template | Archetype | Key Skills | Primary Use Case |
 |----------|-----------|------------|------------------|
@@ -194,7 +194,7 @@ requirements:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.6.0",
+  "aget_version": "3.7.0",
   "instance_type": "AGET",
   "template": "researcher",
   "migration_history": [
@@ -203,7 +203,8 @@ requirements:
     "v2.11.0 -> v2.12.0: 2025-12-25",
     "v2.12.0 -> v3.0.0: 2025-12-28",
     "v3.0.0 -> v3.1.0: 2026-01-04",
-    "v3.5.0 -> v3.6.0: 2026-02-21"
+    "v3.5.0 -> v3.6.0: 2026-02-21",
+    "v3.6.0 -> v3.7.0: 2026-03-01"
   ]
 }
 ```
@@ -284,14 +285,14 @@ Track agent identity, manage upgrades, ensure compliance:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.6.0",
+  "aget_version": "3.7.0",
   "instance_type": "AGET",
   "template": "researcher",
   "domain": "market_analysis"
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → **v3.6.0**
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → **v3.7.0**
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -418,7 +419,20 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ## Roadmap
 
-### v3.6.0 (Current) - Infrastructure Maturation
+### v3.7.0 (Current) - Quality Reconciliation
+**Released**: 2026-03-01
+
+- ✅ **Skill Count Reconciliation**: Spec/README/deployed aligned at 15 universal skills
+- ✅ **Post-Release Validation**: post_release_validation.py 12/12 checks passing
+- ✅ **Content Integrity Validators**: .py version string validator + V-tests
+- ✅ **SOP Lifecycle Governance**: AGET_SOP_SPEC v1.2.0 (CAP-SOP-006, 8 requirements)
+- ✅ **Evidence-Based Positioning**: POSITIONING_SPEC v1.2.0, IDENTITY_SPEC v1.2.0 (L610)
+- ✅ **Verb Vocabulary Reconciliation**: 25 compliant verbs, aget-studyup → aget-study-up
+- ✅ **Governance Doc Refresh**: CHARTER, MISSION, SCOPE_BOUNDARIES updated
+- ✅ **README Conformance**: All 13 repo READMEs verified
+- ✅ **Specification Enhancement**: /aget-enhance-spec skill (SOP + SKILL-041)
+
+### v3.6.0 - Infrastructure Maturation
 **Released**: 2026-02-21
 
 - ✅ **Release Observability**: 5 scripts — validation_logger, run_gate, release_snapshot, propagation_audit, health_logger
@@ -448,12 +462,6 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 - ✅ **New SOPs**: L-doc creation, Enhancement Request, PROJECT_PLAN archival
 - ✅ **Template Infrastructure**: sops/ with SOP_escalation.md in all 12 templates (R-TEMPLATE-001)
 - ✅ **codemeta.json + CITATION.cff**: Standard software metadata
-
-### v3.7.0 (Next) - Quality Reconciliation
-- 📋 Skill count reconciliation (spec/README/deployed alignment)
-- 📋 Post-release validation baseline
-- 📋 Content integrity validators
-- 📋 SOP lifecycle governance
 
 ### v3.3.0 - Shell Integration + Executable Knowledge Ontology
 **Released**: 2026-01-10
