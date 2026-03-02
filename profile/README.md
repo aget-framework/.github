@@ -425,15 +425,12 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 ### v3.7.0 (Current) - Quality Reconciliation
 **Released**: 2026-03-01
 
-- ✅ **Skill Count Reconciliation**: Spec/README/deployed aligned at 15 universal skills
-- ✅ **Post-Release Validation**: post_release_validation.py 12/12 checks passing
-- ✅ **Content Integrity Validators**: .py version string validator + V-tests
-- ✅ **SOP Lifecycle Governance**: AGET_SOP_SPEC v1.2.0 (CAP-SOP-006, 8 requirements)
-- ✅ **Evidence-Based Positioning**: POSITIONING_SPEC v1.2.0, IDENTITY_SPEC v1.2.0 (L610)
-- ✅ **Verb Vocabulary Reconciliation**: 25 compliant verbs, aget-studyup → aget-study-up
-- ✅ **Governance Doc Refresh**: CHARTER, MISSION, SCOPE_BOUNDARIES updated
-- ✅ **README Conformance**: All 13 repo READMEs verified
-- ✅ **Specification Enhancement**: /aget-enhance-spec skill (SOP + SKILL-041)
+- ✅ **Supervisor Template Public**: [Start with a supervisor](https://github.com/aget-framework/template-supervisor-aget), create your fleet with `/aget-create-aget` — 6 archetype skills, exemplary governance, recommended entry point
+- ✅ **15 Universal Skills**: wake-up, wind-down, study-up, check-health, record-lesson, and 10 more across all 12 templates
+- ✅ **Content Integrity Validation**: [8-dimension spec](https://github.com/aget-framework/aget/blob/main/specs/AGET_CONTENT_INTEGRITY_VALIDATION_SPEC.md) ensuring public content matches reality
+- ✅ **Specification Enhancement Skill**: `/aget-enhance-spec` — 7-phase lifecycle for creating and updating AGET specs ([SKILL-041](https://github.com/aget-framework/aget/blob/main/specs/skills/SKILL-041_aget-enhance-spec.yaml))
+- ✅ **25 Compliant Skill Verbs**: Standardized naming across all skills (`aget-studyup` → `aget-study-up`)
+- ✅ **13 Repo READMEs Verified**: Version consistency, link integrity, positioning alignment
 
 ### v3.6.0 - Infrastructure Maturation
 **Released**: 2026-02-21
