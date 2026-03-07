@@ -552,6 +552,13 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 - Success measured by agent effectiveness (not market capture)
 - Positive direction leads (affirmative framing, not negative contrast)
 
+### Structural Aesthetics
+
+- Beauty signals health; ugliness signals problems worth investigating
+- Not all ugliness is failure — some is the cost of evolution
+- Naming, structure, and ceremony should feel inevitable (not forced)
+- Artifacts should invite engagement (not just pass validation)
+
 ### Human-Supervised
 
 - Agents augment human capability (not replace)

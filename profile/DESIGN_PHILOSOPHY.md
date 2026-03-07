@@ -71,7 +71,46 @@ AGET favors the first approach (configuration over code).
 
 ---
 
-### 3. Universal CLI Compatibility
+### 3. Structural Aesthetics
+
+**Principle**: Attend to structural aesthetics. Beauty signals health; ugliness signals problems worth investigating. Not all ugliness is failure — some is the cost of evolution.
+
+**Rationale**: Agent configurations, governance artifacts, and interaction patterns are used daily. If they are ugly, cluttered, or incoherent, they degrade the collaboration experience and likely signal structural problems. Every major design tradition — from Unix to industrial design to software architecture — recognizes that beauty is diagnostic: its absence warns of deeper issues.
+
+AGET already embodies aesthetic values in its naming conventions, structural orthogonality, narrative craft, and session ceremony — but has never named beauty as an explicit principle. Naming it enables teaching it, evaluating it, and protecting it from being sacrificed for efficiency.
+
+**In Practice**:
+- Naming choices should be precise and beautiful, not just consistent (L414, L543)
+- Governance artifacts should read as coherent narratives, not just pass validators (L384)
+- Session protocols should have ceremony where ceremony serves understanding (L543)
+- Structural designs should feel inevitable — as though no other arrangement makes sense (L488)
+- Specifications should have companion narratives that tell humans why it matters (L384)
+
+**Anti-Pattern**: "It passes the tests, ship it" → governance artifact is correct but ugly, cluttered, hard to navigate → maintainers avoid reading it → drift accumulates → structural problems go unnoticed
+
+**AGET Pattern**: "It passes the tests AND it reads well AND the naming is precise AND the structure feels inevitable" → artifact invites engagement → patterns propagate naturally → beauty compounds across the fleet
+
+**Evaluation Criterion** (adapted from Fuller):
+
+> If the solution is not beautiful, investigate whether it is wrong.
+
+**Learning References**:
+- L635: Aesthetic Dimension Missing from Framework Principles
+- L384: Specification Narrative Pattern ("Specs tell machines what to enforce. Narratives tell humans why it matters.")
+- L414: Template Naming Convention Semantics (naming as aesthetic)
+- L367: Governance Agent Exemplar Requirement (integrity as aesthetic coherence)
+- L341: Governance Intensity Classification (persona_style as aesthetic)
+
+**External Precedent**:
+- Python (PEP 20): "Beautiful is better than ugly" — first principle
+- Dieter Rams: "Good design is aesthetic" — principle #3, integral to usefulness
+- Christopher Alexander: "The Quality Without a Name" — beauty IS correct structure
+- Eric Raymond (Unix): "Rule of Beauty: Design for beauty"
+- Edsger Dijkstra: "Elegance is not a dispensable luxury but decides between success and failure"
+
+---
+
+### 4. Universal CLI Compatibility
 
 **Principle**: AGET works across competing CLI coding tools.
 
@@ -93,7 +132,7 @@ AGET favors the first approach (configuration over code).
 
 ---
 
-### 4. Evidence-Based Evolution
+### 5. Evidence-Based Evolution
 
 **Principle**: Organizational memory captures "why" decisions were made, not just "what" changed.
 
@@ -141,7 +180,7 @@ Execute ONLY current gate deliverables, stop at boundary, WAIT for explicit GO.
 
 ---
 
-### 5. Lightweight Architecture (Zero Infrastructure)
+### 6. Lightweight Architecture (Zero Infrastructure)
 
 **Principle**: No servers, no databases, no deployment overhead.
 
@@ -168,7 +207,7 @@ Execute ONLY current gate deliverables, stop at boundary, WAIT for explicit GO.
 
 ---
 
-### 6. Recursive Supervision Model
+### 7. Recursive Supervision Model
 
 **Principle**: Every agent is a worker; supervision is a capability, not a type.
 
@@ -193,7 +232,7 @@ Human (supervises) → fleet-supervisor-AGET (supervises) → 10 worker agents
 
 ---
 
-### 7. Version Progression Framework
+### 8. Version Progression Framework
 
 **Principle**: Agents have compliance levels with migration protocols.
 
