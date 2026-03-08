@@ -6,7 +6,7 @@ Build AI agents that accumulate domain expertise serving your decisions. AGET pr
 
 **Solve**: Lost context between sessions, knowledge that resets daily, agents that can't learn from each other, deployment confidence across your fleet.
 
-[![Version](https://img.shields.io/badge/version-3.7.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.7.0)
+[![Version](https://img.shields.io/badge/version-3.8.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.8.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
 [![Release Date](https://img.shields.io/badge/released-2026--03--01-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
@@ -56,7 +56,7 @@ See [template-spec-engineer-aget](https://github.com/aget-framework/template-spe
 
 ### 1. Choose Your Template
 
-**12 Archetypes** — Each with specialized skills and ontology (v3.5.0+, updated v3.7.0):
+**12 Archetypes** — Each with specialized skills and ontology (v3.5.0+, updated v3.8.0):
 
 | Template | Archetype | Key Skills | Primary Use Case |
 |----------|-----------|------------|------------------|
@@ -197,7 +197,7 @@ requirements:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.7.0",
+  "aget_version": "3.8.0",
   "instance_type": "AGET",
   "template": "researcher",
   "migration_history": [
@@ -207,7 +207,7 @@ requirements:
     "v2.12.0 -> v3.0.0: 2025-12-28",
     "v3.0.0 -> v3.1.0: 2026-01-04",
     "v3.5.0 -> v3.6.0: 2026-02-21",
-    "v3.6.0 -> v3.7.0: 2026-03-01"
+    "v3.6.0 -> v3.8.0: 2026-03-01"
   ]
 }
 ```
@@ -288,14 +288,14 @@ Track agent identity, manage upgrades, ensure compliance:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.7.0",
+  "aget_version": "3.8.0",
   "instance_type": "AGET",
   "template": "researcher",
   "domain": "market_analysis"
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → **v3.7.0**
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → **v3.8.0**
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -422,13 +422,13 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ## Roadmap
 
-### v3.7.0 (Current) - Quality Reconciliation
+### v3.8.0 (Current) - Governance Maturation
 **Released**: 2026-03-01
 
 - ✅ **Supervisor Template Public**: [Start with a supervisor](https://github.com/aget-framework/template-supervisor-aget), create your fleet with `/aget-create-aget` — 6 archetype skills, exemplary governance, recommended entry point
 - ✅ **15 Universal Skills**: wake-up, wind-down, study-up, check-health, record-lesson, and 10 more across all 12 templates
-- ✅ **Content Integrity Validation**: [8-dimension spec](https://github.com/aget-framework/aget/blob/main/specs/AGET_CONTENT_INTEGRITY_VALIDATION_SPEC.md) ensuring public content matches reality
-- ✅ **Specification Enhancement Skill**: `/aget-enhance-spec` — 7-phase lifecycle for creating and updating AGET specs ([SKILL-041](https://github.com/aget-framework/aget/blob/main/specs/skills/SKILL-041_aget-enhance-spec.yaml))
+- ✅ **Content Integrity Validation**: 8-dimension spec ensuring public content matches reality
+- ✅ **Specification Enhancement Skill**: `/aget-enhance-spec` — 7-phase lifecycle for creating and updating AGET specs
 - ✅ **25 Compliant Skill Verbs**: Standardized naming across all skills (`aget-studyup` → `aget-study-up`)
 - ✅ **13 Repo READMEs Verified**: Version consistency, link integrity, positioning alignment
 
