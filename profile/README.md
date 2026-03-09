@@ -8,7 +8,7 @@ Build AI agents that accumulate domain expertise serving your decisions. AGET pr
 
 [![Version](https://img.shields.io/badge/version-3.8.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.8.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2026--03--01-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
+[![Release Date](https://img.shields.io/badge/released-2026--03--08-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
 ---
 
@@ -207,7 +207,8 @@ requirements:
     "v2.12.0 -> v3.0.0: 2025-12-28",
     "v3.0.0 -> v3.1.0: 2026-01-04",
     "v3.5.0 -> v3.6.0: 2026-02-21",
-    "v3.6.0 -> v3.8.0: 2026-03-01"
+    "v3.6.0 -> v3.7.0: 2026-03-02",
+    "v3.7.0 -> v3.8.0: 2026-03-08"
   ]
 }
 ```
@@ -423,14 +424,25 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 ## Roadmap
 
 ### v3.8.0 (Current) - Governance Maturation
-**Released**: 2026-03-01
+**Released**: 2026-03-08
 
-- ✅ **Supervisor Template Public**: [Start with a supervisor](https://github.com/aget-framework/template-supervisor-aget), create your fleet with `/aget-create-aget` — 6 archetype skills, exemplary governance, recommended entry point
-- ✅ **15 Universal Skills**: wake-up, wind-down, study-up, check-health, record-lesson, and 10 more across all 12 templates
-- ✅ **Content Integrity Validation**: 8-dimension spec ensuring public content matches reality
-- ✅ **Specification Enhancement Skill**: `/aget-enhance-spec` — 7-phase lifecycle for creating and updating AGET specs
-- ✅ **25 Compliant Skill Verbs**: Standardized naming across all skills (`aget-studyup` → `aget-study-up`)
-- ✅ **13 Repo READMEs Verified**: Version consistency, link integrity, positioning alignment
+- ✅ **Meta-Principle Codification**: GOVERNANCE_PRINCIPLES.md v1.1.0 — 6 Tier 1 + 5 Tier 2 meta-principles answering "what rules govern the rules?"
+- ✅ **Structural Aesthetics**: Third design principle integrated into DESIGN_PHILOSOPHY, MISSION, homepage
+- ✅ **Skill Customization Detection**: `pre_sync_check.py` detects, classifies, and reports skill customizations before upgrade
+- ✅ **PROJECT_PLAN Validator**: `validate_project_plan.py` prevents prompt-as-plan anti-pattern
+- ✅ **Private-First Issue Routing**: AGET_ISSUE_GOVERNANCE_SPEC v2.0.0 — all issues route to private repo first
+- ✅ **Template Governance**: All 12 templates updated with `.claude/` scaffolding and governance patterns
+- ✅ **New Skills**: `aget-enhance-spec` v1.1.0 (spec lifecycle), `aget-expand-ontology` v1.0.0 (SKOS expansion)
+
+### v3.7.0 - Quality Reconciliation
+**Released**: 2026-03-02
+
+- ✅ **Content Integrity Validation**: CONTENT_INTEGRITY_SPEC v1.0.0 — 38 EARS requirements covering 8 dimensions of content claim drift
+- ✅ **Evidence-Based Positioning**: 15 READMEs + 2 specs reframed to lead with demonstrated capabilities
+- ✅ **Skill Verb Vocabulary**: 4 skill renames aligned to approved verbs (`aget-studyup` → `aget-study-up`)
+- ✅ **SOP Lifecycle Management**: AGET_SOP_SPEC v1.2.0 with Draft/Active/Deprecated states
+- ✅ **Specification Enhancement Lifecycle**: SKILL-041 + SOP for governed spec creation/updates
+- ✅ **15 Universal Skills**: 3-way mismatch resolved — spec/README/deployed aligned at 15 universal
 
 ### v3.6.0 - Infrastructure Maturation
 **Released**: 2026-02-21
