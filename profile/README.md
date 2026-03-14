@@ -6,9 +6,9 @@ Build AI agents that accumulate domain expertise serving your decisions. AGET pr
 
 **Solve**: Lost context between sessions, knowledge that resets daily, agents that can't learn from each other, deployment confidence across your fleet.
 
-[![Version](https://img.shields.io/badge/version-3.8.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.8.0)
+[![Version](https://img.shields.io/badge/version-3.9.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.9.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2026--03--08-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
+[![Release Date](https://img.shields.io/badge/released-2026--03--15-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
 ---
 
@@ -56,7 +56,7 @@ See [template-spec-engineer-aget](https://github.com/aget-framework/template-spe
 
 ### 1. Choose Your Template
 
-**12 Archetypes** — Each with specialized skills and ontology (v3.5.0+, updated v3.8.0):
+**12 Archetypes** — Each with specialized skills and ontology (v3.5.0+, updated v3.9.0):
 
 | Template | Archetype | Key Skills | Primary Use Case |
 |----------|-----------|------------|------------------|
@@ -197,7 +197,7 @@ requirements:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.8.0",
+  "aget_version": "3.9.0",
   "instance_type": "AGET",
   "template": "researcher",
   "migration_history": [
@@ -208,7 +208,8 @@ requirements:
     "v3.0.0 -> v3.1.0: 2026-01-04",
     "v3.5.0 -> v3.6.0: 2026-02-21",
     "v3.6.0 -> v3.7.0: 2026-03-02",
-    "v3.7.0 -> v3.8.0: 2026-03-08"
+    "v3.7.0 -> v3.8.0: 2026-03-08",
+    "v3.8.0 -> v3.9.0: 2026-03-15"
   ]
 }
 ```
@@ -289,14 +290,14 @@ Track agent identity, manage upgrades, ensure compliance:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.8.0",
+  "aget_version": "3.9.0",
   "instance_type": "AGET",
   "template": "researcher",
   "domain": "market_analysis"
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → **v3.8.0**
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → **v3.9.0**
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -423,7 +424,17 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ## Roadmap
 
-### v3.8.0 (Current) - Governance Maturation
+### v3.9.0 (Current) - Governance Enforcement
+**Released**: 2026-03-15
+
+- ✅ **Phase -1: Release Readiness**: 3 sub-phases (B.1 Assessment, B.2 Conformance Audit, B.3 Principal Approval) with 12-item checklist — governs Gap B transition
+- ✅ **Phase 0.85: Deliverable Conformance Check**: SHALL violations are BLOCKING
+- ✅ **Gate 0: Spec Verification (MP-1)**: Mandatory spec verification sweep before implementation begins
+- ✅ **Version-Bearing Enforcement**: version_bump.py extended to 5/5 artifact types (version.json, README.md, AGENTS.md, codemeta.json, CITATION.cff) with `--check` validation mode
+- ✅ **GOVERNANCE_PRINCIPLES.md**: First public publication (6 Tier 1 + 5 Tier 2 meta-principles)
+- ✅ **aget-enhance-spec Fixes**: Phase 6 consistency (#418), phantom spec reference (#419)
+
+### v3.8.0 - Governance Maturation
 **Released**: 2026-03-08
 
 - ✅ **Meta-Principle Codification**: GOVERNANCE_PRINCIPLES.md v1.1.0 — 6 Tier 1 + 5 Tier 2 meta-principles answering "what rules govern the rules?"
