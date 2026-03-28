@@ -6,9 +6,9 @@ Build AI agents that accumulate domain expertise serving your decisions. AGET pr
 
 **Solve**: Lost context between sessions, knowledge that resets daily, agents that can't learn from each other, deployment confidence across your fleet.
 
-[![Version](https://img.shields.io/badge/version-3.10.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.10.0)
+[![Version](https://img.shields.io/badge/version-3.11.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.11.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2026--03--21-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
+[![Release Date](https://img.shields.io/badge/released-2026--03--28-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
 ---
 
@@ -56,7 +56,7 @@ See [template-spec-engineer-aget](https://github.com/aget-framework/template-spe
 
 ### 1. Choose Your Template
 
-**12 Archetypes** — Each with specialized skills and ontology (v3.5.0+, updated v3.10.0):
+**12 Archetypes** — Each with specialized skills and ontology (v3.5.0+, updated v3.11.0):
 
 | Template | Archetype | Key Skills | Primary Use Case |
 |----------|-----------|------------|------------------|
@@ -197,7 +197,7 @@ requirements:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.10.0",
+  "aget_version": "3.11.0",
   "instance_type": "AGET",
   "template": "researcher",
   "migration_history": [
@@ -210,7 +210,8 @@ requirements:
     "v3.6.0 -> v3.7.0: 2026-03-02",
     "v3.7.0 -> v3.8.0: 2026-03-08",
     "v3.8.0 -> v3.9.0: 2026-03-15",
-    "v3.9.0 -> v3.10.0: 2026-03-21"
+    "v3.9.0 -> v3.10.0: 2026-03-21",
+    "v3.10.0 -> v3.11.0: 2026-03-28"
   ]
 }
 ```
@@ -291,14 +292,14 @@ Track agent identity, manage upgrades, ensure compliance:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.10.0",
+  "aget_version": "3.11.0",
   "instance_type": "AGET",
   "template": "researcher",
   "domain": "market_analysis"
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → **v3.10.0**
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → **v3.11.0**
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -425,7 +426,17 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ## Roadmap
 
-### v3.10.0 (Current) - Structural Enforcement
+### v3.11.0 (Current) - Skill Conformance, Requirements & Hooks
+**Released**: 2026-03-28
+
+- ✅ **Requirements Layer**: Human-level requirements directory (`requirements/`) with REQUIREMENTS_FORMAT.md and REQ-REL exemplar — first formal requirements artifact per L742 two-level model
+- ✅ **Hook Adoption**: `.claude/hooks/` scaffolded across all 12 templates with HOOK_ADOPTION_GUIDE — ADR-008 Generator level infrastructure
+- ✅ **Skill Conformance**: 17 skill instructions remediated for L736 conformance — assert-before-verify anti-pattern eliminated
+- ✅ **Archetype Governance**: `governance_intensity` field in all 12 template AGENTS.md (Rigorous/Standard/Lightweight)
+- ✅ **Release Quality**: Pre-push hook, study_up.py fix, "sanity→health" terminology, homepage roadmap, phantom cleanup
+- ✅ **Requirements-Spec Traceability**: AGET_RELEASE_SPEC v1.11.0 — first bidirectional requirements ↔ spec grounding
+
+### v3.10.0 - Structural Enforcement
 **Released**: 2026-03-21
 
 - ✅ **3-Layer Structural Enforcement**: MUST-invoke directives for `/aget-create-project` and `/aget-file-issue`; gate completion requires plan update + commit; skill completion signals
