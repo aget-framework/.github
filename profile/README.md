@@ -22,12 +22,15 @@ AGET enables AI agents that build persistent domain knowledge serving human deci
 - **Session Continuity** - Pick up where you left off with structured memory architecture
 - **Shared Learning** - Propagate insights across your fleet (`.aget/evolution/`)
 - **Lifecycle Governance** - Gated releases, contract testing, deployment verification
+- **Requirements-Driven** - Human-level requirements ground testable specifications
 - **Universal CLI Compatibility** - Works with Claude Code, Codex CLI, Gemini CLI
 - **Open Standard** - AGENTS.md enables ecosystem innovation
+- **Hook-Ready** - Platform-native lifecycle automation via .claude/hooks/
 
 ### Specification-First Development
 
-AGET brings formal requirements engineering to agent fleet management:
+AGET brings formal requirements engineering to agent fleet management.
+Requirements define principal intent; specifications define testable contracts (two-level model).
 
 **EARS Patterns** - Write unambiguous specifications:
 - **Ubiquitous**: "The system SHALL always..."
