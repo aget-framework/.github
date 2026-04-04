@@ -6,7 +6,7 @@ Build AI agents that accumulate domain expertise serving your decisions. AGET pr
 
 **Solve**: Lost context between sessions, knowledge that resets daily, agents that can't learn from each other, deployment confidence across your fleet.
 
-[![Version](https://img.shields.io/badge/version-3.11.1-blue)](https://github.com/aget-framework/aget/releases/tag/v3.11.1)
+[![Version](https://img.shields.io/badge/version-3.12.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.12.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
 [![Release Date](https://img.shields.io/badge/released-2026--04--04-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
@@ -59,7 +59,7 @@ See [template-spec-engineer-aget](https://github.com/aget-framework/template-spe
 
 ### 1. Choose Your Template
 
-**12 Archetypes** — Each with specialized skills and ontology (v3.5.0+, updated v3.11.1):
+**12 Archetypes** — Each with specialized skills and ontology (v3.5.0+, updated v3.12.0):
 
 | Template | Archetype | Key Skills | Primary Use Case |
 |----------|-----------|------------|------------------|
@@ -200,7 +200,7 @@ requirements:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.11.1",
+  "aget_version": "3.12.0",
   "instance_type": "AGET",
   "template": "researcher",
   "migration_history": [
@@ -215,7 +215,7 @@ requirements:
     "v3.8.0 -> v3.9.0: 2026-03-15",
     "v3.9.0 -> v3.10.0: 2026-03-21",
     "v3.10.0 -> v3.11.0: 2026-03-28
-    "v3.11.0 -> v3.11.1: 2026-04-04""
+    "v3.11.0 -> v3.12.0: 2026-04-04""
   ]
 }
 ```
@@ -296,14 +296,14 @@ Track agent identity, manage upgrades, ensure compliance:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.11.1",
+  "aget_version": "3.12.0",
   "instance_type": "AGET",
   "template": "researcher",
   "domain": "market_analysis"
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → **v3.11.1**
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → **v3.12.0**
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -430,12 +430,20 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ## Roadmap
 
-### v3.11.1 (Current) - Script Rename Stabilization
+### v3.12.0 (Current) - Developer Surface & Governance Maturation
+
+- ✅ **Issue Governance v2.1.0**: Triage, lifecycle state machine, Issue Forms — 3 new capabilities, 9 EARS requirements, 54 SKOS vocabulary terms
+- ✅ **Homepage Rewrite**: README 169→104 lines, Quick Start at line 14, pain-point framing, R-HOM-001 6/7 conformance
+- ✅ **Epistemic Parameterization**: `study_topic.py` --purpose and --domain-keywords for agent-aware KB search
+- ✅ **First Deprecation Cycle**: 3 deprecated items removed (capture verb, study-up script, record-nugget skill)
+- ✅ **Release State Management**: SOP state machine, BLOCKING deployment_monitor, tag_release.py automation
+
+### v3.11.1 - Script Rename Stabilization
+**Released**: 2026-04-04
 
 - Renamed `aget_housekeeping_protocol.py` → `health_check.py`
 - Renamed `study_up.py` → `study_topic.py`
-- New: `tag_release.py`, `verify_deployment.py`
-- First completed deprecation cycle (3 items)
+- New: `tag_release.py`
 
 ### v3.11.0 - Skill Conformance, Requirements & Hooks
 **Released**: 2026-03-28
