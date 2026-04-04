@@ -6,9 +6,9 @@ Build AI agents that accumulate domain expertise serving your decisions. AGET pr
 
 **Solve**: Lost context between sessions, knowledge that resets daily, agents that can't learn from each other, deployment confidence across your fleet.
 
-[![Version](https://img.shields.io/badge/version-3.11.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.11.0)
+[![Version](https://img.shields.io/badge/version-3.11.1-blue)](https://github.com/aget-framework/aget/releases/tag/v3.11.1)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2026--03--28-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
+[![Release Date](https://img.shields.io/badge/released-2026--04--04-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
 ---
 
@@ -59,7 +59,7 @@ See [template-spec-engineer-aget](https://github.com/aget-framework/template-spe
 
 ### 1. Choose Your Template
 
-**12 Archetypes** — Each with specialized skills and ontology (v3.5.0+, updated v3.11.0):
+**12 Archetypes** — Each with specialized skills and ontology (v3.5.0+, updated v3.11.1):
 
 | Template | Archetype | Key Skills | Primary Use Case |
 |----------|-----------|------------|------------------|
