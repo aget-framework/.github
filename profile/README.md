@@ -59,7 +59,7 @@ See [template-spec-engineer-aget](https://github.com/aget-framework/template-spe
 
 ### 1. Choose Your Template
 
-**12 Archetypes** — Each with specialized skills and ontology (v3.5.0+, updated v3.12.0):
+**12 Archetypes** — Each with specialized skills and ontology (v3.5.0+, updated v3.11.1):
 
 | Template | Archetype | Key Skills | Primary Use Case |
 |----------|-----------|------------|------------------|
@@ -215,7 +215,7 @@ requirements:
     "v3.8.0 -> v3.9.0: 2026-03-15",
     "v3.9.0 -> v3.10.0: 2026-03-21",
     "v3.10.0 -> v3.11.0: 2026-03-28
-    "v3.11.0 -> v3.12.0: 2026-04-04""
+    "v3.11.0 -> v3.11.1: 2026-04-04""
   ]
 }
 ```
@@ -303,7 +303,7 @@ Track agent identity, manage upgrades, ensure compliance:
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → **v3.12.0**
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → **v3.12.0**
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
