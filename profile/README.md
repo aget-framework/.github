@@ -200,7 +200,7 @@ requirements:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.11.0",
+  "aget_version": "3.11.1",
   "instance_type": "AGET",
   "template": "researcher",
   "migration_history": [
@@ -214,7 +214,8 @@ requirements:
     "v3.7.0 -> v3.8.0: 2026-03-08",
     "v3.8.0 -> v3.9.0: 2026-03-15",
     "v3.9.0 -> v3.10.0: 2026-03-21",
-    "v3.10.0 -> v3.11.0: 2026-03-28"
+    "v3.10.0 -> v3.11.0: 2026-03-28
+    "v3.11.0 -> v3.11.1: 2026-04-04""
   ]
 }
 ```
@@ -295,14 +296,14 @@ Track agent identity, manage upgrades, ensure compliance:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.11.0",
+  "aget_version": "3.11.1",
   "instance_type": "AGET",
   "template": "researcher",
   "domain": "market_analysis"
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → **v3.11.0**
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → **v3.11.1**
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -429,7 +430,14 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ## Roadmap
 
-### v3.11.0 (Current) - Skill Conformance, Requirements & Hooks
+### v3.11.1 (Current) - Script Rename Stabilization
+
+- Renamed `aget_housekeeping_protocol.py` → `health_check.py`
+- Renamed `study_up.py` → `study_topic.py`
+- New: `tag_release.py`, `verify_deployment.py`
+- First completed deprecation cycle (3 items)
+
+### v3.11.0 - Skill Conformance, Requirements & Hooks
 **Released**: 2026-03-28
 
 - ✅ **Requirements Layer**: Human-level requirements directory (`requirements/`) with REQUIREMENTS_FORMAT.md and REQ-REL exemplar — first formal requirements artifact per L742 two-level model
