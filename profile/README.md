@@ -6,9 +6,9 @@ Build AI agents that accumulate domain expertise serving your decisions. AGET pr
 
 **Solve**: Lost context between sessions, knowledge that resets daily, agents that can't learn from each other, deployment confidence across your fleet.
 
-[![Version](https://img.shields.io/badge/version-3.12.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.12.0)
+[![Version](https://img.shields.io/badge/version-3.13.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.13.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2026--04--04-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
+[![Release Date](https://img.shields.io/badge/released-2026--04--12-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
 ---
 
@@ -200,7 +200,7 @@ requirements:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.12.0",
+  "aget_version": "3.13.0",
   "instance_type": "AGET",
   "template": "researcher",
   "migration_history": [
@@ -296,14 +296,14 @@ Track agent identity, manage upgrades, ensure compliance:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.12.0",
+  "aget_version": "3.13.0",
   "instance_type": "AGET",
   "template": "researcher",
   "domain": "market_analysis"
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → **v3.12.0**
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → v3.12.0 → **v3.13.0**
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -430,13 +430,21 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ## Roadmap
 
-### v3.12.0 (Current) - Developer Surface & Governance Maturation
+### v3.13.0 (Current) - Operational Maturation & Fleet Automation
 
-- ✅ **Issue Governance v2.1.0**: Triage, lifecycle state machine, Issue Forms — 3 new capabilities, 9 EARS requirements, 54 SKOS vocabulary terms
-- ✅ **Homepage Rewrite**: README 169→104 lines, Quick Start at line 14, pain-point framing, R-HOM-001 6/7 conformance
-- ✅ **Epistemic Parameterization**: `study_topic.py` --purpose and --domain-keywords for agent-aware KB search
-- ✅ **First Deprecation Cycle**: 3 deprecated items removed (capture verb, study-up script, record-nugget skill)
-- ✅ **Release State Management**: SOP state machine, BLOCKING deployment_monitor, tag_release.py automation
+- ✅ **Release Gate Validator**: `validate_release_gate.py` — structural exit-code enforcement across 7 validators (L784 fix)
+- ✅ **Fleet Upgrade Script**: `fleet_upgrade.py` — single-script migration reduces 25-40 prompts to ≤5
+- ✅ **Release Delivery Triad**: Builder/Spec Auditor/Critic perspectives v0.2.0 — three-perspective quality at every gate
+- ✅ **8 New Skills** (24→31): promote-issue, describe-session, propose-actions, create-rubric, check-initiative, process-observation, open-session, check-facts
+- ✅ **Skill Telemetry**: Mandatory Requirements section + invocation logging infrastructure
+- ✅ **Health Check Orchestration**: 3-tier spec (Quick/Standard/Full) resolving L787 divergence
+- ✅ **Governed Discourse Boundary**: Formal/informal artifact classification + high-impact term remediation
+
+### v3.12.0 - Developer Surface & Governance Maturation
+**Released**: 2026-04-04
+
+- ✅ Issue Governance v2.1.0, Homepage Rewrite, Epistemic Parameterization
+- ✅ First Deprecation Cycle, Release State Management
 
 ### v3.11.1 - Script Rename Stabilization
 **Released**: 2026-04-04
