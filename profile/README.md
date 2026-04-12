@@ -57,72 +57,55 @@ See [template-spec-engineer-aget](https://github.com/aget-framework/template-spe
 
 ## Quick Start
 
-### 1. Choose Your Template
-
-**12 Archetypes** — Each with specialized skills and ontology (v3.5.0+, updated v3.11.1):
-
-| Template | Archetype | Key Skills | Primary Use Case |
-|----------|-----------|------------|------------------|
-| [**template-supervisor-aget**](https://github.com/aget-framework/template-supervisor-aget) | supervisor | broadcast-fleet, review-agent, escalate-issue, create-aget | Fleet coordination (**recommended start**) |
-| [**template-worker-aget**](https://github.com/aget-framework/template-worker-aget) | worker | execute-task, report-progress | Task execution, foundation |
-| [**template-developer-aget**](https://github.com/aget-framework/template-developer-aget) | developer | run-tests, lint-code, review-pr | Code development |
-| [**template-advisor-aget**](https://github.com/aget-framework/template-advisor-aget) | advisor | assess-risk, recommend-action | Persona-based guidance |
-| [**template-consultant-aget**](https://github.com/aget-framework/template-consultant-aget) | consultant | assess-client, propose-engagement | Strategic engagements |
-| [**template-analyst-aget**](https://github.com/aget-framework/template-analyst-aget) | analyst | analyze-data, generate-report | Data analysis |
-| [**template-architect-aget**](https://github.com/aget-framework/template-architect-aget) | architect | design-architecture, assess-tradeoffs | System design |
-| [**template-researcher-aget**](https://github.com/aget-framework/template-researcher-aget) | researcher | search-literature, document-finding | Research workflows |
-| [**template-operator-aget**](https://github.com/aget-framework/template-operator-aget) | operator | handle-incident, run-playbook | Operations/DevOps |
-| [**template-executive-aget**](https://github.com/aget-framework/template-executive-aget) | executive | make-decision, review-budget | Executive advisory |
-| [**template-reviewer-aget**](https://github.com/aget-framework/template-reviewer-aget) | reviewer | review-artifact, provide-feedback | Quality review |
-| [**template-spec-engineer-aget**](https://github.com/aget-framework/template-spec-engineer-aget) | spec-engineer | validate-spec, generate-requirement | Requirements engineering |
-
-**All templates include**: 15 universal skills (wake-up, wind-down, check-health, study-up, record-lesson, etc.) + archetype-specific skills above.
-
-#### Ontology-Driven Design (v3.5.0)
-
-Each archetype includes a **formal ontology** defining domain vocabulary:
-
-```
-Vocabulary → Specification → Implementation
-```
-
-| Archetype | Concepts | Clusters | Example Terms |
-|-----------|----------|----------|---------------|
-| Developer | 10 | 4 | Codebase, TestSuite, PullRequest, LintRule |
-| Supervisor | 8 | 3 | Fleet, Agent, Escalation, Broadcast |
-| Advisor | 6 | 2 | Risk, Recommendation, Persona |
-| Architect | 7 | 3 | Architecture, Component, Tradeoff |
-
-**Benefits**: Precision (formal vocabulary prevents ambiguity), Consistency (same concepts across instances), Extensibility (add domain-specific terms).
-
-See [`ontology/ONTOLOGY_{archetype}.yaml`](https://github.com/aget-framework/template-developer-aget/blob/main/ontology/ONTOLOGY_developer.yaml) in any template.
-
-### 2. Start with a Supervisor
-
-> **Recommended**: Begin with a supervisor agent, then use `/aget-create-aget` to build your fleet.
+### 1. Get Your Supervisor
 
 ```bash
 # Clone the supervisor template
-gh repo clone aget-framework/template-supervisor-aget my-supervisor
+git clone https://github.com/aget-framework/template-supervisor-aget my-supervisor
 cd my-supervisor
-
-# Configure identity
-vim .aget/version.json  # Set agent_name, domain
-
-# Verify deployment
-python3 -m pytest tests/ -v  # Contract tests must pass
 ```
 
-### 3. Create Your Fleet
+### 2. Open in Your CLI Tool
 
-```bash
-# In your CLI tool (Claude Code, Codex CLI, Gemini CLI)
-cd my-supervisor/
+Open the `my-supervisor/` directory in **Claude Code**, **Codex CLI**, or **Gemini CLI**. Then tell your agent:
 
-# Use the supervisor's /aget-create-aget skill to create agents
-/aget-create-aget
-# Follows 9 SOP gates: ontology → template → identity → deploy
 ```
+wake up
+```
+
+Your supervisor initializes — it knows its identity, loads its knowledge base, and is ready to work. No configuration needed.
+
+### 3. Create Your First Agent
+
+Ask your supervisor to create the agent you need most:
+
+```
+/aget-create-aget developer my-dev-agent
+```
+
+The supervisor handles everything: picks the right template, configures identity, deploys skills. You now have a two-agent fleet — a supervisor and a developer.
+
+### 4. Grow Your Fleet
+
+Add more agents as needs emerge. **13 archetypes** available — each with specialized skills and formal ontology:
+
+| Template | Primary Use Case |
+|----------|------------------|
+| [supervisor](https://github.com/aget-framework/template-supervisor-aget) | Fleet coordination (**you started here**) |
+| [developer](https://github.com/aget-framework/template-developer-aget) | Code development |
+| [analyst](https://github.com/aget-framework/template-analyst-aget) | Data analysis |
+| [researcher](https://github.com/aget-framework/template-researcher-aget) | Research workflows |
+| [architect](https://github.com/aget-framework/template-architect-aget) | System design |
+| [advisor](https://github.com/aget-framework/template-advisor-aget) | Persona-based guidance |
+| [consultant](https://github.com/aget-framework/template-consultant-aget) | Strategic engagements |
+| [operator](https://github.com/aget-framework/template-operator-aget) | Operations/DevOps |
+| [reviewer](https://github.com/aget-framework/template-reviewer-aget) | Quality review |
+| [spec-engineer](https://github.com/aget-framework/template-spec-engineer-aget) | Requirements engineering |
+| [executive](https://github.com/aget-framework/template-executive-aget) | Executive advisory |
+| [worker](https://github.com/aget-framework/template-worker-aget) | General task execution |
+| [document-processor](https://github.com/aget-framework/template-document-processor-AGET) | Document pipelines |
+
+All templates include 15+ universal skills (wake-up, wind-down, check-health, study-topic, record-lesson, etc.) plus archetype-specific skills.
 
 ---
 
