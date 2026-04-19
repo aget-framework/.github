@@ -6,9 +6,9 @@ Build AI agents that accumulate domain expertise serving your decisions. AGET pr
 
 **Solve**: Lost context between sessions, knowledge that resets daily, agents that can't learn from each other, deployment confidence across your fleet.
 
-[![Version](https://img.shields.io/badge/version-3.13.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.13.0)
+[![Version](https://img.shields.io/badge/version-3.14.1-blue)](https://github.com/aget-framework/aget/releases/tag/v3.14.1)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2026--04--12-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
+[![Release Date](https://img.shields.io/badge/released-2026--04--18-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
 ---
 
@@ -183,7 +183,7 @@ requirements:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.13.0",
+  "aget_version": "3.14.1",
   "instance_type": "AGET",
   "template": "researcher",
   "migration_history": [
@@ -279,14 +279,14 @@ Track agent identity, manage upgrades, ensure compliance:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.13.0",
+  "aget_version": "3.14.1",
   "instance_type": "AGET",
   "template": "researcher",
   "domain": "market_analysis"
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → v3.12.0 → **v3.13.0**
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → v3.12.0 → v3.13.0 → v3.14.0 → **v3.14.1**
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -413,7 +413,27 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ## Roadmap
 
-### v3.13.0 (Current) - Operational Maturation & Fleet Automation
+### v3.14.1 (Current) - #979 Installer Partial-Propagation Hotfix
+
+**Released**: 2026-04-18
+
+- ✅ **Surgical 4-repo bump**: aget/ core + advisor/developer/spec-engineer templates. `installer/install.py` now references `scripts/health_check.py` (was stale `housekeeping_protocol.py` from partial #979 propagation in v3.11.1). Restores CI green on the 3 affected templates. Other 10 templates remain at v3.14.0.
+- ✅ **No breaking changes. No new deprecations.**
+
+### v3.14.0 - v3.13 Loop Closure + Scope-Lock Discipline
+
+**Released**: 2026-04-18
+
+- ✅ **CAP-REL-028 Upstream Deployment Feedback spec** (REQ-REL-F-009): Formalizes the feedback channel from fleet agents back to framework when deployment reveals gaps (L827). Closes the deployment→framework feedback loop.
+- ✅ **DEPLOYMENT_SPEC_v3.13.0.yaml + v3.14.1.yaml**: Template baselines + reconciliation steps for fleet upgrade. Pairs with SOP Phase 2.5 deployment artifact sync.
+- ✅ **Skill Telemetry Logger** (`log_skill_invocation.py`): Structured JSONL entries when skills are invoked — substrate for principal-facing skill-usage analytics.
+- ✅ **Single-Verb Exception Registry** (CAP-SNAME-001-06): Permits `aget-{verb}` form for approved single-verb skills (`aget-ask`, `aget-name`).
+- ✅ **AGET_TEMPLATE_SPEC** universal skills 15 → 31; supervisor skills 18 → 37.
+- ✅ **Session Script Deprecations**: 4 session scripts deprecated per POL-DEP-001 (2 minor-version grace per R-DEP-011); removal v3.16.0.
+
+### v3.13.0 - Operational Maturation & Fleet Automation
+
+**Released**: 2026-04-12
 
 - ✅ **Release Gate Validator**: `validate_release_gate.py` — structural exit-code enforcement across 7 validators (L784 fix)
 - ✅ **Fleet Upgrade Script**: `fleet_upgrade.py` — single-script migration reduces 25-40 prompts to ≤5
