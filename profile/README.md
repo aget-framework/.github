@@ -425,7 +425,7 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 - ✅ **POL-REL-001**: Weekly Saturday release policy formalized from 6-release empirical record (v3.10–v3.15).
 - ✅ **ADR-022**: Breaking-change policy ratified — codifies Q3=(b) interpretation.
 - ✅ **`verification/validate_archetype_skills.py`**: Promoted to canonical `aget/verification/` — mechanically enforces universal-skill mandate (CAP-TPL-016-04).
-- ⚠️ **Breaking: BC-001** — `version.json` old field names removed (19 fields renamed in v3.14; dual-read shim removed). See [BREAKING_CHANGES_v3.15.md](https://github.com/aget-framework/aget/blob/main/docs/BREAKING_CHANGES_v3.15.md).
+- ⚠️ **Breaking: BC-001** — v3.14 dual-read shim removed; code reading `aget_`-prefixed field names from `version.json` (which don't exist) now breaks. See [BREAKING_CHANGES_v3.15.md](https://github.com/aget-framework/aget/blob/main/docs/BREAKING_CHANGES_v3.15.md).
 - ⚠️ **Breaking: BC-002** — `--fix` flag removed from skill surfaces. Replacement: `/aget-enhance-health`.
 
 ### v3.14.1 - #979 Installer Partial-Propagation Hotfix
