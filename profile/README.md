@@ -6,9 +6,9 @@ Build AI agents that accumulate domain expertise serving your decisions. AGET pr
 
 **Solve**: Lost context between sessions, knowledge that resets daily, agents that can't learn from each other, deployment confidence across your fleet.
 
-[![Version](https://img.shields.io/badge/version-3.14.1-blue)](https://github.com/aget-framework/aget/releases/tag/v3.14.1)
+[![Version](https://img.shields.io/badge/version-3.15.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.15.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2026--04--18-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
+[![Release Date](https://img.shields.io/badge/released-2026--04--25-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
 ---
 
@@ -183,7 +183,7 @@ requirements:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.14.1",
+  "aget_version": "3.15.0",
   "instance_type": "AGET",
   "template": "researcher",
   "migration_history": [
@@ -197,8 +197,9 @@ requirements:
     "v3.7.0 -> v3.8.0: 2026-03-08",
     "v3.8.0 -> v3.9.0: 2026-03-15",
     "v3.9.0 -> v3.10.0: 2026-03-21",
-    "v3.10.0 -> v3.11.0: 2026-03-28
-    "v3.11.0 -> v3.11.1: 2026-04-04""
+    "v3.10.0 -> v3.11.0: 2026-03-28",
+    "v3.11.0 -> v3.11.1: 2026-04-04",
+    "v3.14.1 -> v3.15.0: 2026-04-25"
   ]
 }
 ```
@@ -279,14 +280,14 @@ Track agent identity, manage upgrades, ensure compliance:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.14.1",
+  "aget_version": "3.15.0",
   "instance_type": "AGET",
   "template": "researcher",
   "domain": "market_analysis"
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → v3.12.0 → v3.13.0 → v3.14.0 → **v3.14.1**
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → v3.12.0 → v3.13.0 → v3.14.0 → v3.14.1 → **v3.15.0**
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -413,7 +414,21 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ## Roadmap
 
-### v3.14.1 (Current) - #979 Installer Partial-Propagation Hotfix
+### v3.15.0 (Current) - Two-Level Model Coherence + Security Hardening + Weekly Cadence Formalization
+
+**Released**: 2026-04-25
+
+- ✅ **`/aget-enhance-health` (SKILL-049 v1.0.0)**: 7-phase health remediation — canonical `check → enhance` pipeline. Deployed to all 13 templates.
+- ✅ **AGET_SECURITY_SPEC v0.2**: First dedicated security spec — 8 CAP-SEC contracts (boundary enforcement, input validation, information disclosure, dependency integrity, authority overstep, scope creep, output contamination, autonomous action bounds).
+- ✅ **AGET_BUDGET_GRAMMAR_SPEC v0.2**: Budget grammar formalized — 4 CAP-BGG contracts.
+- ✅ **CAP-REL-029**: Pre-release gate checklist as testable EARS requirement.
+- ✅ **POL-REL-001**: Weekly Saturday release policy formalized from 6-release empirical record (v3.10–v3.15).
+- ✅ **ADR-022**: Breaking-change policy ratified — codifies Q3=(b) interpretation.
+- ✅ **`verification/validate_archetype_skills.py`**: Promoted to canonical `aget/verification/` — mechanically enforces universal-skill mandate (CAP-TPL-016-04).
+- ⚠️ **Breaking: BC-001** — `version.json` old field names removed (19 fields renamed in v3.14; dual-read shim removed). See [BREAKING_CHANGES_v3.15.md](https://github.com/aget-framework/aget/blob/main/docs/BREAKING_CHANGES_v3.15.md).
+- ⚠️ **Breaking: BC-002** — `--fix` flag removed from skill surfaces. Replacement: `/aget-enhance-health`.
+
+### v3.14.1 - #979 Installer Partial-Propagation Hotfix
 
 **Released**: 2026-04-18
 
