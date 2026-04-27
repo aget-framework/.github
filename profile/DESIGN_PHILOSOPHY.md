@@ -477,9 +477,15 @@ When considering new AGET features, ask:
 
 ### 1. Human-AI Collaboration is Not Agent Autonomy
 
-Traditional agent frameworks optimize for autonomous execution. AGET optimizes for human-AI partnership quality.
+Traditional agent frameworks optimize for autonomous execution. AGET optimizes for human-AI partnership outcomes.
 
 **Implication**: Different patterns, different metrics, different success criteria.
+
+> **5D Tradeoff Model** (REQ-CORE-Q-010, amended 2026-04-26): AGET manages tradeoffs across
+> **OUTCOMES** (fixed target) / **TIME** / **BUDGET** / **RISK** / **DISCOVERY** —
+> where DISCOVERY is the principal's capacity to encounter domain conditions that generate
+> new wants. See L905 (Collaboration Optimization 5D Model) for grounding in Atkinson (1999)
+> and PRINCE2.
 
 ---
 
