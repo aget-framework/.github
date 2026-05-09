@@ -183,7 +183,7 @@ requirements:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.15.0",
+  "aget_version": "3.16.0",
   "instance_type": "AGET",
   "template": "researcher",
   "migration_history": [
@@ -199,7 +199,8 @@ requirements:
     "v3.9.0 -> v3.10.0: 2026-03-21",
     "v3.10.0 -> v3.11.0: 2026-03-28",
     "v3.11.0 -> v3.11.1: 2026-04-04",
-    "v3.14.1 -> v3.15.0: 2026-04-25"
+    "v3.14.1 -> v3.15.0: 2026-04-25",
+    "v3.15.0 -> v3.16.0: 2026-05-02"
   ]
 }
 ```
@@ -280,14 +281,14 @@ Track agent identity, manage upgrades, ensure compliance:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.15.0",
+  "aget_version": "3.16.0",
   "instance_type": "AGET",
   "template": "researcher",
   "domain": "market_analysis"
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → v3.12.0 → v3.13.0 → v3.14.0 → v3.14.1 → **v3.15.0**
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → v3.12.0 → v3.13.0 → v3.14.0 → v3.14.1 → v3.15.0 → **v3.16.0**
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -414,7 +415,17 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ## Roadmap
 
-### v3.15.0 (Current) - Two-Level Model Coherence + Security Hardening + Weekly Cadence Formalization
+### v3.16.0 (Current) - Framework-Discipline Cluster Closure + Wave-1A Spec Contracts + /aget-go Production
+
+**Released**: 2026-05-02
+
+- ✅ **`/aget-go` (SKILL-048 v1.0.0)**: Healthy Friction primitive promoted to production — the framework's first explicit middle ground between Advisory (no friction) and Strict (hard block). Mandatory verification of the principle triad (spec+verify-first, coherence-next, evidence-driven). Authorization-only by design — does not execute the authorized work, preserving Two-Level Model separation (L742).
+- ✅ **Wave-1A post-release spec contracts** (CAP-REL-030/031/032/033): Post-Release CHANGELOG / Tag / Badge-Parity / Contract-Test validators specified. Shipped as **SPEC-LANDED; IMPLEMENTATION DEFERRED v3.17** with R-DEP-010 grace-period annotation per ADR-007 (No Test Theater) — honest spec-truthfulness over aspirational "LANDED."
+- ✅ **Knowledge-tier isolation skeleton** (CAP-SEC-007): Four-tier trust model contract (T0 confidential / T1 internal / T2 shared / T3 external) and `.agetignore` skeleton at canonical `aget/` root. Theoretical basis: Least Privilege, Bell-LaPadula, Mandatory Access Control. Hook implementation deferred v3.17.
+- ✅ **Framework-discipline cluster closure** (L908+L909+L910+L912+L913+L914+L916): Seven-member cluster representing surfaces where narrative-discipline outpaced structural-discipline. Each member made detectable and structurally fixed (or carrying explicit v3.17 commitment).
+- ✅ **Universal-skill mandate recalibration** (CAP-TPL-016-04): 32 → 29 universal skills. Three release-triad skills graduated from universal baseline to release-execution archetype catalog (CAP-TPL-016-07).
+
+### v3.15.0 - Two-Level Model Coherence + Security Hardening + Weekly Cadence Formalization
 
 **Released**: 2026-04-25
 
