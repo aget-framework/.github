@@ -6,9 +6,9 @@ Build AI agents that accumulate domain expertise serving your decisions. AGET pr
 
 **Solve**: Lost context between sessions, knowledge that resets daily, agents that can't learn from each other, deployment confidence across your fleet.
 
-[![Version](https://img.shields.io/badge/version-3.16.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.16.0)
+[![Version](https://img.shields.io/badge/version-3.17.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.17.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2026--05--02-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
+[![Release Date](https://img.shields.io/badge/released-2026--05--09-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
 ---
 
@@ -183,7 +183,7 @@ requirements:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.16.0",
+  "aget_version": "3.17.0",
   "instance_type": "AGET",
   "template": "researcher",
   "migration_history": [
@@ -200,7 +200,8 @@ requirements:
     "v3.10.0 -> v3.11.0: 2026-03-28",
     "v3.11.0 -> v3.11.1: 2026-04-04",
     "v3.14.1 -> v3.15.0: 2026-04-25",
-    "v3.15.0 -> v3.16.0: 2026-05-02"
+    "v3.15.0 -> v3.16.0: 2026-05-02",
+    "v3.16.0 -> v3.17.0: 2026-05-09"
   ]
 }
 ```
@@ -281,14 +282,14 @@ Track agent identity, manage upgrades, ensure compliance:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.16.0",
+  "aget_version": "3.17.0",
   "instance_type": "AGET",
   "template": "researcher",
   "domain": "market_analysis"
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → v3.12.0 → v3.13.0 → v3.14.0 → v3.14.1 → v3.15.0 → **v3.16.0**
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → v3.12.0 → v3.13.0 → v3.14.0 → v3.14.1 → v3.15.0 → v3.16.0 → **v3.17.0**
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -415,7 +416,18 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ## Roadmap
 
-### v3.16.0 (Current) - Framework-Discipline Cluster Closure + Wave-1A Spec Contracts + /aget-go Production
+### v3.17.0 (Current) - Theme C3: Canonical Coherence + Structural Self-Conformance
+
+**Released**: 2026-05-09
+
+- ✅ **`framework-manager` agent archetype** (T1.7, Q4=A.2): Coined to close the self-classification gap for agents whose role is canonically managing the framework's public repos. 6-site multi-site equality propagation (`identity.json` + `version.json` + `CHARTER` + `SCOPE_BOUNDARIES` + `AGENTS.md` + ontology C610 FrameworkManagerArchetype). Theoretical basis: Stewardship Theory of Management (Davis, Schoorman & Donaldson 1997).
+- ✅ **CAP-REL-030 + CAP-REL-031 IMPLEMENTED** (T1.1 + T1.2): Closes v3.16 sleeping CAPs (Post-Release CHANGELOG Validator + Post-Release Tag Validator). Empirical run against v3.16.0 reference: 14/14 PASS. CAP-REL-032 + CAP-REL-033 grace-extended to v3.18.0 (Q1=B; R-DEP-011 rationale in `governance/POLICY_deprecation.md` Active Grace Extensions).
+- ✅ **Sibling-quadruple spec authoring** (Tier 2, calibrated rigor): T2.18 `SOP_scope_lock_ceremony.md` v1.0.0 LANDED (codifies the very 4-gate ceremony executed at v3.16+v3.17 lock events — Theme C3 self-conformance demonstrated structurally); T2.19 `AGET_SKILL_LIFECYCLE_SPEC` v1.0.0 LANDED with full V-test authoring (Q-G1.5-2=B principal Decide rejected v3.16 SPEC-LANDED-IMPL-DEFERRED precedent — NO sleeping CAPs at V-test layer); T2.20 `AGET_FLEET_UPGRADE_SPEC` v0.1.0 DRAFT (calibrated demote per L103); T2.23 `AGET_TASK_ROUTING_SPEC` v0.1.0 DRAFT (calibrated demote).
+- ✅ **`scripts/health_check.py` substance-aware evolution check** (T1.8, gh#1211): Closes L656 check-by-shape vs check-by-substance gap. Thresholds: WARN at non_ldoc_count > 2× l_doc_count; CRITICAL at non_ldoc_count > 10× l_doc_count OR byte_size > 100 MB.
+- ✅ **`SOP_release_process.md` v1.32 → v1.45** (T1.5 + T1.6): H-RHSC-001 G3+G4 SOP wiring; V-G7.x broadened from presence-style to multi-condition correctness; explicit RELEASE_REPOS array (closes case-sensitive bash glob silently skipping `template-document-processor-AGET`).
+- ✅ **V-test scope-of-validation as second axis of correctness** (Theme C3 empirical ratification): v3.16's #1 lesson (correctness-not-presence) extended with a second axis — declared scope of a V-test must equal the actual canonical-artifact universe. Three in-cycle V-test recurrences (T1.7, G2, G4) plus two post-publication recurrences (org-profile, AGET_DELTA chronic-17) ratify the pattern.
+
+### v3.16.0 - Framework-Discipline Cluster Closure + Wave-1A Spec Contracts + /aget-go Production
 
 **Released**: 2026-05-02
 
