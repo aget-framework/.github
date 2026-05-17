@@ -6,9 +6,9 @@ Build AI agents that accumulate domain expertise serving your decisions. AGET pr
 
 **Solve**: Lost context between sessions, knowledge that resets daily, agents that can't learn from each other, deployment confidence across your fleet.
 
-[![Version](https://img.shields.io/badge/version-3.17.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.17.0)
+[![Version](https://img.shields.io/badge/version-3.18.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.18.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2026--05--09-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
+[![Release Date](https://img.shields.io/badge/released-2026--05--17-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
 ---
 
@@ -183,7 +183,7 @@ requirements:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.17.0",
+  "aget_version": "3.18.0",
   "instance_type": "AGET",
   "template": "researcher",
   "migration_history": [
@@ -201,7 +201,8 @@ requirements:
     "v3.11.0 -> v3.11.1: 2026-04-04",
     "v3.14.1 -> v3.15.0: 2026-04-25",
     "v3.15.0 -> v3.16.0: 2026-05-02",
-    "v3.16.0 -> v3.17.0: 2026-05-09"
+    "v3.16.0 -> v3.17.0: 2026-05-09",
+    "v3.17.0 -> v3.18.0: 2026-05-17"
   ]
 }
 ```
@@ -282,14 +283,14 @@ Track agent identity, manage upgrades, ensure compliance:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.17.0",
+  "aget_version": "3.18.0",
   "instance_type": "AGET",
   "template": "researcher",
   "domain": "market_analysis"
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → v3.12.0 → v3.13.0 → v3.14.0 → v3.14.1 → v3.15.0 → v3.16.0 → **v3.17.0**
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → v3.12.0 → v3.13.0 → v3.14.0 → v3.14.1 → v3.15.0 → v3.16.0 → v3.17.0 → **v3.18.0**
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -416,7 +417,20 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ## Release History
 
-### v3.17.0 (Current) - Theme C3: Canonical Coherence + Structural Self-Conformance
+### v3.18.0 (Current) - Substrate Hygiene + Memory-Layer Self-Application
+
+**Released**: 2026-05-17
+
+- ✅ **`AGET_MEMORY_SURFACE_SPEC` v0.2.0 canonical promotion** (T1.16 + T2.37): Codifies harness-vs-KB taxonomy per L335; R-MS-001..007 + V-MS-001..008 + CAP-MS-001..003 at LANDED rigor. Keystones the L908 family memory-layer closure.
+- ✅ **Verb Registry Currency** (T1.9 = PP-021, 8-gate sub-plan): 37 Active + 4 Reserved verbs + 11 §Hierarchy Decisions pairs (incl. `analyze ⊂ check`, `scan ⊂ study`, `update ⊂ enhance`). `SOP_verb_registry_maintenance.md` v1.0.0 + `audit_verb_registry.py` drift-detector. Closes INIT-FRAMEWORK-COHERENCE Stream 2.
+- ✅ **Homepage Fork C Hybrid** (T1.12, 8-gate sub-plan): org-profile inline releases bounded v3.10+; 14 pre-v3.10 entries archived; `## Roadmap` → `## Release History`; `release_homepage_update.py` ADR-008 Generator. **L941-L944 cluster closed structurally**.
+- ✅ **`/aget-create-initiative` Strict promotion** (T2.46): D71 verb-pair gap closed. Direct authoring of `planning/initiatives/INIT-*.md` now PROHIBITED unless skill invoked. Three Strict skills now.
+- ✅ **L961 multi-channel structural defenses** (Gate 4): Channel 1 AGENTS.md §HANDOFF-Deferral Discipline + Channel 2 SKILL-024 v1.4.0 REQ-PA-012 + Channel 4 wake_up.py `get_active_handoffs()`. 4/5 channels LANDED (Channel 5 deferred v3.19). Exceeds L467 ≥2 multi-channel requirement.
+- ✅ **Cycle-novel discipline: Honest Defect Acknowledgment**. At Gate 1.5, agent refused to confabulate 24 trim decisions when LOCK ceremony's IN-composition was not persisted on-disk. L964 prevention fired correctly against its author's own work. Tier 2 ships PARTIAL (3/18 LANDED) by honest acknowledgment of DEFECT-2/4; ~85 forward-routables documented to v3.19.
+
+**Tier 1 LANDED rate: 15/17 = 88%** (exceeds H-V318(a) target by 23pp). **H-V318(b) RESOLVED** via L961 multi-channel coverage. Spec-fault carry: gh#1179 + gh#1180 OPEN per L708 annotation. CAP-REL-032 + CAP-REL-033 second-grace-extended to v3.19 with explicit IMPLEMENT commitment.
+
+### v3.17.0 - Theme C3: Canonical Coherence + Structural Self-Conformance
 
 **Released**: 2026-05-09
 
