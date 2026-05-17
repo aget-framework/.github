@@ -414,7 +414,7 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ---
 
-## Roadmap
+## Release History
 
 ### v3.17.0 (Current) - Theme C3: Canonical Coherence + Structural Self-Conformance
 
