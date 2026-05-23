@@ -418,7 +418,18 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ## Release History
 
-### v3.18.0 (Current) - Substrate Hygiene + Memory-Layer Self-Application
+### v3.19.0 (Current) - Discipline + Healthy Friction Codification
+
+**Released**: 2026-05-23
+
+- ✅ **`/aget-propose-actions` Step 2.7 + Step 2.8** (REQ-PA-013/014/015): audit-after-synthesis pre-check (L980) + authorization-shape pre-check distinguishing agent-mode REFUSE (L976/L979 NBA-fill) from principal-mode ACCEPT. The cycle's anti-confabulation / authority-shape disciplines land as **enforced structure**, not prose advice.
+- ✅ **`AGET_ISSUE_GOVERNANCE_SPEC` v2.2.0** (PP-042): issue `routing_mode` ∈ {direct, supervisor_intake, supervisor_editorial, lesson_first} (CAP-ISSUE-009..014 + V-ISSUE-015..020) + ADR-021 Amendment 1.
+- ✅ **gh#1476 Healthy Friction codification**: SOP point-of-use channel (`SOP_scope_lock_ceremony` v1.3.0 §G1.AUDIT + `SOP_release_process` v1.50). No new L-doc (anti-banner-inflation).
+- ✅ **L983 over-application scope discipline**: the L735 push-window banner now carries an explicit `aget-framework/*`-only scope qualifier.
+
+> **No breaking changes.** Tier 2 PCRV citation-resolution remediation re-baselined to v3.20 (priority carry); CAP-REL-032/033 formally RECLASSIFIED → Spec-Landed/Implementation-Optional.
+
+### v3.18.0 - Substrate Hygiene + Memory-Layer Self-Application
 
 **Released**: 2026-05-17
 
