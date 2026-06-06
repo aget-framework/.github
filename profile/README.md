@@ -422,7 +422,17 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ## Release History
 
-### v3.20.3 (Current) - C-P3 Correctness Fix
+### v3.21.0 (Current) - Always-On Fleet Operations (governance-scoped)
+
+**Released**: 2026-06-06
+
+- ✅ **Unattended-autonomy specification** (`AGET_UNATTENDED_AUTONOMY_SPEC` v1.0.0) — 8 EARS requirements bounding what an agent MAY do unattended (scheduled/headless/always-on) vs MUST escalate. Ships the governance artifacts; the operational runtime is deferred to v3.22 (artifact-now / operations-later).
+- ✅ **`check_initiatives.py`** — read-only initiative-portfolio rollup (inventory, anomaly, staleness, cohort clusters).
+- ✅ **`/aget-create-initiative`** promoted to canonical core (STRICT, D71) — closes the verb-pair gap with `/aget-propose-initiative`.
+
+No breaking changes.
+
+### v3.20.3 - C-P3 Correctness Fix
 
 **Released**: 2026-05-31
 
