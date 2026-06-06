@@ -6,9 +6,9 @@ Build AI agents that accumulate domain expertise serving your decisions. AGET pr
 
 **Solve**: Lost context between sessions, knowledge that resets daily, agents that can't learn from each other, deployment confidence across your fleet.
 
-[![Version](https://img.shields.io/badge/version-3.20.3-blue)](https://github.com/aget-framework/aget/releases/tag/v3.20.3)
+[![Version](https://img.shields.io/badge/version-3.21.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.21.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2026--05--31-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
+[![Release Date](https://img.shields.io/badge/released-2026--06--06-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
 ---
 
@@ -183,7 +183,7 @@ requirements:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.20.3",
+  "aget_version": "3.21.0",
   "instance_type": "AGET",
   "template": "researcher",
   "migration_history": [
@@ -206,7 +206,8 @@ requirements:
     "v3.18.0 -> v3.19.0: 2026-05-23",
     "v3.19.0 -> v3.20.0: 2026-05-30",
     "v3.20.0 -> v3.20.2: 2026-05-31",
-    "v3.20.2 -> v3.20.3: 2026-05-31"
+    "v3.20.2 -> v3.20.3: 2026-05-31",
+    "v3.20.3 -> v3.21.0: 2026-06-06"
   ]
 }
 ```
@@ -287,14 +288,14 @@ Track agent identity, manage upgrades, ensure compliance:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.20.3",
+  "aget_version": "3.21.0",
   "instance_type": "AGET",
   "template": "researcher",
   "domain": "market_analysis"
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → v3.12.0 → v3.13.0 → v3.14.0 → v3.14.1 → v3.15.0 → v3.16.0 → v3.17.0 → v3.18.0 → v3.19.0 → v3.20.0 → v3.20.2 → **v3.20.3**
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → v3.12.0 → v3.13.0 → v3.14.0 → v3.14.1 → v3.15.0 → v3.16.0 → v3.17.0 → v3.18.0 → v3.19.0 → v3.20.0 → v3.20.2 → v3.20.3 → **v3.21.0**
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
