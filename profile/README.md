@@ -6,9 +6,9 @@ Build AI agents that accumulate domain expertise serving your decisions. AGET pr
 
 **Solve**: Lost context between sessions, knowledge that resets daily, agents that can't learn from each other, deployment confidence across your fleet.
 
-[![Version](https://img.shields.io/badge/version-3.21.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.21.0)
+[![Version](https://img.shields.io/badge/version-3.22.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.22.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2026--06--06-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
+[![Release Date](https://img.shields.io/badge/released-2026--06--13-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
 ---
 
@@ -183,7 +183,7 @@ requirements:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.21.0",
+  "aget_version": "3.22.0",
   "instance_type": "AGET",
   "template": "researcher",
   "migration_history": [
@@ -207,7 +207,8 @@ requirements:
     "v3.19.0 -> v3.20.0: 2026-05-30",
     "v3.20.0 -> v3.20.2: 2026-05-31",
     "v3.20.2 -> v3.20.3: 2026-05-31",
-    "v3.20.3 -> v3.21.0: 2026-06-06"
+    "v3.20.3 -> v3.21.0: 2026-06-06",
+    "v3.21.0 -> v3.22.0: 2026-06-13"
   ]
 }
 ```
@@ -288,14 +289,14 @@ Track agent identity, manage upgrades, ensure compliance:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.21.0",
+  "aget_version": "3.22.0",
   "instance_type": "AGET",
   "template": "researcher",
   "domain": "market_analysis"
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → v3.12.0 → v3.13.0 → v3.14.0 → v3.14.1 → v3.15.0 → v3.16.0 → v3.17.0 → v3.18.0 → v3.19.0 → v3.20.0 → v3.20.2 → v3.20.3 → **v3.21.0**
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → v3.12.0 → v3.13.0 → v3.14.0 → v3.14.1 → v3.15.0 → v3.16.0 → v3.17.0 → v3.18.0 → v3.19.0 → v3.20.0 → v3.20.2 → v3.20.3 → v3.21.0 → **v3.22.0**
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -422,7 +423,18 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ## Release History
 
-### v3.21.0 (Current) - Always-On Fleet Operations (governance-scoped)
+### v3.22.0 (Current) - Skill-Support Delivery + Verify-at-Point-of-Use + Hygiene
+
+**Released**: 2026-06-13
+
+- ✅ **`deploy_skill.py`** — governed surgical skill deployer (per-skill filter, push-window guard, live gap re-derivation). Principle: *distribute ≠ homogenize*.
+- ✅ **`check_claim_freshness.py`** + **`check_skill_coherence.py`** — verify-at-point-of-use gates (citation freshness, skill-frontmatter↔tree coherence). Principle: *propagation SHALL carry a paired point-of-use verify*.
+- ✅ **`validate_spec_binding.py`** — ONTOLOGY-SPEC-BINDING validator-half.
+- ✅ **`/aget-propose-actions` v1.8.0** — Step 3.5 Self-Critique (10-point checklist) + Type column; propagated to all 13 templates.
+
+No breaking changes. First deliberately-ambitious minor cycle (instrumented capacity experiment).
+
+### v3.21.0 - Always-On Fleet Operations (governance-scoped)
 
 **Released**: 2026-06-06
 
