@@ -424,9 +424,9 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ## Release History
 
-### v3.23.0 (Current) - Goal Tier & Integrity Hardening
+### v3.23.0 (Current) - Goal Tier (preview)
 
-Goal Tier (preview): `aget-create-goal` + `aget-propose-goals` skills; close-time authorization guard. Minor, no breaking changes.
+Goal Tier (preview): `aget-create-goal` + `aget-propose-goals` skills in canonical core. Minor, no breaking changes. (Canonical spec promotion + a close-time authorization guard land in 3.23.1.)
 
 ### v3.22.0 - Skill-Support Delivery + Verify-at-Point-of-Use + Hygiene
 
