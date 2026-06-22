@@ -243,7 +243,7 @@ Worker Foundation (all core capabilities)
 ```
 
 **Typical Use Cases**:
-- Fleet release management (coordinate v2.6 → v2.7 migration)
+- Fleet release management (coordinate v2.7 → v2.8 migration)
 - Pattern deployment across agents
 - Multi-repository operations (batch updates, consistency checks)
 - Issue triage and routing
@@ -634,7 +634,7 @@ git push -u origin main
 
 ### Example 4: Fleet Release Management
 
-**Need**: Coordinate v2.6 → v2.7 migration across 15 agents
+**Need**: Coordinate v2.7 → v2.8 migration across 15 agents
 **Choice**: Supervisor template (worker + fleet coordination)
 **Portfolio**: `null` (cross-portfolio coordination)
 **Rationale**: Multi-agent coordination, pattern deployment, release management, built on worker foundation

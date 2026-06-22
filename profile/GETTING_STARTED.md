@@ -242,7 +242,7 @@ Works with Claude Code, Cursor, Aider, Windsurf, and other CLI coding agents.
 ### Project Context Section
 ```markdown
 ## Project Context
-my-first-aget - [Brief description of agent's purpose] - v2.7.0
+my-first-aget - [Brief description of agent's purpose] - v2.8.0
 
 [Explain what this agent does, what problems it solves, what it's responsible for]
 ```
@@ -329,7 +329,7 @@ gh repo create my-first-aget --private --source=. --remote=origin
 
 # Push initial commit
 git add .
-git commit -m "Initial commit: my-first-aget v2.7.0
+git commit -m "Initial commit: my-first-aget v2.8.0
 
 AGET agent created from template-worker-aget.
 
@@ -368,7 +368,7 @@ wake up
 
 **Expected response**:
 ```
-my-first-aget v2.7.0 (Worker)
+my-first-aget v2.8.0 (Worker)
 
 📍 Location: ~/github/my-first-aget
 📊 Git: Clean working tree
