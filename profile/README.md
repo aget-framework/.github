@@ -426,11 +426,21 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ## Release History
 
-### v3.23.1 (Current) - Goal Tier (canonical) + Close-Authorization Guard
+### v3.24.0 (Current) - Reliance & Boundaries
+
+**Released**: 2026-06-27
+
+- ✅ **R-BND-001 — Boundary & Reliance Requirements** (canonical) — a cross-boundary reliance must be principal-owned, single-source, version-pinned, verified *meets-declared-minimum* (not parity-to-template), and drift-detectable.
+- ✅ **Skill-reliance manifest framework feature** — a release-pinned `{S}`/`{O}`/`{D}` reliance contract any AGET can declare and self-check (governed schema + generic validator).
+- ✅ **AGET_HOST_RUNTIME_SPEC v1.0.0** — host-filesystem layout standard (lifecycle-class separation, record/exhaust tier boundary, deployed-copy decoupling); conformance activates at first node deployment (ADR-007).
+
+Theme advanced-not-completed; friction-handling triage staged to a following cycle. Core `aget/` only (template fan-out is a follow-up).
+
+### v3.23.1 - Goal Tier (canonical) + Close-Authorization Guard
 
 **Released**: 2026-06-20
 
-- ✅ (auto-stub — replace with curated release bullets at SOP Phase 7.x)
+- ✅ Goal Tier promoted to canonical core (`AGET_GOAL_SPEC` + `/aget-create-goal` / `/aget-propose-goals`) + the close-authorization guard (built but not shipped in 3.23.0) lands in `aget/` with template propagation.
 
 ### v3.23.0 - Goal Tier (preview)
 
