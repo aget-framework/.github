@@ -431,7 +431,12 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 **Released**: 2026-07-04
 
-- ✅ (auto-stub — replace with curated release bullets at SOP Phase 7.x)
+- ✅ **AGET_ENTITY_DIMENSION_SPEC v0.1.0** (canonical) — first spec that normatively binds vocabulary by `aget:concept/` URI (7 entity-characterization dimensions, self-demonstrating), with conformance validator `validate_entity_dimension.py` (16 V-tests). The reusable template for the ontology-spec-binding program.
+- ✅ **AGET_FRICTION_SPEC v1.0.0 Active** — graduated from draft after non-author forward-validation; friction capture now stamps a triage value-class (`owed` fail-safe) so healthy controls are structurally protected from "cleanup".
+- ✅ **aget-ask v1.0.0** (SKILL-045, production) — entropy-reducing clarification/followup skill with altitude filter; canonical + all 13 templates.
+- ✅ **Computed release integrity** — "RELEASED" is computed, never asserted: binary Definition-of-Done gate wired into the plan-close path (blocks on red), closure-substance detection, received-state V-tests, reliance self-attestation at wake-up, migration guidance reachable *at the tag*. This release ran under its own new gates — and they drew blood (3 pre-green remediations).
+- ✅ **`study_topic.py` repair** — live plans no longer render `[inactive]`; knowledge/ + ontology/ join the KB search surface.
+- ✅ **Reliance-only template conformance** — all 13 templates payload-verified, bumped, and **tagged v3.25.0** (first tagged template release since v3.9), carrying an `@aget-canonical-specs` reference line instead of spec copies.
 
 ### v3.24.0 - Reliance & Boundaries
 
