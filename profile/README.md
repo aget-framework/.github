@@ -432,7 +432,13 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 **Released**: 2026-07-11
 
-- ✅ (auto-stub — replace with curated release bullets at SOP Phase 7.x)
+- ✅ **Release-currency signal at wake-up** — an agent now learns at session start when its framework version is behind the latest release (one line when behind, silent when current, fail-soft offline). Adopter note: use the shipped `gh api` form; `gh release view` hangs under non-tty subprocess.
+- ✅ **Extension hooks for `health_check.py` + `study_topic.py`** (`*_ext.py:post_*`) — local additions get a supported surface that upgrades never overwrite, ending the fork-or-halt dilemma observed in fleet migrations.
+- ✅ **Three-state check contract** — every check reports PASS / FAIL / **UNREACHABLE** distinctly; "couldn't check" stops masquerading as "checked and clean" (a fleet-wide checker had silently degraded for two releases).
+- ✅ **Verify-before-claim coverage matrix** — four claim channels, each with an owning gate: pre-filing dedup/existence probes (`/aget-file-issue`), a has-it-run gate blocking COMPLETE on execution-evidence-free mechanisms (`/aget-close-project`), a spec-registered conversational pre-assertion gate (CAP-SESSION-015), and lesson-propagation wiring (`/aget-record-lesson`).
+- ✅ **`study_topic.py` search contract** — output declares which surfaces were searched and which deliberately not; token-boundary matching, ranking rebalance, relevance floor (7 audited defects closed).
+- ✅ **Release-integrity hardening** — tag-payload coherence gate (post-tag repairs can't silently diverge from the tag); deployment spec **tag-reachable** (closing v3.25.0's disclosed lapse); first exercised deprecation rehearsal under the newly adopted N-2 policy; permission-QUALITY check (bare write-capable grants warn even at green counts).
+- ✅ **Terminal-state vocabulary** — IMPLEMENTED-AWAITING-DEPLOYMENT-EVIDENCE and kin make "built but not deployed" an honest, representable plan state.
 
 ### v3.25.0 - Grounded Entities & Trusted Releases
 
