@@ -105,7 +105,7 @@ Add more agents as needs emerge. **13 archetypes** available — each with speci
 | [worker](https://github.com/aget-framework/template-worker-aget) | General task execution |
 | [document-processor](https://github.com/aget-framework/template-document-processor-AGET) | Document pipelines |
 
-All templates include 31 universal skills (session management, health checks, knowledge capture, governance, release quality triad, and more) plus archetype-specific skills.
+All templates include the full universal skill set — session management, health checks, knowledge capture, governance, release-quality triad, and more — enforced per archetype by `validate_archetype_skills` (14/14 conformant as of v3.27.0), plus archetype-specific skills.
 
 ---
 
