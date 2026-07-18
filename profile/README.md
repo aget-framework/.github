@@ -433,7 +433,13 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 **Released**: 2026-07-18
 
-- ✅ (auto-stub — replace with curated release bullets at SOP Phase 7.x)
+- ✅ **Rung-4 behavioral migration verification** — a migration now proves it *runs*, not just landed: mandatory Behavioral Smoke probes on the executed surface, post-payload test suite, dual-basename parity; pilot confirmations require a behavioral result, not a disk receipt.
+- ✅ **3-axis tag-payload coherence** — the release gate now sweeps all 14 origins at their tagged trees and checks executed-surface declarations (`DEPLOYMENT_SPEC` carries the first binding set); found a real gap on its first run.
+- ✅ **"Corrections since tag" single surface** — one write per post-tag fix (`handoffs/CORRECTIONS_vX.Y.Z.md`); guidance surfaces point, never duplicate. Exercised same-day by its own release (3 rows).
+- ✅ **Honest portfolio-completion signals** — exit-condition tick-state becomes a maintained signal (CIS-010), and capability share is measured among finite work only (CIS-008 Achieve-only): the checks stop punishing *finishing*.
+- ✅ **L-doc ID injectivity restored** — 10 collided lesson files renumbered with a tombstone registry; the collision health-gate fails on recurrence.
+- ✅ **Universal-skill conformance 14/14** — canonical core and every template now ship their archetype's full skill set.
+- ✅ **Transactional Execution doctrine** in every template `AGENTS.md` — results-first sessions, no option-menu ceremony, one-line genuine gates.
 
 ### v3.26.0 - Signals & Contracts
 
