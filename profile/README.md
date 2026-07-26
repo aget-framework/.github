@@ -434,7 +434,11 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 **Released**: 2026-07-26
 
-- ⛔ UNCURATED-STUB-FAIL — replace with curated release bullets (SOP Phase 7.x). This token FAILS --check S9 by design: an uncurated section must never read green (L1212).
+- ✅ **Gates that fire without being asked** — a `PreToolUse` hook runs the release battery and the release-quality gate at the moment of `git tag` or `push --tags`, and refuses the act if either fails. Before v3.28 these ran only when an agent remembered to run them.
+- ✅ **A release score can no longer certify itself** — the quality score must declare an independent verification leg that resolves: a registered verifier, evidence carrying findings prose, and a recorded claims-under-test step. A bare verdict is not a landed leg.
+- ✅ **Refusals leave a trace** — every gate refusal appends to a firing ledger that records whether the control fired unbidden or was run by hand. The distinction is the evidence.
+- ✅ **A traceability floor that moves** — the long-standing 80% figure was a pilot aspiration in its own source comment, never met. Replaced by a ratified floor that ratchets each minor release, blocking regression instead of blocking everything.
+- ✅ **Four defects found by executing gates rather than reading them** — release metadata dates that were never bumped, a research tool advertising a specification tier it never searched, issue counts saturating silently at a page cap, and a contract suite that could not pass its own timeout.
 
 ### v3.27.0 - Finish & Verify
 
