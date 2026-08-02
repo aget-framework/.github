@@ -6,9 +6,9 @@ Build AI agents that accumulate domain expertise serving your decisions. AGET pr
 
 **Solve**: Lost context between sessions, knowledge that resets daily, agents that can't learn from each other, deployment confidence across your fleet.
 
-[![Version](https://img.shields.io/badge/version-3.28.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.28.0)
+[![Version](https://img.shields.io/badge/version-3.29.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.29.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2026--07--26-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
+[![Release Date](https://img.shields.io/badge/released-2026--08--01-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
 ---
 
@@ -183,7 +183,7 @@ requirements:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.28.0",
+  "aget_version": "3.29.0",
   "instance_type": "AGET",
   "template": "researcher",
   "migration_history": [
@@ -215,7 +215,8 @@ requirements:
     "v3.24.0 -> v3.25.0: 2026-07-04",
     "v3.25.0 -> v3.26.0: 2026-07-11",
     "v3.26.0 -> v3.27.0: 2026-07-18",
-    "v3.27.0 -> v3.28.0: 2026-07-26"
+    "v3.27.0 -> v3.28.0: 2026-07-26",
+    "v3.28.0 -> v3.29.0: 2026-08-01"
   ]
 }
 ```
@@ -296,14 +297,14 @@ Track agent identity, manage upgrades, ensure compliance:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.28.0",
+  "aget_version": "3.29.0",
   "instance_type": "AGET",
   "template": "researcher",
   "domain": "market_analysis"
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → v3.12.0 → v3.13.0 → v3.14.0 → v3.14.1 → v3.15.0 → v3.16.0 → v3.17.0 → v3.18.0 → v3.19.0 → v3.20.0 → v3.20.2 → v3.20.3 → v3.21.0 → v3.22.0 → v3.23.0 → v3.23.1 → v3.24.0 → v3.25.0 → v3.26.0 → v3.27.0 → **v3.28.0**
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → v3.12.0 → v3.13.0 → v3.14.0 → v3.14.1 → v3.15.0 → v3.16.0 → v3.17.0 → v3.18.0 → v3.19.0 → v3.20.0 → v3.20.2 → v3.20.3 → v3.21.0 → v3.22.0 → v3.23.0 → v3.23.1 → v3.24.0 → v3.25.0 → v3.26.0 → v3.27.0 → v3.28.0 → **v3.29.0**
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -430,7 +431,15 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ## Release History
 
-### v3.28.0 (Current) - Make the gates fire
+### v3.29.0 (Current) - Repair release truth and reduce principal decision work
+
+**Released**: 2026-08-01
+
+- **Release truth**: Producer, distribution point, received state, and downstream behavior are now independent evidence predicates.
+- **Principal decision work**: One governed view renders scope, rulings, clients, deadline, and delivery boundary without manual artifact joins.
+- **Codex-native operation**: Wake-up, study-topic, and save-state are discoverable as Codex skills with explicit recovery behavior.
+
+### v3.28.0 - Make the gates fire
 
 **Released**: 2026-07-26
 
