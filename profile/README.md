@@ -217,7 +217,8 @@ requirements:
     "v3.26.0 -> v3.27.0: 2026-07-18",
     "v3.27.0 -> v3.28.0: 2026-07-26",
     "v3.28.0 -> v3.29.0: 2026-08-01",
-    "v3.29.0 -> v3.30.0: 2026-08-09"
+    "v3.29.0 -> v3.30.0: 2026-08-09",
+    "v3.30.0 -> v3.31.0: 2026-08-15"
   ]
 }
 ```
@@ -432,7 +433,15 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ## Release History
 
-### v3.30.0 (Current) - Portable Skills, Continuous Cadence
+### v3.31.0 (Current) - Ship What Was Already Built
+
+**Released**: 2026-08-15
+
+- Promoted five verification instruments to canonical, each with its test.
+- Repaired the promotion leg: fixture-dir assumption, live-registry skip, instance-scoped regression.
+- Made every shipped skill selectable by its description.
+
+### v3.30.0 - Portable Skills, Continuous Cadence
 
 **Released**: 2026-08-09
 
