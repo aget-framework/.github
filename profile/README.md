@@ -6,9 +6,9 @@ Build AI agents that accumulate domain expertise serving your decisions. AGET pr
 
 **Solve**: Lost context between sessions, knowledge that resets daily, agents that can't learn from each other, deployment confidence across your fleet.
 
-[![Version](https://img.shields.io/badge/version-3.30.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.30.0)
+[![Version](https://img.shields.io/github/v/release/aget-framework/aget?label=version&color=blue)](https://github.com/aget-framework/aget/releases/latest)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2026--08--09-lightgrey)](https://github.com/aget-framework/aget/releases/latest)
+[![Release Date](https://img.shields.io/github/release-date/aget-framework/aget?label=released&color=lightgrey)](https://github.com/aget-framework/aget/releases/latest)
 
 ---
 
