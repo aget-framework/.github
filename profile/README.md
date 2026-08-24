@@ -436,10 +436,11 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 ## Release History
 
 ### v3.32.0 (Current) - Truthful Release Evidence
-
 **Released**: 2026-08-23
 
-- ⛔ UNCURATED-STUB-FAIL — replace with curated release bullets (SOP Phase 7.x). This token FAILS --check S9 by design: an uncurated section must never read green (L1212).
+- Cadence instrument now rejects an unresolvable explicit source (exit 2, UNAVAILABLE) instead of silently measuring a different repository, and discloses which resolution rule selected the subject it measured.
+- Deprecation removal check reports pass/fail/unavailable over a real public registry (governance/DEPRECATIONS.md ships), with unavailability reflected in the exit code.
+- Core-only corrective release: two items, no breaking changes, no migration required; templates do not ride this cycle.
 
 ### v3.31.1 - Receiver-Safe Close Gates
 
