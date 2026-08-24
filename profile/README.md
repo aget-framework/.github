@@ -6,9 +6,9 @@ Build AI agents that accumulate domain expertise serving your decisions. AGET pr
 
 **Solve**: Lost context between sessions, knowledge that resets daily, agents that can't learn from each other, deployment confidence across your fleet.
 
-[![Version](https://img.shields.io/badge/version-3.31.1-blue)](https://github.com/aget-framework/aget/releases/tag/v3.31.1)
+[![Version](https://img.shields.io/badge/version-3.32.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.32.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2026--08--18-lightgrey)]
+[![Release Date](https://img.shields.io/badge/released-2026--08--23-lightgrey)]
 
 ---
 
@@ -183,7 +183,7 @@ requirements:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.31.1",
+  "aget_version": "3.32.0",
   "instance_type": "AGET",
   "template": "researcher",
   "migration_history": [
@@ -219,7 +219,8 @@ requirements:
     "v3.28.0 -> v3.29.0: 2026-08-01",
     "v3.29.0 -> v3.30.0: 2026-08-09",
     "v3.30.0 -> v3.31.0: 2026-08-15",
-    "v3.31.0 -> v3.31.1: 2026-08-18"
+    "v3.31.0 -> v3.31.1: 2026-08-18",
+    "v3.31.1 -> v3.32.0: 2026-08-23"
   ]
 }
 ```
@@ -300,14 +301,14 @@ Track agent identity, manage upgrades, ensure compliance:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.31.1",
+  "aget_version": "3.32.0",
   "instance_type": "AGET",
   "template": "researcher",
   "domain": "market_analysis"
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → v3.12.0 → v3.13.0 → v3.14.0 → v3.14.1 → v3.15.0 → v3.16.0 → v3.17.0 → v3.18.0 → v3.19.0 → v3.20.0 → v3.20.2 → v3.20.3 → v3.21.0 → v3.22.0 → v3.23.0 → v3.23.1 → v3.24.0 → v3.25.0 → v3.26.0 → v3.27.0 → v3.28.0 → v3.29.0 → v3.30.0 → v3.31.0 → **v3.31.1**
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → v3.12.0 → v3.13.0 → v3.14.0 → v3.14.1 → v3.15.0 → v3.16.0 → v3.17.0 → v3.18.0 → v3.19.0 → v3.20.0 → v3.20.2 → v3.20.3 → v3.21.0 → v3.22.0 → v3.23.0 → v3.23.1 → v3.24.0 → v3.25.0 → v3.26.0 → v3.27.0 → v3.28.0 → v3.29.0 → v3.30.0 → v3.31.0 → v3.31.1 → **v3.32.0**
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -434,7 +435,13 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ## Release History
 
-### v3.31.1 (Current) - Receiver-Safe Close Gates
+### v3.32.0 (Current) - Truthful Release Evidence
+
+**Released**: 2026-08-23
+
+- ⛔ UNCURATED-STUB-FAIL — replace with curated release bullets (SOP Phase 7.x). This token FAILS --check S9 by design: an uncurated section must never read green (L1212).
+
+### v3.31.1 - Receiver-Safe Close Gates
 
 **Released**: 2026-08-18
 
