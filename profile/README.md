@@ -441,7 +441,10 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 **Released**: 2026-09-13
 
-- ⛔ UNCURATED-STUB-FAIL — replace with curated release bullets (SOP Phase 7.x). This token FAILS --check S9 by design: an uncurated section must never read green (L1212).
+- Adds receipt continuity, receiver conformance and host-layout checks with explicit limits when evidence is unavailable.
+- Introduces a payload lint ratchet, capability-retention checks and runtime/voice evidence bindings.
+- Carries an independently accepted repair successor and explicitly discloses inherited regression-coverage limitations.
+- Provides tag-bound deployment instructions; publication does not itself establish receiver acceptance.
 
 ### v3.33.1 - Receiver-visible integrity
 
