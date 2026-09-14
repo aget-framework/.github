@@ -456,6 +456,12 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 - Moves all thirteen templates to one coherent v3.33.1 release identity.
 - Updates every governed organization-homepage release surface to v3.33.1.
 
+### v3.33.0 - Integrity before clock
+
+- Publishes only validated canonical patterns, preserving the boundary between shipped framework content and deferred instance controls.
+- Adds archetype parity reporting that compares the authoritative register with consumers, templates, and declared fleet roles, naming unavailable inputs explicitly.
+- Adds self-assessment conformance detection for rejected unlanded content, controls without actuators, and L-document index incoherence.
+
 ### v3.32.0 - Truthful Release Evidence
 **Released**: 2026-08-23
 
