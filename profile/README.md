@@ -87,7 +87,7 @@ The supervisor handles everything: picks the right template, configures identity
 
 ### 4. Grow Your Fleet
 
-Add more agents as needs emerge. **13 archetypes** available — each with specialized skills and formal ontology:
+Add more agents as needs emerge. **13 registered templates** are available, covering 12 core archetypes plus the worker-derived document-processor variant:
 
 | Template | Primary Use Case |
 |----------|------------------|
@@ -105,7 +105,7 @@ Add more agents as needs emerge. **13 archetypes** available — each with speci
 | [worker](https://github.com/aget-framework/template-worker-aget) | General task execution |
 | [document-processor](https://github.com/aget-framework/template-document-processor-AGET) | Document pipelines |
 
-All templates include the full universal skill set — session management, health checks, knowledge capture, governance, release-quality triad, and more — enforced per archetype by `validate_archetype_skills` (14/14 conformant as of v3.27.0), plus archetype-specific skills.
+All templates include the **29 required universal skills** listed in the template specification, plus additional and archetype-specific skills. The shipped templates contain **38–44 installed skill definitions** each. Release-triad skills are separate from the mandated universal baseline. The presence validator checks core and all 13 templates; its result does not certify every archetype rule.
 
 ---
 
@@ -288,7 +288,7 @@ Advisor     ─── Read-only guidance (5 personas: teacher, mentor, consultan
 Worker      ─── Task execution, the foundation archetype for all agents
 ```
 
-**10 specialized archetypes** extend this hierarchy with domain-specific capabilities (developer, analyst, architect, researcher, operator, executive, reviewer, spec-engineer, consultant). Each inherits from worker and can operate alongside advisors or under supervisor coordination.
+**9 specialized archetypes** extend this hierarchy with domain-specific capabilities (developer, analyst, architect, researcher, operator, executive, reviewer, spec-engineer, consultant). The registered document-processor template is an additional worker-derived variant. Each inherits from worker and can operate alongside advisors or under supervisor coordination.
 
 The **[supervisor template](https://github.com/aget-framework/template-supervisor-aget)** manages fleet-level operations: agent review, learning propagation, issue escalation, and cross-agent coordination. **Recommended starting point** — start with a supervisor, then use it to create your fleet agents.
 
