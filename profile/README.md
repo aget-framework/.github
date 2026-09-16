@@ -67,13 +67,13 @@ cd my-supervisor
 
 ### 2. Open in Your CLI Tool
 
-Open the `my-supervisor/` directory in **Claude Code**, **Codex CLI**, or **Gemini CLI**. Then tell your agent:
+Open the `my-supervisor/` directory in **Claude Code**, **Codex CLI**, or **Gemini CLI**. Configure `agent_name` and `domain` in `.aget/version.json` and run the setup verification described in the [Supervisor template Quick Start](https://github.com/aget-framework/template-supervisor-aget#quick-start). Then tell your agent:
 
 ```
 wake up
 ```
 
-Your supervisor initializes — it knows its identity, loads its knowledge base, and is ready to work. No configuration needed.
+Your supervisor loads its configured identity and knowledge base. Check its wake-up report before starting work.
 
 ### 3. Create Your First Agent
 
@@ -407,9 +407,9 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 - **[Versioning Guide](https://github.com/aget-framework/aget/blob/main/docs/VERSIONING.md)** - Version system and compatibility
 - **[Upgrade Guide](https://github.com/aget-framework/aget/blob/main/docs/UPGRADING.md)** - Safe upgrade procedures
 - **[Releases](https://github.com/aget-framework/aget/blob/main/docs/RELEASES.md)** - Release process and quality standards
-- **[Version History](https://github.com/aget-framework/aget/blob/main/docs/VERSION_HISTORY.md)** - Complete release timeline
+- **[Version History](https://github.com/aget-framework/aget/blob/main/docs/VERSION_HISTORY.md)** - Selected release history and coverage gaps
 - **[Template Structure Guide](https://github.com/aget-framework/aget/blob/main/docs/TEMPLATE_STRUCTURE_GUIDE.md)** - Understanding agent templates
-- **[Layer Architecture](https://github.com/aget-framework/aget/blob/main/docs/LAYER_ARCHITECTURE.md)** - 5-layer knowledge architecture
+- **[Layer Architecture](https://github.com/aget-framework/aget/blob/main/docs/LAYER_ARCHITECTURE.md)** - Template inheritance and layer architecture
 
 ---
 
