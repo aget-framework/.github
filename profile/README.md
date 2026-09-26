@@ -4,11 +4,11 @@
 
 Build AI agents that accumulate domain expertise serving your decisions. AGET provides session continuity, shared memory architecture, and governance patterns across Claude Code, Codex CLI, Gemini CLI—through an open standard. Zero infrastructure required.
 
-**Solve**: Lost context between sessions, knowledge that resets daily, agents that can't learn from each other, deployment confidence across your fleet.
+**Solve**: Lost context between sessions, knowledge that resets daily, agents that can't learn from each other, deployment confidence across your [fleet](https://w3id.org/aget/vocab#Agent_Fleet).
 
 [![Version](https://img.shields.io/badge/version-3.35.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.35.0)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2026--09--26-lightgrey)]
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue)](https://github.com/aget-framework/aget/blob/main/LICENSE)
+[![Release Date](https://img.shields.io/badge/released-2026--09--25-lightgrey)](https://github.com/aget-framework/aget/releases/tag/v3.35.0)
 
 ---
 
@@ -223,7 +223,7 @@ requirements:
     "v3.31.1 -> v3.32.0: 2026-08-23",
     "v3.32.0 -> v3.33.1: 2026-08-30",
     "v3.33.1 -> v3.34.0: 2026-09-13",
-    "v3.34.0 -> v3.35.0: 2026-09-26"
+    "v3.34.0 -> v3.35.0: 2026-09-25"
   ]
 }
 ```
@@ -440,7 +440,7 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ### v3.35.0 (Current) - Receiver correctness
 
-**Released**: 2026-09-26
+**Released**: 2026-09-25
 
 - Proposed actions now say whether they move the outcome or only its measurement, and the deferral scan reads handoff documents on disk from configurable locations.
 - The strict close gate runs in Agets created from templates: the lifecycle module and specification ship with the gate, and the close-project skill passes the arguments it requires.
@@ -794,7 +794,7 @@ Inline release entries for v2.10.0 through v3.9.0 have been relocated to keep th
 
 ## License
 
-Apache 2.0 License - See [LICENSE](LICENSE) for details
+Apache 2.0 License - See [LICENSE](https://github.com/aget-framework/aget/blob/main/LICENSE) for details
 
 ---
 
