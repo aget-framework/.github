@@ -445,7 +445,7 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 **Released**: 2026-10-03
 
 - Adds a migration kit that a supervisor runs to move its fleet to a new release batch by batch: prepare, rehearse on copies, apply, launch, check, push and read the fleet's state. A supervisor copies the kit from a core clone; templates do not receive it.
-- The fleet migration procedure gains the kit's batch procedure and a blocking close-out gate. Launch and push each require a line typed by the supervisor's principal.
+- The fleet migration procedure gains the kit's batch procedure and a blocking close-out gate. The kit's push, and its launch when run without the `--copy-root` option, check for a line typed by the supervisor's principal. The release notes state what these checks do not enforce.
 - Also adds a display form for grounded vocabulary terms, a public decision log and two requirement domains.
 - The kit was exercised with one command-line tool (Claude Code) on the previous release's content. A migration to v3.36.0 itself has not been shown; publication does not itself establish receiver acceptance.
 
