@@ -301,26 +301,28 @@ If you have advisor instance using **only** consultant persona:
 
 ### Portfolio Classifications
 
+The portfolio names below are illustrative labels; choose names for your own installation.
+
 - **main** (private): Standard agents, general-purpose capabilities
-- **ccb** (very_personal): Personal/confidential agents with sensitive context
-- **legalon** (confidential): Domain-specific agents with proprietary data
+- **personal-example** (very_personal): Personal/confidential agents with sensitive context
+- **confidential-example** (confidential): Domain-specific agents with proprietary data
 - **null**: Template or coordinator (no specific portfolio)
 
 ### Portfolio Guidance by Template
 
 **Worker** (Core):
 - Assign to specific portfolio based on data access
-- Examples: `main` for general automation, `ccb` for personal agents
+- Examples: `main` for general automation, `personal-example` for personal agents
 
 **Consultant** (Worker + Patterns):
 - Inherits worker portfolio capabilities
 - Consultant artifacts inherit portfolio classification
-- Examples: `main` for general consulting, `ccb` for personal advisory
+- Examples: `main` for general consulting, `personal-example` for personal advisory
 
 **Advisor** (Worker + Persona):
 - Inherits worker portfolio capabilities
 - Session artifacts inherit portfolio classification
-- Examples: `ccb` for personal coach, `main` for technical mentor
+- Examples: `personal-example` for personal coach, `main` for technical mentor
 
 **Supervisor** (Worker + Fleet Coordination):
 - Inherits worker portfolio capabilities
@@ -336,7 +338,7 @@ vim .aget/version.json
 
 # Set portfolio field
 {
-  "portfolio": "main"  // or "ccb", "legalon", null
+  "portfolio": "main"  // or "personal-example", "confidential-example", null
 }
 ```
 
@@ -627,7 +629,7 @@ git push -u origin main
 
 **Need**: Provide coaching with ability to switch to mentoring or teaching
 **Choice**: Advisor template (worker + 5 personas)
-**Portfolio**: `ccb` (very_personal - confidential coaching context)
+**Portfolio**: `personal-example` (very_personal - confidential coaching context)
 **Rationale**: Multi-persona flexibility, session artifacts required, persona system needed, built on worker foundation
 
 ---
