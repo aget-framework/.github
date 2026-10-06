@@ -8,7 +8,7 @@ Build AI agents that accumulate domain expertise serving your decisions. AGET pr
 
 [![Version](https://img.shields.io/badge/version-3.36.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.36.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](https://github.com/aget-framework/aget/blob/main/LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2026--10--03-lightgrey)](https://github.com/aget-framework/aget/releases/tag/v3.36.0)
+[![Release Date](https://img.shields.io/badge/planned-2026--10--10-lightgrey)](https://github.com/aget-framework/aget/releases/tag/v3.36.0)
 
 ---
 
@@ -225,7 +225,7 @@ requirements:
     "v3.33.1 -> v3.34.0: 2026-09-13",
     "v3.34.0 -> v3.35.0: 2026-09-25",
     "v3.35.0 -> v3.35.1: 2026-10-04",
-    "v3.35.1 -> v3.36.0: 2026-10-03"
+    "v3.35.1 -> v3.36.0: 2026-10-10"
   ]
 }
 ```
@@ -442,12 +442,11 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ### v3.36.0 (Current) - Fleet migration kit for supervisors
 
-**Released**: 2026-10-03
+**Planned publication**: 2026-10-10
 
-- Adds a migration kit that a supervisor runs to move its fleet to a new release batch by batch: prepare, rehearse on copies, apply, launch, check, push and read the fleet's state. A supervisor copies the kit from a core clone; templates do not receive it.
+- From the previous release, v3.35.1 (published 2026-10-04 UTC), adds a migration kit that a supervisor runs to move its fleet to a new release batch by batch: prepare, rehearse on copies, apply, launch, check, push and read the fleet's state. A supervisor copies the kit from a core clone; templates do not receive it.
 - The fleet migration procedure gains the kit's batch procedure and a blocking close-out gate. The kit's push, and its launch when run without the `--copy-root` option, check for a line typed by the supervisor's principal. The release notes state what these checks do not enforce.
-- Also adds a display form for grounded vocabulary terms, a public decision log and two requirement domains.
-- The kit was exercised with one command-line tool (Claude Code) on the previous release's content. A migration to v3.36.0 itself has not been shown; publication does not itself establish receiver acceptance.
+- The kit was exercised with one command-line tool (Claude Code) on 3.34.0 to 3.35.0 content. The second outcome test took two worker fixtures from 3.35.1 to v3.36.0 through apply, launch, push to local remotes and the ledger; its result was FAIL on P3 (principal-line count) and P6 (principal-wait time), accepted as named limits under weekly-train:R59. Real-fleet deployment is unverified; publication does not itself establish receiver acceptance.
 
 ### v3.35.1 - Weekly train
 
@@ -648,7 +647,7 @@ No breaking changes.
 **Released**: 2026-05-23
 
 - ✅ **`/aget-propose-actions` Step 2.7 + Step 2.8** (REQ-PA-013/014/015): audit-after-synthesis pre-check (L980) + authorization-shape pre-check distinguishing agent-mode REFUSE (L976/L979 NBA-fill) from principal-mode ACCEPT. The cycle's anti-confabulation / authority-shape disciplines land as **enforced structure**, not prose advice.
-- ✅ **`AGET_ISSUE_GOVERNANCE_SPEC` v2.2.0** (PP-042): issue `routing_mode` ∈ {direct, supervisor_intake, supervisor_editorial, lesson_first} (CAP-ISSUE-009..014 + V-ISSUE-015..020) + ADR-021 Amendment 1.
+- ✅ **`AGET_ISSUE_GOVERNANCE_SPEC` v2.2.0** (prior authoring project): issue `routing_mode` ∈ {direct, supervisor_intake, supervisor_editorial, lesson_first} (CAP-ISSUE-009..014 + V-ISSUE-015..020) + ADR-021 Amendment 1.
 - ✅ **gh#1476 Healthy Friction codification**: SOP point-of-use channel (`SOP_scope_lock_ceremony` v1.3.0 §G1.AUDIT + `SOP_release_process` v1.50). No new L-doc (anti-banner-inflation).
 - ✅ **L983 over-application scope discipline**: the L735 push-window banner now carries an explicit `aget-framework/*`-only scope qualifier.
 
@@ -659,7 +658,7 @@ No breaking changes.
 **Released**: 2026-05-17
 
 - ✅ **`AGET_MEMORY_SURFACE_SPEC` v0.2.0 canonical promotion** (T1.16 + T2.37): Codifies harness-vs-KB taxonomy per L335; R-MS-001..007 + V-MS-001..008 + CAP-MS-001..003 at LANDED rigor. Keystones the L908 family memory-layer closure.
-- ✅ **Verb Registry Currency** (T1.9 = PP-021, 8-gate sub-plan): 37 Active + 4 Reserved verbs + 11 §Hierarchy Decisions pairs (incl. `analyze ⊂ check`, `scan ⊂ study`, `update ⊂ enhance`). `SOP_verb_registry_maintenance.md` v1.0.0 + `audit_verb_registry.py` drift-detector. Closes INIT-FRAMEWORK-COHERENCE Stream 2.
+- ✅ **Verb Registry Currency** (T1.9 = prior authoring project, 8-gate sub-plan): 37 Active + 4 Reserved verbs + 11 §Hierarchy Decisions pairs (incl. `analyze ⊂ check`, `scan ⊂ study`, `update ⊂ enhance`). `SOP_verb_registry_maintenance.md` v1.0.0 + `audit_verb_registry.py` drift-detector. Closes INIT-FRAMEWORK-COHERENCE Stream 2.
 - ✅ **Homepage Fork C Hybrid** (T1.12, 8-gate sub-plan): org-profile inline releases bounded v3.10+; 14 pre-v3.10 entries archived; `## Roadmap` → `## Release History`; `release_homepage_update.py` ADR-008 Generator. **L941-L944 cluster closed structurally**.
 - ✅ **`/aget-create-initiative` Strict promotion** (T2.46): D71 verb-pair gap closed. Direct authoring of `planning/initiatives/INIT-*.md` now PROHIBITED unless skill invoked. Three Strict skills now.
 - ✅ **L961 multi-channel structural defenses** (Gate 4): Channel 1 AGENTS.md §HANDOFF-Deferral Discipline + Channel 2 SKILL-024 v1.4.0 REQ-PA-012 + Channel 4 wake_up.py `get_active_handoffs()`. 4/5 channels LANDED (Channel 5 deferred v3.19). Exceeds L467 ≥2 multi-channel requirement.
