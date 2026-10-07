@@ -8,7 +8,7 @@ No AGET-hosted service is required. You supply the CLI runtime and its model acc
 
 - **Work can outlast a session**: a handoff saves context for a later session.
 - **The agent persists through records**: identity, memory and skills live in its working copy.
-- **Scope, GO and permission are distinct**: the agent checks its mandate, the principal decides scoped authority, and the execution platform applies its own permission controls.
+- **Scope, authority and permission are distinct**: the agent checks its mandate, the principal decides scoped authority (GO), and the execution platform applies its own permission controls.
 
 **Solve**: Lost context between sessions, knowledge that resets daily, agents that can't learn from each other, deployment confidence across your [fleet](https://w3id.org/aget/vocab#Agent_Fleet).
 
@@ -21,8 +21,6 @@ No AGET-hosted service is required. You supply the CLI runtime and its model acc
 ## What is AGET?
 
 AGET enables AI agents that build persistent domain knowledge serving human decisions, with session continuity, shared learning, and governed autonomy across CLI tools. Think of it as the knowledge layer for your AI team.
-
-Gemini CLI consumer Code Assist access ended on 18 June 2026; Standard and Enterprise access remain unchanged. [Google’s notice](https://developers.google.com/gemini-code-assist/docs/deprecations/code-assist-individuals) identifies the affected tiers. Antigravity CLI is Experimental in [AGET’s support matrix](https://github.com/aget-framework/aget/blob/main/docs/AGET_CLI_SUPPORT_MATRIX.md).
 
 ### How It Works
 
