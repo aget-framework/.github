@@ -2,7 +2,13 @@
 
 **Persistent Domain Intelligence for the CLI Coding Tools You Already Use**
 
-Build AI agents that accumulate domain expertise serving your decisions. AGET provides session continuity, shared memory architecture, and governance patterns across Claude Code, Codex CLI, Gemini CLI—through an open standard. Zero infrastructure required.
+Build AI agents that accumulate domain expertise serving your decisions. AGET provides session continuity, shared memory architecture, and governance practices for CLI agents. Claude Code is the baseline; Codex CLI is compatible. Other tools have [documented support levels and dated validation evidence](https://github.com/aget-framework/aget/blob/main/docs/AGET_CLI_SUPPORT_MATRIX.md).
+
+No AGET-hosted service is required. You supply the CLI runtime and its model access.
+
+- **Work can outlast a session**: a handoff saves context for a later session.
+- **The agent persists through records**: identity, memory and skills live in its working copy.
+- **Scope, GO and permission are distinct**: the agent checks its mandate, the principal decides scoped authority, and the execution platform applies its own permission controls.
 
 **Solve**: Lost context between sessions, knowledge that resets daily, agents that can't learn from each other, deployment confidence across your [fleet](https://w3id.org/aget/vocab#Agent_Fleet).
 
@@ -14,7 +20,9 @@ Build AI agents that accumulate domain expertise serving your decisions. AGET pr
 
 ## What is AGET?
 
-AGET enables AI agents that build persistent domain knowledge serving human decisions—with session continuity, shared learning, and governed autonomy across CLI tools. Think of it as the knowledge layer for your AI team.
+AGET enables AI agents that build persistent domain knowledge serving human decisions, with session continuity, shared learning, and governed autonomy across CLI tools. Think of it as the knowledge layer for your AI team.
+
+Gemini CLI consumer Code Assist access ended on 18 June 2026; Standard and Enterprise access remain unchanged. [Google’s notice](https://developers.google.com/gemini-code-assist/docs/deprecations/code-assist-individuals) identifies the affected tiers. Antigravity CLI is Experimental in [AGET’s support matrix](https://github.com/aget-framework/aget/blob/main/docs/AGET_CLI_SUPPORT_MATRIX.md).
 
 ### How It Works
 
@@ -23,7 +31,7 @@ AGET enables AI agents that build persistent domain knowledge serving human deci
 - **Shared Learning** - Propagate insights across your fleet (`.aget/evolution/`)
 - **Lifecycle Governance** - Gated releases, contract testing, deployment verification
 - **Requirements-Driven** - Human-level requirements ground testable specifications
-- **Universal CLI Compatibility** - Works with Claude Code, Codex CLI, Gemini CLI
+- **CLI Support Levels** - Claude Code baseline, Codex CLI compatible; other tools follow the linked support matrix
 - **Open Standard** - AGENTS.md enables ecosystem innovation
 - **Hook-Ready** - Platform-native lifecycle automation via .claude/hooks/
 
@@ -39,7 +47,7 @@ Requirements define principal intent; specifications define testable contracts (
 - **Optional**: "WHERE [feature enabled] the system SHALL..."
 - **Conditional**: "IF [condition] THEN the system SHALL..."
 
-**Contract Testing** - Validate deployments before production (7-30 tests per agent)
+**Contract Testing** - Check deployments against the applicable specifications before production
 
 **Validation Framework** - Every specification includes formal validation tests
 
