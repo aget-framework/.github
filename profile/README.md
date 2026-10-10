@@ -8,7 +8,7 @@ Build AI agents that accumulate domain expertise serving your decisions. AGET pr
 
 [![Version](https://img.shields.io/badge/version-3.36.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.36.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](https://github.com/aget-framework/aget/blob/main/LICENSE)
-[![Release Date](https://img.shields.io/badge/planned-2026--10--10-lightgrey)](https://github.com/aget-framework/aget/releases/tag/v3.36.0)
+[![Release Date](https://img.shields.io/badge/released-2026--10--10-lightgrey)](https://github.com/aget-framework/aget/releases/tag/v3.36.0)
 
 ---
 
@@ -442,7 +442,7 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ### v3.36.0 (Current) - Fleet migration kit for supervisors
 
-**Planned publication**: 2026-10-10
+**Released**: 2026-10-10
 
 - From the previous release, v3.35.1 (published 2026-10-04 UTC), adds a migration kit that a supervisor runs to move its fleet to a new release batch by batch: prepare, rehearse on copies, apply, launch, check, push and read the fleet's state. A supervisor copies the kit from a core clone; templates do not receive it.
 - The fleet migration procedure gains the kit's batch procedure and a blocking close-out gate. The kit's push, and its launch when run without the `--copy-root` option, check for a line typed by the supervisor's principal. The release notes state what these checks do not enforce.
