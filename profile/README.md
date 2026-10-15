@@ -23,7 +23,7 @@ An AGET fleet is a self-built [Personal AGI System](https://www.gabormelli.com/R
 
 ## What is AGET?
 
-AGET enables AI agents that build persistent domain knowledge serving human decisions, with session continuity, shared learning, and governed autonomy across CLI tools. Think of it as the knowledge layer for your AI team.
+AGET enables AI agents that build persistent domain knowledge serving human decisions, with session continuity, shared learning, and governed autonomy across CLI tools. Think of it as the knowledge layer for your Personal AGI System.
 
 ### How It Works
 
@@ -31,7 +31,7 @@ AGET enables AI agents that build persistent domain knowledge serving human deci
 - **Session Continuity** - Pick up where you left off with structured memory architecture
 - **Shared Learning** - Propagate insights across your fleet (`.aget/evolution/`)
 - **Lifecycle Governance** - Gated releases, contract testing, deployment verification
-- **Requirements-Driven** - Human-level requirements ground testable specifications
+- **Requirements-Driven** - Human-authored requirements ground testable specifications
 - **CLI Support Levels** - Claude Code baseline, Codex CLI compatible; other tools follow the linked support matrix
 - **Open Standard** - AGENTS.md enables ecosystem innovation
 - **Hook-Ready** - Platform-native lifecycle automation via .claude/hooks/
