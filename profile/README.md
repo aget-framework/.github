@@ -34,7 +34,7 @@ AGET enables AI agents that build persistent domain knowledge serving human deci
 - **Requirements-Driven** - Human-authored requirements ground testable specifications
 - **CLI Support Levels** - Claude Code baseline, Codex CLI compatible; other tools follow the linked support matrix
 - **Open Standard** - AGENTS.md enables ecosystem innovation
-- **Hook-Ready** - Platform-native lifecycle automation via .claude/hooks/
+- **Hook-Ready** - Platform-native lifecycle automation through each CLI's own hook mechanism (Claude Code: `.claude/hooks/`)
 
 ### Specification-First Development
 
@@ -637,7 +637,7 @@ No breaking changes.
 **Released**: 2026-05-31
 
 - ✅ **C-F1/C-P1/C-P3 delivered to all 13 templates** (0/13 → 13/13, verified by the consumer's own check) — v3.20.0 advertised these but they had not reached the templates consumers pull.
-- ✅ **C-P1** `close_gate_check.py`, **C-P3** `check_structural_skill_frontmatter` (#1489), **C-F1** `/aget-propose-actions` presentation — now present fleet-wide.
+- ✅ **C-P1** `close_gate_check.py`, **C-P3** `check_structural_skill_frontmatter`, **C-F1** `/aget-propose-actions` presentation — now present fleet-wide.
 
 > **No breaking changes.** Version-bump-only. Tier-2 (blocking reachability gate) + Tier-3 (canonical skill source-of-truth) deferred.
 
