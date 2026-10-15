@@ -1,10 +1,13 @@
 # AGET Framework
 
-**Persistent Domain Intelligence for the CLI Coding Tools You Already Use**
+**Build Your Personal AGI System**\
+Persistent Domain Intelligence for the CLI Coding Tools You Already Use
 
 Build AI agents that accumulate domain expertise serving your decisions. AGET provides session continuity, shared memory architecture, and governance practices for CLI agents. Claude Code is the baseline; Codex CLI is compatible. Other tools have [documented support levels and dated validation evidence](https://github.com/aget-framework/aget/blob/main/docs/AGET_CLI_SUPPORT_MATRIX.md).
 
 No AGET-hosted service is required. You supply the CLI runtime and its model access.
+
+An AGET fleet is a self-built [Personal AGI System](https://www.gabormelli.com/RKB/Personal_AGI_System): a [Personal AI System](https://www.gabormelli.com/RKB/Personal_AI_System) that keeps your memory, skills and governance across sessions. Its code (Apache-2.0) and specifications are open; its internal rulings are not.
 
 - **Work can outlast a session**: a handoff saves context for a later session.
 - **The agent persists through records**: identity, memory and skills live in its working copy.
