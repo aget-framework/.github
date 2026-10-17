@@ -17,9 +17,9 @@ An AGET fleet is a self-built [Personal AGI System](https://www.gabormelli.com/R
 
 **Solve**: Lost context between sessions, knowledge that resets daily, agents that can't learn from each other, deployment confidence across your [fleet](https://w3id.org/aget/vocab#Agent_Fleet).
 
-[![Version](https://img.shields.io/badge/version-3.36.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.36.0)
+[![Version](https://img.shields.io/badge/version-3.37.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.37.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](https://github.com/aget-framework/aget/blob/main/LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2026--10--10-lightgrey)](https://github.com/aget-framework/aget/releases/tag/v3.36.0)
+[![Release Date](https://img.shields.io/badge/released-2026--10--17-lightgrey)](https://github.com/aget-framework/aget/releases/tag/v3.37.0)
 
 ---
 
@@ -194,7 +194,7 @@ requirements:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.36.0",
+  "aget_version": "3.37.0",
   "instance_type": "AGET",
   "template": "researcher",
   "migration_history": [
@@ -236,7 +236,8 @@ requirements:
     "v3.33.1 -> v3.34.0: 2026-09-13",
     "v3.34.0 -> v3.35.0: 2026-09-25",
     "v3.35.0 -> v3.35.1: 2026-10-04",
-    "v3.35.1 -> v3.36.0: 2026-10-10"
+    "v3.35.1 -> v3.36.0: 2026-10-10",
+    "v3.36.0 -> v3.37.0: 2026-10-17"
   ]
 }
 ```
@@ -317,14 +318,14 @@ Track agent identity, manage upgrades, ensure compliance:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.36.0",
+  "aget_version": "3.37.0",
   "instance_type": "AGET",
   "template": "researcher",
   "domain": "market_analysis"
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → v3.12.0 → v3.13.0 → v3.14.0 → v3.14.1 → v3.15.0 → v3.16.0 → v3.17.0 → v3.18.0 → v3.19.0 → v3.20.0 → v3.20.2 → v3.20.3 → v3.21.0 → v3.22.0 → v3.23.0 → v3.23.1 → v3.24.0 → v3.25.0 → v3.26.0 → v3.27.0 → v3.28.0 → v3.29.0 → v3.30.0 → v3.31.0 → v3.31.1 → v3.32.0 → v3.33.1 → v3.34.0 → v3.35.0 → v3.35.1 → **v3.36.0**
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → v3.12.0 → v3.13.0 → v3.14.0 → v3.14.1 → v3.15.0 → v3.16.0 → v3.17.0 → v3.18.0 → v3.19.0 → v3.20.0 → v3.20.2 → v3.20.3 → v3.21.0 → v3.22.0 → v3.23.0 → v3.23.1 → v3.24.0 → v3.25.0 → v3.26.0 → v3.27.0 → v3.28.0 → v3.29.0 → v3.30.0 → v3.31.0 → v3.31.1 → v3.32.0 → v3.33.1 → v3.34.0 → v3.35.0 → v3.35.1 → v3.36.0 → **v3.37.0**
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -451,7 +452,15 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ## Release History
 
-### v3.36.0 (Current) - Fleet migration kit for supervisors
+### v3.37.0 (Current) - Receiver fixes and runner pin
+
+**Released**: 2026-10-17
+
+- From the previous release, v3.36.0 (published 2026-10-10 UTC), this release fixes receiver-side issues. In core and all 13 templates, tests no longer inherit the caller's git location, and wind-down reports a health-check timeout or crash instead of hiding it behind a pass.
+- Launch checks active and archived scope records: a scope approval alone cannot authorize a launch, and old-format records block it until retired. Policy review, fleet-skew and post-apply halt checks become explicit steps. Install the kit from pinned core, separately from templates; templates do not receive it.
+- CI in core and in the 12 templates that have a CI workflow pins its runner image and its checkout and setup-python action versions; template copies filter compiled caches. Hosted CI passed at the published commit of every repository that has a CI workflow (13 of 14). Real-fleet deployment is unverified; publication does not itself establish receiver acceptance.
+
+### v3.36.0 - Fleet migration kit for supervisors
 
 **Released**: 2026-10-10
 
