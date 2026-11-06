@@ -17,9 +17,9 @@ An AGET fleet is a self-built [Personal AGI System](https://www.gabormelli.com/R
 
 **Solve**: Lost context between sessions, knowledge that resets daily, agents that can't learn from each other, deployment confidence across your [fleet](https://w3id.org/aget/vocab#Agent_Fleet).
 
-[![Version](https://img.shields.io/badge/version-3.37.0-blue)](https://github.com/aget-framework/aget/releases/tag/v3.37.0)
+[![Version](https://img.shields.io/badge/version-3.37.1-blue)](https://github.com/aget-framework/aget/releases/tag/v3.37.1)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](https://github.com/aget-framework/aget/blob/main/LICENSE)
-[![Release Date](https://img.shields.io/badge/released-2026--10--17-lightgrey)](https://github.com/aget-framework/aget/releases/tag/v3.37.0)
+[![Release Date](https://img.shields.io/badge/planned-2026--11--04-lightgrey)](https://github.com/aget-framework/aget/releases/tag/v3.37.1)
 
 ---
 
@@ -194,7 +194,7 @@ requirements:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.37.0",
+  "aget_version": "3.37.1",
   "instance_type": "AGET",
   "template": "researcher",
   "migration_history": [
@@ -237,7 +237,8 @@ requirements:
     "v3.34.0 -> v3.35.0: 2026-09-25",
     "v3.35.0 -> v3.35.1: 2026-10-04",
     "v3.35.1 -> v3.36.0: 2026-10-10",
-    "v3.36.0 -> v3.37.0: 2026-10-17"
+    "v3.36.0 -> v3.37.0: 2026-10-17",
+    "v3.37.0 -> v3.37.1: 2026-11-04"
   ]
 }
 ```
@@ -318,14 +319,14 @@ Track agent identity, manage upgrades, ensure compliance:
 // .aget/version.json
 {
   "agent_name": "my-research-agent",
-  "aget_version": "3.37.0",
+  "aget_version": "3.37.1",
   "instance_type": "AGET",
   "template": "researcher",
   "domain": "market_analysis"
 }
 ```
 
-Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → v3.12.0 → v3.13.0 → v3.14.0 → v3.14.1 → v3.15.0 → v3.16.0 → v3.17.0 → v3.18.0 → v3.19.0 → v3.20.0 → v3.20.2 → v3.20.3 → v3.21.0 → v3.22.0 → v3.23.0 → v3.23.1 → v3.24.0 → v3.25.0 → v3.26.0 → v3.27.0 → v3.28.0 → v3.29.0 → v3.30.0 → v3.31.0 → v3.31.1 → v3.32.0 → v3.33.1 → v3.34.0 → v3.35.0 → v3.35.1 → v3.36.0 → **v3.37.0**
+Version progression: v2.5 → v2.6 → v2.7 → v2.8 → v2.9 → v2.10 → v2.11 → v2.12 → v3.0.0 → v3.1.0 → v3.2.0 → v3.2.1 → v3.3.0 → v3.4.0 → v3.5.0 → v3.6.0 → v3.7.0 → v3.8.0 → v3.9.0 → v3.10.0 → v3.11.0 → v3.11.1 → v3.12.0 → v3.13.0 → v3.14.0 → v3.14.1 → v3.15.0 → v3.16.0 → v3.17.0 → v3.18.0 → v3.19.0 → v3.20.0 → v3.20.2 → v3.20.3 → v3.21.0 → v3.22.0 → v3.23.0 → v3.23.1 → v3.24.0 → v3.25.0 → v3.26.0 → v3.27.0 → v3.28.0 → v3.29.0 → v3.30.0 → v3.31.0 → v3.31.1 → v3.32.0 → v3.33.1 → v3.34.0 → v3.35.0 → v3.35.1 → v3.36.0 → v3.37.0 → **v3.37.1**
 Migration history tracked, contract tests enforce compliance.
 
 ### Shared Learning
@@ -452,7 +453,14 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ## Release History
 
-### v3.37.0 (Current) - Receiver fixes and runner pin
+### v3.37.1 (Current) - Same-day release adoption
+
+**Planned publication**: 2026-11-04
+
+- From the previous release, v3.37.0 (published 2026-10-17 UTC), this patch makes one fix to the migration kit for supervisors: with no adoption policy file, its release-age check reports `ADOPT NOW` on the day a release is published instead of waiting seven days. The ruled default is zero days; the previous release disclosed the seven-day value as a correction.
+- Templates change only their version identity; the fix is in the core framework's migration kit, which is not a template payload. Supervisors that use the kit copy it again from a core clone at the new tag; others need take no action. Regression tests fail if the seven-day default returns. Real-fleet deployment is unverified; publication does not itself establish receiver acceptance.
+
+### v3.37.0 - Receiver fixes and runner pin
 
 **Released**: 2026-10-17
 
