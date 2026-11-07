@@ -19,7 +19,7 @@ An AGET fleet is a self-built [Personal AGI System](https://www.gabormelli.com/R
 
 [![Version](https://img.shields.io/badge/version-3.37.1-blue)](https://github.com/aget-framework/aget/releases/tag/v3.37.1)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](https://github.com/aget-framework/aget/blob/main/LICENSE)
-[![Release Date](https://img.shields.io/badge/planned-2026--11--04-lightgrey)](https://github.com/aget-framework/aget/releases/tag/v3.37.1)
+[![Release Date](https://img.shields.io/badge/released-2026--11--04-lightgrey)](https://github.com/aget-framework/aget/releases/tag/v3.37.1)
 
 ---
 
@@ -455,7 +455,7 @@ AGET's gated workflows and evolution tracking create an auditable trail of decis
 
 ### v3.37.1 (Current) - Same-day release adoption
 
-**Planned publication**: 2026-11-04
+**Released**: 2026-11-04
 
 - From the previous release, v3.37.0 (published 2026-10-17 UTC), this patch makes one fix to the migration kit for supervisors: with no adoption policy file, its release-age check reports `ADOPT NOW` on the day a release is published instead of waiting seven days. The ruled default is zero days; the previous release disclosed the seven-day value as a correction.
 - Templates change only their version identity; the fix is in the core framework's migration kit, which is not a template payload. Supervisors that use the kit copy it again from a core clone at the new tag; others need take no action. Regression tests fail if the seven-day default returns. Real-fleet deployment is unverified; publication does not itself establish receiver acceptance.
